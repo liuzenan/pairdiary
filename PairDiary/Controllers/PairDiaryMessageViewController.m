@@ -11,6 +11,7 @@
 #import "loginViewController.h"
 #import "PairingViewController.h"
 #import <UIColor-HexString/UIColor+HexString.h>
+#import "DataUtil.h"
 
 @interface PairDiaryMessageViewController ()
 
@@ -246,7 +247,7 @@
 {
     NSLog(@"tapped");
     PFObject *chat = self.chats[recognizer.view.tag];
-    NSLog(@"%@", chat[@"text"]);
+    NSLog(@"%@", chat[@"objectId"]);
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
     
