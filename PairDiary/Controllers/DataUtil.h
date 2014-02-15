@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Message.h"
+#import <Parse/Parse.h>
 @interface DataUtil : NSObject
 
-+ (void)saveMessageToDiary: (NSString*)messageId;
-+ (Message*)getMessagesFor: (NSDate*)date;
++ (void)saveMessageToDiary: (NSString*)chatId;
++ (NSArray*)getMessagesFor: (NSDate*)date;
 + (NSArray*)getImportantMessages: (NSDate*)date;
 @end

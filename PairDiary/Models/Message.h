@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@interface Message : NSObject
+@interface Message : PFObject
 
 @property (nonatomic,strong) NSString *fromUser;
 @property (nonatomic,strong) NSString *toUser;
 @property (nonatomic,strong) NSString *pairId;
 @property (nonatomic,strong) NSString *text;
+
+
+- (Message*)initWithText:(NSString*)s fromUser:(NSString*)from toUser:(NSString*)to inPair:(NSString*)pair;
+
 
 @end
