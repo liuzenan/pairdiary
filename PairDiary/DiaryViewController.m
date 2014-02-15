@@ -68,18 +68,32 @@
         static NSString *CellIdentifier = @"DiaryTopCell";
         DiaryTopCell *cell = (DiaryTopCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
+        [StatisticsController totalMessageCount:self.pairId handler:
+         ^(NSInteger totalMessages){
+              [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",totalMessages]];
+         }];
+       
+        [StatisticsController todayMessageCount:self.pairId handler:
+         ^(NSInteger todayMessages){
+             [cell.todayMsg setText: [NSString stringWithFormat:@"%ld",todayMessages]];
+         }];
+
+        [StatisticsController totalPhotos:self.pairId handler:
+         ^(NSInteger totalPhotos){
+             [cell.numPhotos setText: [NSString stringWithFormat:@"%ld",totalPhotos]];
+         }];
         
-        [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",[StatisticsController totalDate:self.pairId]]];
-        [cell.todayMsg setText:[NSString stringWithFormat:@"%ld", [StatisticsController todayMessageCount:self.pairId]]];
-        [cell.numPhotos setText: @"0"];
-        [cell.numDays setText:[NSString stringWithFormat:@"%ld", [StatisticsController totalDate:self.pairId]]];
-        [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", [StatisticsController totalSavedMessage:self.pairId]]];
+        [StatisticsController totalDate:self.pairId handler:^(NSInteger totalDates){
+            [cell.numDays setText:[NSString stringWithFormat:@"%ld", totalDates]];
+        }];
         
+        [StatisticsController totalSavedMessage:self.pairId handler:^(NSInteger totalSavedMessage){
+            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", totalSavedMessage]];
+        }];
         return cell;
     } else {
         static NSString *CellIdentifier = @"DiaryDayCell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        
         
         return cell;
     }

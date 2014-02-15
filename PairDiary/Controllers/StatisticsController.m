@@ -47,14 +47,18 @@
         return block(0);
     });
 }
-+ (NSInteger) totalSavedMessage:(NSString*)pairId{
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
-    [queryForChats whereKey:@"pairId" equalTo:pairId];
-    if([queryForChats countObjects]>1)
-        return [queryForChats countObjects];
-    else
-        return 0;
+
++(void)totalSavedMessage:(NSString *)pairId handler:(void(^)(NSInteger))block{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
+        [queryForChats whereKey:@"pairId" equalTo:pairId];
+        if([queryForChats countObjects]>1)
+            return block([queryForChats countObjects]);
+        else
+            return block(0);
+    });
 }
+
 +(void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_main_queue(), ^{
     PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
