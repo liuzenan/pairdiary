@@ -70,10 +70,6 @@
     [self.FriendAvatarImageView setImage:image];
 }
 
-    [self.UserAvatarImage setImage:image];
-    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
