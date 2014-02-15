@@ -403,7 +403,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cwj-Rt-rcw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ibw-Ju-u6x" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="home" automaticallyAdjustsScrollViewInsets="NO" id="ibw-Ju-u6x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>

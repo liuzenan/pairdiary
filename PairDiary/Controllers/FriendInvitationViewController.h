@@ -10,7 +10,7 @@
 #import <FacebookSDK/FBGraphUser.h>
 @protocol PairingDelegate
 
--(void)friendSelected:(NSDictionary<FBGraphUser> *)user;
+-(void)friendSelected:(id<FBGraphUser>)user;
 
 @end
 

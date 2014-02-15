@@ -11,6 +11,8 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <Parse/Parse.h>
 #import <FacebookSDK/FBGraphUser.h>
+#import "SVProgressHUD.h"
+#import "PairDiaryMessageViewController.h"
 
 @interface PairingViewController ()
 
@@ -43,17 +45,15 @@
     }
 }
 
--(void)friendSelected:(NSDictionary<FBGraphUser> *)user
+-(void)friendSelected:(id<FBGraphUser>)user
 {
     NSLog(@"rendering friend's profile");
     NSLog(@"%@",user);
-    NSLog(@"%@",user[@"pciture"]);
-    NSURL *imageURL = [NSURL URLWithString:[user link]];
+    NSURL *imageURL = [NSURL URLWithString:user[@"picture"][@"data"][@"url"]];
     NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
     UIImage *image = [UIImage imageWithData:imageData];
     [self.FriendAvatarImageView setImage:image];
-    
-    
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -62,11 +62,58 @@
 }
 
 - (IBAction)SelectPartnerButtonPressed:(id)sender {
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    FriendInvitationViewController * FIViewController =(FriendInvitationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"FriendInvitation"];
-    FIViewController.PairingDelegate = self;
-    [self presentViewController:FIViewController animated:YES completion:Nil];
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    FriendInvitationViewController * FIViewController =(FriendInvitationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"FriendInvitation"];
+//    FIViewController.PairingDelegate = self;
+//    [self presentViewController:FIViewController animated:YES completion:Nil];
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
+    [FBWebDialogs
+     presentRequestsDialogModallyWithSession:nil
+     message:@"Try our application PairDiary!"
+     title:nil
+     parameters:nil
+     handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
+         if (error) {
+             // Error launching the dialog or sending the request.
+             NSLog(@"Error sending request.");
+         } else {
+             if (result == FBWebDialogResultDialogNotCompleted) {
+                 // User clicked the "x" icon
+                 NSLog(@"User canceled request.");
+             } else {
+                 // Handle the send request callback
+                 NSDictionary *urlParams = [self parseURLParams:[resultURL query]];
+                 if (![urlParams valueForKey:@"request"]) {
+                     // User clicked the Cancel button
+                     NSLog(@"User canceled request.");
+                 } else {
+                     NSLog(@"urlParams: %@",resultURL);
+                     // User clicked the Send button
+                     NSString *requestID = [urlParams valueForKey:@"request"];
+                     NSLog(@"Request ID: %@", requestID);
+                     [SVProgressHUD dismiss];
+                     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+                     PairDiaryMessageViewController * PairDiaryMessaging = (PairDiaryMessageViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"home"];
+                     [self presentViewController:PairDiaryMessaging animated:YES completion:Nil];
+                     
+                 }
+             }
+         }
+     }];
 }
+
+- (NSDictionary*)parseURLParams:(NSString *)query {
+    NSArray *pairs = [query componentsSeparatedByString:@"&"];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    for (NSString *pair in pairs) {
+        NSArray *kv = [pair componentsSeparatedByString:@"="];
+        NSString *val =
+        [kv[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        params[kv[0]] = val;
+    }
+    return params;
+}
+
 
 //- (void)loadFacebookInvite {
 //    [[FriendsController sharedInstance] getInviteRequestCurrentFriendListWithCompletionHandler:^(NSArray *friendsArray, NSError *error) {

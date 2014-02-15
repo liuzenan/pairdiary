@@ -8,9 +8,9 @@
 
 #import "UserController.h"
 #import <Parse/PFObject+Subclass.h>
+#import "SVProgressHUD.h"
 
 #define FACEBOOK_ID_KEY @"fb_id_for_%@"
-
 
 @implementation UserController
 
@@ -35,6 +35,7 @@
     
     // Login PFUser using Facebook
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
         NSLog(@"%@",user.objectId);
         if (!user) {
             if (!error) {
@@ -61,13 +62,14 @@
 - (void)fetchFacebookDetailsWithCompletionHandler: (void(^)())completion {
     
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-        
+        NSLog(@"%@",result);
         NSDictionary *facebookDetails = [NSDictionary dictionaryWithDictionary:result];
         User *currentUser = (User *)[User currentUser];
         [currentUser setEmail:[facebookDetails objectForKey:@"email"]];
-        [currentUser setObject:[facebookDetails objectForKey:@"id"] forKey:kMRUserFacebookIdKey];
-        [currentUser setObject:[facebookDetails objectForKey:@"username"] forKey:kMRUserDisplayNameKey];
-        
+        [currentUser setObject:[facebookDetails objectForKey:@"id"] forKey:UserFacebookIdKey];
+        [currentUser setObject:[facebookDetails objectForKey:@"name"] forKey:UserDisplayNameKey];
+        [currentUser setObject:[facebookDetails objectForKey:@"first_name"] forKey:UserFirstNameKey];
+        [currentUser setObject:[facebookDetails objectForKey:@"last_name"] forKey:UserLastNameKey];
         [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if(succeeded){
                 NSLog(@"save logined user successfully.");

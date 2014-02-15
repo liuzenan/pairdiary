@@ -41,11 +41,15 @@
 
 - (void)facebookViewControllerDoneWasPressed:(id)sender{
     if(self.selection.count > 0){
-        NSDictionary<FBGraphUser> * selectedUser = [self.selection objectAtIndex:0];
+        id<FBGraphUser> selectedUser = [self.selection objectAtIndex:0];
         [self.PairingDelegate friendSelected:selectedUser];
-        
     }
     [self dismissViewControllerAnimated:YES completion:Nil];
     NSLog(@"DONE button pressed.");
+}
+
+- (void)facebookViewControllerCancelWasPressed:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:Nil];
+    NSLog(@"CANCEL button pressed.");
 }
 @end
