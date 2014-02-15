@@ -24,3 +24,9 @@
 #define COCOAPODS_VERSION_MINOR_JSQSystemSoundPlayer 4
 #define COCOAPODS_VERSION_PATCH_JSQSystemSoundPlayer 0
 
+// UIColor-HexString
+#define COCOAPODS_POD_AVAILABLE_UIColor_HexString
+#define COCOAPODS_VERSION_MAJOR_UIColor_HexString 1
+#define COCOAPODS_VERSION_MINOR_UIColor_HexString 0
+#define COCOAPODS_VERSION_PATCH_UIColor_HexString 1
+

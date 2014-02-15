@@ -20,6 +20,18 @@
                   clientKey:@"9r9UIOyyKGO1XFJOF0OJSVet5YKlpv9rZYj7HmhJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [PFFacebookUtils initializeFacebook];
+
+    NSShadow* shadow = [NSShadow new];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                            NSFontAttributeName: [UIFont fontWithName:@"AvenirNext-Medium" size:17.0f],
+                                                            NSShadowAttributeName: shadow
+                                                            }];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes: @{
+                                                           NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Medium" size:17.0f]
+                                                           } forState:UIControlStateNormal];
     return YES;
 }
 							
@@ -43,11 +55,11 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    if (![[UserController sharedInstance] isLoggedIn]) {
+    //if (![[UserController sharedInstance] isLoggedIn]) {
         UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         LoginViewController * PairDiaryLogin = (LoginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
         [self.window.rootViewController presentViewController:PairDiaryLogin animated:NO completion:Nil];
-    }
+    //f}
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
