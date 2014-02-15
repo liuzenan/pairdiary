@@ -115,6 +115,9 @@
                                 <state key="normal" image="select_pair_button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="SelectPartnerButtonPressed:" destination="YlT-jb-b2f" eventType="touchUpInside" id="zMB-i9-O79"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -125,6 +128,9 @@
                             <constraint firstItem="1K6-Sf-Hei" firstAttribute="top" secondItem="DoL-iZ-K2k" secondAttribute="top" constant="90" id="gNO-6N-rRQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UserAvatarImage" destination="dOU-Bs-qHr" id="JP2-nm-Fo2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sP8-32-Iu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

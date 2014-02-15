@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PairingViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *UserAvatarImage;
+
+- (IBAction)SelectPartnerButtonPressed:(id)sender;
 
 @end
