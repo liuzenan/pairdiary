@@ -486,15 +486,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				F258900D18AF913A00E07B7C /* FacebookUserController.m in Sources */,
-=======
 				E4523AAF18AFB4BF005D3AF0 /* PairDiaryMessageViewController.m in Sources */,
 				E4523AB018AFB4BF005D3AF0 /* DaySummaryViewController.m in Sources */,
 				E4523AB118AFB4BF005D3AF0 /* User.m in Sources */,
 				E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */,
 				E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */,
->>>>>>> 6a2568d717ae5460e264ac02f8a7cce136c3dd46
 				F2BCEF5018AF819D000084D7 /* loginViewController.m in Sources */,
 				F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */,
 				F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */,
