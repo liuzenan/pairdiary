@@ -13,12 +13,14 @@
 
 // Class key
 
-NSString *const kMRUserClassKey = @"User";
-NSString *const kMRUserUserNameKey = @"username";
-NSString *const kMRUserDisplayNameKey = @"displayName";
-NSString *const kMRUserEmailKey = @"email";
-NSString *const kMRUserFacebookIdKey = @"facebookId";
-NSString *const kMRUserObjectIdKey = @"objectId";
+NSString *const UserClassKey = @"User";
+NSString *const UserUserNameKey = @"username";
+NSString *const UserDisplayNameKey = @"displayName";
+NSString *const UserEmailKey = @"email";
+NSString *const UserFacebookIdKey = @"facebookId";
+NSString *const UserObjectIdKey = @"objectId";
+NSString *const UserFirstNameKey = @"first_name";
+NSString *const UserLastNameKey = @"last_name";
 
 @implementation User
 
@@ -28,17 +30,18 @@ NSString *const kMRUserObjectIdKey = @"objectId";
 @dynamic facebookId;
 
 + (NSString *)parseClassName {
-    return kMRUserClassKey;
+    return UserClassKey;
 }
 
 - (User*)initWithPFUser:(PFUser*)user{
     self = [super init];
     if(self){
         self.objectId = user.objectId;
-        self.username = [user objectForKey:kMRUserUserNameKey];
-        self.displayName = [user objectForKey:kMRUserDisplayNameKey];
-        self.email = [user objectForKey:kMRUserEmailKey];
-        self.facebookId = [user objectForKey:kMRUserFacebookIdKey];
+        self.lastName = [user objectForKey:UserLastNameKey];
+        self.firstName = [user objectForKey:UserFirstNameKey];
+        self.displayName = [user objectForKey:UserDisplayNameKey];
+        self.email = [user objectForKey:UserEmailKey];
+        self.facebookId = [user objectForKey:UserFacebookIdKey];
     }
     return self;
 }
