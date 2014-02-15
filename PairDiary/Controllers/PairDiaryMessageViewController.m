@@ -224,7 +224,7 @@
     frame.size.height = cell.bubbleView.textView.contentSize.height;
     cell.bubbleView.textView.frame = frame;
     [cell.bubbleView.textView setContentInset:UIEdgeInsetsMake(4.0f, 4.0f, 0, 0)];
-    cell.bubbleView.tag = indexPath.row;
+    cell.bubbleView.textView.tag = indexPath.row;
     
     frame = cell.bubbleView.frame;
     frame.size.height = cell.bubbleView.textView.contentSize.height + 10.0f;
@@ -249,7 +249,7 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellSingleTap:)];
     [singleTap setNumberOfTapsRequired:1];
     [singleTap setNumberOfTouchesRequired:1];
-    [cell.bubbleView addGestureRecognizer:singleTap];
+    [cell.bubbleView.textView addGestureRecognizer:singleTap];
 }
 
 - (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
