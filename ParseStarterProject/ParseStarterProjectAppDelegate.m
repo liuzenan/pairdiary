@@ -68,7 +68,7 @@
     [PFPush subscribeToChannelInBackground:@"" target:self selector:@selector(subscribeFinished:error:)];
 }
 
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
     if (error.code == 3010) {
         NSLog(@"Push notifications are not supported in the iOS Simulator.");
     } else {
