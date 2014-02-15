@@ -188,7 +188,7 @@
 
 -(JSMessagesViewTimestampPolicy)timestampPolicy {
     
-    return JSMessagesViewTimestampPolicyEveryFive;
+    return JSMessagesViewTimestampPolicyAll;
 }
 
 -(JSMessagesViewAvatarPolicy)avatarPolicy {
@@ -253,9 +253,7 @@
 
 -(NSDate *)timestampForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
-    NSDate *date = chat.createdAt;
-    return date;
+    return nil;
 }
 
 -(UIImageView *)avatarImageViewForRowAtIndexPath:(NSIndexPath *)indexPath {

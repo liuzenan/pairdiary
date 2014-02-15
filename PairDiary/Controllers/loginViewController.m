@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "PairingViewController.h"
 
 @interface LoginViewController ()
 
@@ -28,7 +27,6 @@
 {
     [super viewDidLoad];
     [UserController sharedInstance].loginDelegate = self;
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,9 +47,7 @@
 
 -(void) facebookLoginSuccessWithExistingUser {
     //DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
-    //[SVProgressHUD showSuccessWithStatus:@"Successfully logged in!"];
-    
-    [self performSegueWithIdentifier:@"pushPairing" sender:self];
+    [SVProgressHUD showSuccessWithStatus:@"Successfully logged in!"];
 }
 
 - (void) facebookLoginFailedWithError:(NSError*)error {

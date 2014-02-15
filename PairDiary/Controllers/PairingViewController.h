@@ -7,13 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FriendInvitationViewController.h"
-#import <FacebookSDK/FBGraphUser.h>
-@interface PairingViewController : UIViewController<PairingDelegate>
-@property (weak, nonatomic) IBOutlet UIImageView *UserAvatarImageView;
 
-@property (weak, nonatomic) IBOutlet UIImageView *FriendAvatarImageView;
-
+@interface PairingViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *UserAvatarImage;
 
 - (IBAction)SelectPartnerButtonPressed:(id)sender;
 
