@@ -20,6 +20,15 @@
                   clientKey:@"9r9UIOyyKGO1XFJOF0OJSVet5YKlpv9rZYj7HmhJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [PFFacebookUtils initializeFacebook];
+
+    NSShadow* shadow = [NSShadow new];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                                            NSForegroundColorAttributeName: [UIColor whiteColor],
+                                                            NSFontAttributeName: [UIFont fontWithName:@"AvenirNext-Medium" size:17.0f],
+                                                            NSShadowAttributeName: shadow
+                                                            }];
+
     return YES;
 }
 							

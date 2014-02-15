@@ -10,6 +10,7 @@
 #import "UserController.h"
 #import "loginViewController.h"
 #import "PairingViewController.h"
+#import <UIColor-HexString/UIColor+HexString.h>
 
 @interface PairDiaryMessageViewController ()
 
@@ -51,6 +52,12 @@
     if (![[UserController sharedInstance] isLoggedIn]) {
         return;
     }
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"F26363"];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [[JSBubbleView appearance] setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:17.0f]];
+    self.title = @"Loading...";
     
     self.currentUser = [PFUser currentUser];
     
@@ -199,15 +206,13 @@
 
 -(void)configureCell:(JSBubbleMessageCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
-    if ([cell messageType] == JSBubbleMessageTypeOutgoing ) {
+    if ([cell messageType] == JSBubbleMessageTypeIncoming ) {
         
         cell.bubbleView.textView.textColor = [UIColor colorWithRed:91.0/255.0 green:191.0/255.0 blue:171.0/255.0 alpha:1.0];
-        cell.bubbleView.textView.font = [ UIFont fontWithName:@"Avenir Neue" size:20.0];
         cell.backgroundColor = [UIColor clearColor];
-    } else if ([cell messageType] == JSBubbleMessageTypeIncoming) {
+    } else if ([cell messageType] == JSBubbleMessageTypeOutgoing) {
         
         cell.bubbleView.textView.textColor = [UIColor whiteColor];
-        cell.bubbleView.textView.font = [ UIFont fontWithName:@"Avenir Neue" size:20.0];
         cell.backgroundColor = [UIColor clearColor];
     }
 }
