@@ -8,6 +8,7 @@
 
 #import "PairDiaryMessageViewController.h"
 #import "UserController.h"
+#import "loginViewController.h"
 
 @interface PairDiaryMessageViewController ()
 
@@ -63,6 +64,11 @@
         if (error){
             //Go to Invite Page
             NSLog(@"No Such Pair");
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+            LoginViewController *login = (LoginViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Login"];
+            [self presentViewController:login animated:YES completion:^{
+                [login performSegueWithIdentifier:@"Pairing" sender:login];
+            }];
         }else{
             self.dataSource = self;
             self.delegate   = self;
