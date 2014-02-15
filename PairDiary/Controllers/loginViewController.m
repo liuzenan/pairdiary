@@ -42,6 +42,7 @@
 
 - (IBAction)loginButtonPressed:(id)sender {
     [[UserController sharedInstance] loginFaceBookUser];
+    [SVProgressHUD showWithStatus:@"Logging in..."];
 }
 
 

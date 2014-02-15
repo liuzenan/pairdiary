@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DiaryViewController : UITableViewController
-
-@property (strong, nonatomic) NSArray *dataList;
-@property (weak, nonatomic) IBOutlet UILabel *msgTotal;
-@property (weak, nonatomic) IBOutlet UILabel *msgToday;
-@property (weak, nonatomic) IBOutlet UILabel *photoCount;
-@property (weak, nonatomic) IBOutlet UILabel *dayCount;
-@property (weak, nonatomic) IBOutlet UILabel *msgInDiary;
-
+@property (nonatomic, strong) NSString *pairId;
+@property (nonatomic, strong) NSArray *dataList;
 @end
