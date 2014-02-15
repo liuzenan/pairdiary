@@ -45,69 +45,52 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-   /* PFQuery *query= [PFUser query];
-    [query whereKey:@"username" equalTo:@"Harrison"];
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-        PFUser *firstUser = (PFUser *)object;
-        PFQuery *query= [PFUser query];
-        [query whereKey:@"username" equalTo:@"Shao"];
-        [query getFirstObjectInBackgroundWithBlock:^(PFObject *object,NSError *error){
-            PFUser *secondUser = (PFUser *)object;
-            PFObject *pair = [PFObject objectWithClassName:@"Pair"];
-            pair[@"user1"] = firstUser.objectId;
-            pair[@"user2"] = secondUser.objectId;
-            [pair saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                if(!error){
-                    NSLog(@"saved successfully.");
-                }else{
-                    NSLog(@"%@",error);
-                }
-            }];
-        }];
-    }];*/
     
     if (![[UserController sharedInstance] isLoggedIn]) {
         return;
     }
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Pair"];
-    [query whereKey:@"id" equalTo:@"317giHX8Wt"];
-    [query getObjectInBackgroundWithId:@"317giHX8Wt" block:^(PFObject *object, NSError *error){
-        self.pair = object;
-        NSLog(@"inside");
-        NSLog(@"%@",self.pair);
+    self.currentUser = [PFUser currentUser];
+    
+    PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
+    [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
+    PFQuery *query2 = [PFQuery queryWithClassName:@"Pair"];
+    [query1 whereKey:@"user2" equalTo:self.currentUser[@"facebookId"]];
+    
+    PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
         // Do something with the returned PFObject in the gameScore variable.
-        self.dataSource = self;
-        self.delegate   = self;
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        
-        [[JSBubbleView appearance]setFont:[UIFont systemFontOfSize:16.0f]];
-        self.messageInputView.textView.placeHolder = @"Be original";
-        [self setBackgroundColor:[UIColor whiteColor]];
-        self.currentUser = [PFUser currentUser];
-        PFUser *testUser = self.pair[@"user1"];
-        
-        if ([testUser.objectId isEqualToString:self.currentUser.objectId]) {
-            self.withUser = self.pair[@"user2"];
-        } else {
+        if (error){
+            //Go to Invite Page
+            NSLog(@"No Such Pair");
+        }else{
+            self.dataSource = self;
+            self.delegate   = self;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+            self.pair = object;
+            [[JSBubbleView appearance]setFont:[UIFont systemFontOfSize:16.0f]];
+            self.messageInputView.textView.placeHolder = @"Be original";
+            [self setBackgroundColor:[UIColor whiteColor]];
             
-            self.withUser = self.pair[@"user1"];
+            NSString *otherUser = @"";
+            if ([object[@"user1"] isEqualToString: self.currentUser[@"facebookId"]]){
+                otherUser = object[@"user2"];
+            }else{
+                otherUser = object[@"user1"];
+            }
+            PFQuery *query = [PFUser query];
+            
+            [query whereKey:@"facebookId" equalTo:otherUser];
+            [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+                self.withUser = (PFUser *)object;
+                self.title = self.withUser[@"displayName"];
+                self.initialLoadComplete = NO;
+                
+                [self checkForNewChats];
+                self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
+            }];
         }
-        
-        NSString *picstring = self.withUser[@"profilePic"];
-        NSData *profilePictureData = [NSData dataWithContentsOfURL:[NSURL URLWithString:picstring]];
-        UIImage *profilePicture = [UIImage imageWithData:profilePictureData];
-        
-        UIImageView *chatBackRound = [[UIImageView alloc]initWithImage:profilePicture];
-        
-        self.tableView.backgroundView  = chatBackRound;
-        self.title = self.withUser[@"username"];
-        self.initialLoadComplete = NO;
-        
-        [self checkForNewChats];
-        self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
-    }];    
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -138,13 +121,13 @@
     
     if (text.length != 0) {
         PFObject *chat = [PFObject objectWithClassName:@"Chat"];
-        [chat setObject:self.pair forKey:@"pair"];
-        [chat setObject:self.currentUser forKey:@"fromUser"];
-        [chat setObject:self.withUser forKey:@"toUser"];
+        [chat setObject:self.pair.objectId forKey:@"pairId"];
+        [chat setObject:self.currentUser[@"facebookId"] forKey:@"fromUser"];
+        [chat setObject:self.withUser[@"facebookId"] forKey:@"toUser"];
         [chat setObject:text forKey:@"text"];
         [chat saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             [self.chats addObject:chat];
-            //[JSMessageSoundEffect playMessageSentSound];
+            [JSMessageSoundEffect playMessageSentSound];
             [self.tableView reloadData];
             [self finishSend];
             [self scrollToBottomAnimated:YES];
@@ -155,9 +138,9 @@
 -(JSBubbleMessageType)messageTypeForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     PFObject *chat = self.chats[indexPath.row];
-    PFUser *testFromUser = chat[@"fromUser"];
+    NSString *testFromUser = chat[@"fromUser"];
     
-    if ([testFromUser.objectId isEqualToString:self.currentUser.objectId]) {
+    if ([testFromUser isEqualToString:self.currentUser[@"facebookId"]]) {
         return JSBubbleMessageTypeOutgoing;
     } else {
         
@@ -169,9 +152,9 @@
 -(UIImageView *)bubbleImageViewWithType:(JSBubbleMessageType)type forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     PFObject *chat = self.chats[indexPath.row];
-    PFUser *testFromUser = chat[@"fromUser"];
+    NSString *testFromUser = chat[@"fromUser"];
     
-    if ([testFromUser.objectId isEqualToString:self.currentUser.objectId]) {
+    if ([testFromUser isEqualToString:self.currentUser[@"facebookId"]]) {
         return [JSBubbleImageViewFactory bubbleImageViewForType:type color:[UIColor js_bubbleLightGrayColor]];
     } else {
         
@@ -262,12 +245,10 @@
     
     NSInteger oldChatCount = [self.chats count];
     
-    
-    
-    PFQuery *qeuryForCHats = [PFQuery queryWithClassName:@"Chat"];
-    [qeuryForCHats whereKey:@"pair" equalTo:self.pair];
-    [qeuryForCHats orderByAscending:@"createdAt"];
-    [qeuryForCHats findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+    [queryForChats whereKey:@"pairId" equalTo:self.pair.objectId];
+    [queryForChats orderByAscending:@"createdAt"];
+    [queryForChats findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             if (self.initialLoadComplete == NO || oldChatCount != [objects count]) {
                 self.chats = [objects mutableCopy];
