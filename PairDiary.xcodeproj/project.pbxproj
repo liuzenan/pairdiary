@@ -257,6 +257,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = li.shaohuan;
 				TargetAttributes = {
+					F28A171618AF4A43003A109C = {
+						DevelopmentTeam = H5GVH69TV5;
+					};
 					F28A173718AF4A43003A109C = {
 						TestTargetID = F28A171618AF4A43003A109C;
 					};
