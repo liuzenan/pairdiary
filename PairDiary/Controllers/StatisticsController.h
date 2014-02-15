@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface StatisticsController : NSObject
 
-+ (NSInteger) totalMessageCount;
-+ (NSInteger) todayMessageCount;
-+ (NSInteger) totalSavedMessage;
-+ (NSInteger) totalPhotos;
-+ (NSInteger) totalDate;
-+ (NSInteger) totalMessageForDate: (NSDate*)date;
++ (NSInteger) totalMessageCount:(NSString*)pairId;
++ (NSInteger) todayMessageCount:(NSString*)pairId;
++ (NSInteger) totalSavedMessage:(NSString*)pairId;
++ (NSInteger) totalPhotos:(NSString*)pairId;
++ (NSInteger) totalDate:(NSString*)pairId;
++ (NSInteger) totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId;
 @end

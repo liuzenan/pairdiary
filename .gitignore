@@ -23,8 +23,7 @@
 profile
 *.xcodeproj
 *.workspace
-*.pbxproj
-project.pbxproj
+
 
 ####
 # Xcode temporary files that should never be committed

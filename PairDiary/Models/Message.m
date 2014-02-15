@@ -10,4 +10,17 @@
 
 @implementation Message
 
+@synthesize fromUser,toUser,text,pairId;
+
+- (Message*)initWithText:(NSString*)s fromUser:(NSString*)from toUser:(NSString*)to inPair:(NSString*)pair{
+    self = [super init];
+    if(self){
+        self.pairId = pair;
+        self.fromUser = from;
+        self.toUser = to;
+        self.text = s;
+    }
+    return self;
+
+}
 @end

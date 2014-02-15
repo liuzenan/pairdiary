@@ -10,6 +10,8 @@
 #import "UserController.h"
 #import "loginViewController.h"
 #import "PairingViewController.h"
+#import <UIColor-HexString/UIColor+HexString.h>
+#import "DataUtil.h"
 
 @interface PairDiaryMessageViewController ()
 
@@ -46,13 +48,26 @@
 
 - (void)viewDidLoad
 {
+    self.dataSource = self;
+    self.delegate   = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
     [super viewDidLoad];
     
     if (![[UserController sharedInstance] isLoggedIn]) {
         return;
     }
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:@"F26363"];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [[JSBubbleView appearance] setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:17.0f]];
+    self.title = @"Loading...";
+    [self.messageInputView.textView setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:17.0f]];
+    [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
+    
     self.currentUser = [PFUser currentUser];
+    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 20.0f, 0)];
     
     PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
@@ -72,12 +87,9 @@
                 [login.navigationController pushViewController:pair animated:NO];
             }];
         }else{
-            self.dataSource = self;
-            self.delegate   = self;
-            self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
             self.pair = object;
-            [[JSBubbleView appearance]setFont:[UIFont systemFontOfSize:16.0f]];
-            self.messageInputView.textView.placeHolder = @"Be original";
+            self.messageInputView.textView.placeHolder = @"Say something...";
             [self setBackgroundColor:[UIColor whiteColor]];
             
             NSString *otherUser = @"";
@@ -177,7 +189,7 @@
 
 -(JSMessagesViewTimestampPolicy)timestampPolicy {
     
-    return JSMessagesViewTimestampPolicyAll;
+    return JSMessagesViewTimestampPolicyEveryFive;
 }
 
 -(JSMessagesViewAvatarPolicy)avatarPolicy {
@@ -190,25 +202,63 @@
     return JSMessagesViewSubtitlePolicyIncomingOnly;
 }
 
--(JSMessageInputViewStyle)inputViewStyle {
-    
-    return  JSMessageInputViewStyleFlat;
+-(JSMessageInputViewStyle)inputViewStyle
+{
+    return JSMessageInputViewStyleFlat;
 }
-
 
 
 -(void)configureCell:(JSBubbleMessageCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
-    if ([cell messageType] == JSBubbleMessageTypeOutgoing ) {
+    [cell.bubbleView setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:14.0f]];
+    CGRect frame = cell.bubbleView.textView.frame;
+    frame.size.height = cell.bubbleView.textView.contentSize.height;
+    cell.bubbleView.textView.frame = frame;
+    [cell.bubbleView.textView setContentInset:UIEdgeInsetsMake(4.0f, 4.0f, 0, 0)];
+    cell.bubbleView.tag = indexPath.row;
+    
+    frame = cell.bubbleView.frame;
+    frame.size.height = cell.bubbleView.textView.contentSize.height + 10.0f;
+    [cell.bubbleView.bubbleImageView setFrame: frame];
+    
+    if ([cell messageType] == JSBubbleMessageTypeIncoming) {
         
-        cell.bubbleView.textView.textColor = [UIColor colorWithRed:91.0/255.0 green:191.0/255.0 blue:171.0/255.0 alpha:1.0];
-        cell.bubbleView.textView.font = [ UIFont fontWithName:@"Avenir Neue" size:20.0];
-        cell.backgroundColor = [UIColor clearColor];
-    } else if ([cell messageType] == JSBubbleMessageTypeIncoming) {
+        cell.bubbleView.textView.textColor = [UIColor colorWithHexString:@"333333"];
+        
+        UIImageView *imageView = [JSBubbleImageViewFactory bubbleImageViewForType:JSBubbleMessageTypeIncoming color:[UIColor colorWithHexString:@"F6F6F6"]];
+        [cell.bubbleView.bubbleImageView setImage:imageView.image];
+        
+    } else {
         
         cell.bubbleView.textView.textColor = [UIColor whiteColor];
-        cell.bubbleView.textView.font = [ UIFont fontWithName:@"Avenir Neue" size:20.0];
-        cell.backgroundColor = [UIColor clearColor];
+        
+        UIImageView *imageView = [JSBubbleImageViewFactory bubbleImageViewForType:JSBubbleMessageTypeOutgoing color:[UIColor colorWithHexString:@"F26363"]];
+        [cell.bubbleView.bubbleImageView setImage:imageView.image];
+        
+    }
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellSingleTap:)];
+    [singleTap setNumberOfTapsRequired:1];
+    [singleTap setNumberOfTouchesRequired:1];
+    [cell.bubbleView addGestureRecognizer:singleTap];
+}
+
+- (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
+{
+    NSLog(@"tapped");
+    PFObject *chat = self.chats[recognizer.view.tag];
+    NSLog(@"%@", chat[@"objectId"]);
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
+    
+    [actionSheet showInView:self.view];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([buttonTitle isEqualToString:@"Save"]) {
+        NSLog(@"save the msg");
     }
 }
 
@@ -229,7 +279,9 @@
 
 -(NSDate *)timestampForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return nil;
+    PFObject *chat = self.chats[indexPath.row];
+    NSDate *date = chat.createdAt;
+    return date;
 }
 
 -(UIImageView *)avatarImageViewForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -241,11 +293,6 @@
     
     return nil;
 }
-
-
-
-
-
 
 #pragma mark Helper MEthods
 
