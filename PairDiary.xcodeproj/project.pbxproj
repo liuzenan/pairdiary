@@ -44,7 +44,6 @@
 		F28A176018AF4AB2003A109C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */; };
 		F28A176318AF4ADD003A109C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A176118AF4ADD003A109C /* FacebookSDK.framework */; };
 		F28A176418AF4ADD003A109C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A176218AF4ADD003A109C /* Parse.framework */; };
-		F28D95C518AFEC5D006438FA /* FriendInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F28D95C418AFEC5D006438FA /* FriendInvitationViewController.m */; };
 		F2BCEF5018AF819D000084D7 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3318AF819D000084D7 /* loginViewController.m */; };
 		F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3518AF819D000084D7 /* PairingViewController.m */; };
 		F2BCEF5218AF819D000084D7 /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3718AF819D000084D7 /* UserController.m */; };
@@ -112,8 +111,6 @@
 		F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F28A176118AF4ADD003A109C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		F28A176218AF4ADD003A109C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		F28D95C318AFEC5D006438FA /* FriendInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInvitationViewController.h; sourceTree = "<group>"; };
-		F28D95C418AFEC5D006438FA /* FriendInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInvitationViewController.m; sourceTree = "<group>"; };
 		F2BCEF2E18AF819D000084D7 /* DaySummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaySummaryViewController.h; sourceTree = "<group>"; };
 		F2BCEF2F18AF819D000084D7 /* DaySummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaySummaryViewController.m; sourceTree = "<group>"; };
 		F2BCEF3218AF819D000084D7 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
@@ -277,8 +274,6 @@
 		F2BCEF2B18AF819D000084D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F28D95C318AFEC5D006438FA /* FriendInvitationViewController.h */,
-				F28D95C418AFEC5D006438FA /* FriendInvitationViewController.m */,
 				E4523ABA18AFB885005D3AF0 /* DiaryViewController.h */,
 				E4523ABB18AFB885005D3AF0 /* DiaryViewController.m */,
 				CF4873F618AFC33200C86F65 /* PairDiaryMessageViewController.h */,
@@ -416,7 +411,7 @@
 				ORGANIZATIONNAME = li.shaohuan;
 				TargetAttributes = {
 					F28A171618AF4A43003A109C = {
-						DevelopmentTeam = P84MG4SANC;
+						DevelopmentTeam = 6TJJ53K256;
 					};
 					F28A173718AF4A43003A109C = {
 						TestTargetID = F28A171618AF4A43003A109C;
@@ -510,7 +505,6 @@
 				E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */,
 				CF48740118AFE0C700C86F65 /* DataUtil.m in Sources */,
 				F2BCEF5018AF819D000084D7 /* loginViewController.m in Sources */,
-				F28D95C518AFEC5D006438FA /* FriendInvitationViewController.m in Sources */,
 				F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */,
 				F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */,
 				CF4873FE18AFE01800C86F65 /* StatisticsController.m in Sources */,

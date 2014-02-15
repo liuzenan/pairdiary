@@ -9,8 +9,6 @@
 #import "PairingViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <FacebookSDK/FacebookSDK.h>
-#import <Parse/Parse.h>
-#import <FacebookSDK/FBGraphUser.h>
 
 @interface PairingViewController ()
 
@@ -30,31 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    PFUser *currentUser = [PFUser currentUser];
-    NSLog(@"%@",currentUser);
-    if(currentUser){
-        NSLog(@"rendering profile");
-        NSString *imageUrl = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?&height=200&type=normal&width=200", currentUser[@"facebookId"]];
-        NSLog(@"%@",imageUrl);
-        NSURL *imageURL = [NSURL URLWithString:imageUrl];
-        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        UIImage *image = [UIImage imageWithData:imageData];
-        [self.UserAvatarImageView setImage:image];
-    }
+	// Do any additional setup after loading the view.
 }
 
--(void)friendSelected:(NSDictionary<FBGraphUser> *)user
-{
-    NSLog(@"rendering friend's profile");
-    NSLog(@"%@",user);
-    NSLog(@"%@",user[@"pciture"]);
-    NSURL *imageURL = [NSURL URLWithString:[user link]];
-    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-    UIImage *image = [UIImage imageWithData:imageData];
-    [self.FriendAvatarImageView setImage:image];
-    
-    
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -62,10 +38,6 @@
 }
 
 - (IBAction)SelectPartnerButtonPressed:(id)sender {
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    FriendInvitationViewController * FIViewController =(FriendInvitationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"FriendInvitation"];
-    FIViewController.PairingDelegate = self;
-    [self presentViewController:FIViewController animated:YES completion:Nil];
 }
 
 //- (void)loadFacebookInvite {
