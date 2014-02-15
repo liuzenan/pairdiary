@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 li.shaohuan. All rights reserved.
 //
 
-#import "loginViewController.h"
+#import "LoginViewController.h"
 
-@interface loginViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation loginViewController
+@implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,7 +48,6 @@
 -(void) facebookLoginSuccessWithExistingUser {
     //DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
     [SVProgressHUD showSuccessWithStatus:@"Successfully logged in!"];
-    [self performSegueWithIdentifier:@"kLoadSliderView" sender:self];
 }
 
 - (void) facebookLoginFailedWithError:(NSError*)error {

@@ -1,18 +1,18 @@
 //
-//  DiaryViewController.m
+//  FacebookUserController.m
 //  PairDiary
 //
 //  Created by qiyue song on 15/2/14.
 //  Copyright (c) 2014 li.shaohuan. All rights reserved.
 //
 
-#import "DiaryViewController.h"
+#import "FacebookUserController.h"
 
-@interface DiaryViewController ()
+@interface FacebookUserController ()
 
 @end
 
-@implementation DiaryViewController
+@implementation FacebookUserController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

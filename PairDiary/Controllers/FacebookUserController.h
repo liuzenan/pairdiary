@@ -1,5 +1,5 @@
 //
-//  PairDiaryViewController.h
+//  FacebookUserController.h
 //  PairDiary
 //
 //  Created by qiyue song on 15/2/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PairDiaryViewController : UIViewController
+@interface FacebookUserController : UIViewController
 
 @end

@@ -35,7 +35,7 @@
     
     // Login PFUser using Facebook
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
-        
+        NSLog(@"%@",user.objectId);
         if (!user) {
             if (!error) {
                 //DDLogVerbose(@"Uh oh. The user cancelled the Facebook login.");
@@ -61,21 +61,40 @@
 - (void)fetchFacebookDetailsWithCompletionHandler: (void(^)())completion {
     
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-        //DDLogVerbose(@"%@: %@, %@",THIS_FILE,THIS_METHOD,result);
         
         NSDictionary *facebookDetails = [NSDictionary dictionaryWithDictionary:result];
         User *currentUser = (User *)[User currentUser];
         [currentUser setEmail:[facebookDetails objectForKey:@"email"]];
         [currentUser setObject:[facebookDetails objectForKey:@"id"] forKey:kMRUserFacebookIdKey];
-        [currentUser setObject:[facebookDetails objectForKey:@"name"] forKey:kMRUserDisplayNameKey];
+        [currentUser setObject:[facebookDetails objectForKey:@"username"] forKey:kMRUserDisplayNameKey];
+        
+        [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if(succeeded){
+                NSLog(@"save logined user successfully.");
+            }else{
+                NSLog(@"%@",error);
+            }
+        }];
         
         //[currentUser saveInBackgroundWithTarget:[ServerController sharedInstance] selector:@selector(attachUserToInstallation)];
+        
         completion();
     }];
 }
 
-- (User *)fetchCurrentUser {
+- (User*)fetchCurrentUser {
     return (User*)[User currentUser];
+}
+
+- (void)fetchUserForUserID:(NSString*)userId WithCompletionHandler: (void(^)(User *user))completion {
+//    [ServerController queryUserWithConditions:@{kMRUserObjectIdKey:userId} andCompletionHandler:^(NSArray *results, NSError *error) {
+//        if(!error && results.count > 0) {
+//            User *user = [results objectAtIndex:0];
+//            completion(user);
+//        } else {
+//            completion(nil);
+//        }
+//    }];
 }
 
 -(void)logout{

@@ -7,6 +7,7 @@
 //
 
 #import "PairDiaryMessageViewController.h"
+#import "UserController.h"
 
 @interface PairDiaryMessageViewController ()
 
@@ -65,6 +66,11 @@
             }];
         }];
     }];*/
+    
+    if (![[UserController sharedInstance] isLoggedIn]) {
+        return;
+    }
+    
     PFQuery *query = [PFQuery queryWithClassName:@"Pair"];
     [query whereKey:@"id" equalTo:@"317giHX8Wt"];
     [query getObjectInBackgroundWithId:@"317giHX8Wt" block:^(PFObject *object, NSError *error){
