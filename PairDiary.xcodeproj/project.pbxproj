@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		92D80C8F98D84B25A622524C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B159EFCF644E46429BB2F618 /* libPods.a */; };
 		CF4873F818AFC33200C86F65 /* PairDiaryMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4873F718AFC33200C86F65 /* PairDiaryMessageViewController.m */; };
+		CF4873FE18AFE01800C86F65 /* StatisticsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4873FD18AFE01800C86F65 /* StatisticsController.m */; };
+		CF48740118AFE0C700C86F65 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF48740018AFE0C700C86F65 /* DataUtil.m */; };
+		CF48740418AFE1D500C86F65 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CF48740318AFE1D500C86F65 /* Message.m */; };
 		E42991E418AF877300EDF2CF /* DiaryTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E318AF877300EDF2CF /* DiaryTopCell.m */; };
 		E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E618AF878100EDF2CF /* DiaryDayCell.m */; };
 		E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4C18AF819D000084D7 /* SVProgressHUD.m */; };
@@ -66,6 +69,12 @@
 		B159EFCF644E46429BB2F618 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4873F618AFC33200C86F65 /* PairDiaryMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairDiaryMessageViewController.h; sourceTree = "<group>"; };
 		CF4873F718AFC33200C86F65 /* PairDiaryMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairDiaryMessageViewController.m; sourceTree = "<group>"; };
+		CF4873FC18AFE01800C86F65 /* StatisticsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsController.h; sourceTree = "<group>"; };
+		CF4873FD18AFE01800C86F65 /* StatisticsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsController.m; sourceTree = "<group>"; };
+		CF4873FF18AFE0C700C86F65 /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		CF48740018AFE0C700C86F65 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		CF48740218AFE1D500C86F65 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		CF48740318AFE1D500C86F65 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		E42991E218AF877300EDF2CF /* DiaryTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryTopCell.h; sourceTree = "<group>"; };
 		E42991E318AF877300EDF2CF /* DiaryTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryTopCell.m; sourceTree = "<group>"; };
 		E42991E518AF878100EDF2CF /* DiaryDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryDayCell.h; sourceTree = "<group>"; };
@@ -279,6 +288,10 @@
 				F2BCEF3718AF819D000084D7 /* UserController.m */,
 				F258900B18AF913A00E07B7C /* FacebookUserController.h */,
 				F258900C18AF913A00E07B7C /* FacebookUserController.m */,
+				CF4873FC18AFE01800C86F65 /* StatisticsController.h */,
+				CF4873FD18AFE01800C86F65 /* StatisticsController.m */,
+				CF4873FF18AFE0C700C86F65 /* DataUtil.h */,
+				CF48740018AFE0C700C86F65 /* DataUtil.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -288,6 +301,8 @@
 			children = (
 				F2BCEF3918AF819D000084D7 /* User.h */,
 				F2BCEF3A18AF819D000084D7 /* User.m */,
+				CF48740218AFE1D500C86F65 /* Message.h */,
+				CF48740318AFE1D500C86F65 /* Message.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -488,9 +503,11 @@
 				E4523AB118AFB4BF005D3AF0 /* User.m in Sources */,
 				E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */,
 				E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */,
+				CF48740118AFE0C700C86F65 /* DataUtil.m in Sources */,
 				F2BCEF5018AF819D000084D7 /* loginViewController.m in Sources */,
 				F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */,
 				F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */,
+				CF4873FE18AFE01800C86F65 /* StatisticsController.m in Sources */,
 				E4523ABC18AFB885005D3AF0 /* DiaryViewController.m in Sources */,
 				F2BCEF5218AF819D000084D7 /* UserController.m in Sources */,
 				F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */,
@@ -498,6 +515,7 @@
 				F2BCEF5418AF819D000084D7 /* ECSlidingViewController.m in Sources */,
 				E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */,
 				F28A172B18AF4A43003A109C /* PairDiaryAppDelegate.m in Sources */,
+				CF48740418AFE1D500C86F65 /* Message.m in Sources */,
 				F28A172718AF4A43003A109C /* main.m in Sources */,
 				E42991E418AF877300EDF2CF /* DiaryTopCell.m in Sources */,
 			);
