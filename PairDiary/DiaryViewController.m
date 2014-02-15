@@ -68,7 +68,7 @@
         
         return cell;
     } else {
-        static NSString *CellIdentifier = @"Cell";
+        static NSString *CellIdentifier = @"DiaryDayCell";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         
         

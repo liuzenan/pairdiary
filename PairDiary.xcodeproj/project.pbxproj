@@ -391,7 +391,7 @@
 				ORGANIZATIONNAME = li.shaohuan;
 				TargetAttributes = {
 					F28A171618AF4A43003A109C = {
-						DevelopmentTeam = P84MG4SANC;
+						DevelopmentTeam = 6TJJ53K256;
 					};
 					F28A173718AF4A43003A109C = {
 						TestTargetID = F28A171618AF4A43003A109C;

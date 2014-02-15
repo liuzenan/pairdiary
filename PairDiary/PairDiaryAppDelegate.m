@@ -8,7 +8,7 @@
 
 #import "PairDiaryAppDelegate.h"
 #import <Parse/Parse.h>
-#import "loginViewController.h"
+#import "LoginViewController.h"
 #import "UserController.h"
 
 @implementation PairDiaryAppDelegate
@@ -46,7 +46,7 @@
     if (![[UserController sharedInstance] isLoggedIn]) {
         NSLog(@"login already.");
         UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        loginViewController * PairDiaryLogin = (loginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
+        LoginViewController * PairDiaryLogin = (LoginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
         [self.window.rootViewController presentViewController:PairDiaryLogin animated:NO completion:Nil];
     }
 }

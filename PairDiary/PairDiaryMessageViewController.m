@@ -65,43 +65,43 @@
             }];
         }];
     }];*/
-    PFQuery *query = [PFQuery queryWithClassName:@"Pair"];
-    [query whereKey:@"id" equalTo:@"317giHX8Wt"];
-    [query getObjectInBackgroundWithId:@"317giHX8Wt" block:^(PFObject *object, NSError *error){
-        self.pair = object;
-        NSLog(@"inside");
-        NSLog(@"%@",self.pair);
-        // Do something with the returned PFObject in the gameScore variable.
-        self.dataSource = self;
-        self.delegate   = self;
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        
-        [[JSBubbleView appearance]setFont:[UIFont systemFontOfSize:16.0f]];
-        self.messageInputView.textView.placeHolder = @"Be original";
-        [self setBackgroundColor:[UIColor whiteColor]];
-        self.currentUser = [PFUser currentUser];
-        PFUser *testUser = self.pair[@"user1"];
-        
-        if ([testUser.objectId isEqualToString:self.currentUser.objectId]) {
-            self.withUser = self.pair[@"user2"];
-        } else {
-            
-            self.withUser = self.pair[@"user1"];
-        }
-        
-        NSString *picstring = self.withUser[@"profilePic"];
-        NSData *profilePictureData = [NSData dataWithContentsOfURL:[NSURL URLWithString:picstring]];
-        UIImage *profilePicture = [UIImage imageWithData:profilePictureData];
-        
-        UIImageView *chatBackRound = [[UIImageView alloc]initWithImage:profilePicture];
-        
-        self.tableView.backgroundView  = chatBackRound;
-        self.title = self.withUser[@"username"];
-        self.initialLoadComplete = NO;
-        
-        [self checkForNewChats];
-        self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
-    }];    
+//    PFQuery *query = [PFQuery queryWithClassName:@"Pair"];
+//    [query whereKey:@"id" equalTo:@"317giHX8Wt"];
+//    [query getObjectInBackgroundWithId:@"317giHX8Wt" block:^(PFObject *object, NSError *error){
+//        self.pair = object;
+//        NSLog(@"inside");
+//        NSLog(@"%@",self.pair);
+//        // Do something with the returned PFObject in the gameScore variable.
+//        self.dataSource = self;
+//        self.delegate   = self;
+//        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        
+//        [[JSBubbleView appearance]setFont:[UIFont systemFontOfSize:16.0f]];
+//        self.messageInputView.textView.placeHolder = @"Be original";
+//        [self setBackgroundColor:[UIColor whiteColor]];
+//        self.currentUser = [PFUser currentUser];
+//        PFUser *testUser = self.pair[@"user1"];
+//        
+//        if ([testUser.objectId isEqualToString:self.currentUser.objectId]) {
+//            self.withUser = self.pair[@"user2"];
+//        } else {
+//            
+//            self.withUser = self.pair[@"user1"];
+//        }
+//        
+//        NSString *picstring = self.withUser[@"profilePic"];
+//        NSData *profilePictureData = [NSData dataWithContentsOfURL:[NSURL URLWithString:picstring]];
+//        UIImage *profilePicture = [UIImage imageWithData:profilePictureData];
+//        
+//        UIImageView *chatBackRound = [[UIImageView alloc]initWithImage:profilePicture];
+//        
+//        self.tableView.backgroundView  = chatBackRound;
+//        self.title = self.withUser[@"username"];
+//        self.initialLoadComplete = NO;
+//        
+//        [self checkForNewChats];
+//        self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
+//    }];    
 }
 
 - (void)didReceiveMemoryWarning
