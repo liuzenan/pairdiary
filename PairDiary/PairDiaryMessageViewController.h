@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 #import <JSMessagesViewController/JSMessagesViewController.h>
 
 @interface PairDiaryMessageViewController : JSMessagesViewController <JSMessagesViewDataSource, JSMessagesViewDelegate>
-
+@property (strong, nonatomic) PFObject *pair;
+//@property (strong, nonatomic) PFUser *withUser;
 @end
