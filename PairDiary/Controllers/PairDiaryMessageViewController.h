@@ -13,4 +13,5 @@
 @interface PairDiaryMessageViewController : JSMessagesViewController <JSMessagesViewDataSource, JSMessagesViewDelegate, UIActionSheetDelegate>
 @property (strong, nonatomic) PFObject *pair;
 //@property (strong, nonatomic) PFUser *withUser;
+@property (strong, nonatomic) NSString *saveObjectId;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FriendInvitationViewController.h"
+#import "SVProgressHUD.h"
 
 @interface FriendInvitationViewController ()
 
@@ -41,10 +42,12 @@
 
 - (void)facebookViewControllerDoneWasPressed:(id)sender{
     if(self.selection.count > 0){
+        [self dismissViewControllerAnimated:YES completion:Nil];
         id<FBGraphUser> selectedUser = [self.selection objectAtIndex:0];
         [self.PairingDelegate friendSelected:selectedUser];
+    }else{
+        [self dismissViewControllerAnimated:YES completion:Nil];
     }
-    [self dismissViewControllerAnimated:YES completion:Nil];
     NSLog(@"DONE button pressed.");
 }
 

@@ -12,6 +12,7 @@
 #import "PairingViewController.h"
 #import <UIColor-HexString/UIColor+HexString.h>
 #import "DataUtil.h"
+#import "DiaryViewController.h"
 
 @interface PairDiaryMessageViewController ()
 
@@ -46,6 +47,14 @@
     return self;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ShowDiary"]) {
+        DiaryViewController *vc =[segue destinationViewController];
+        [vc setPairId:self.pair.objectId];
+    }
+}
+
 - (void)viewDidLoad
 {
     self.dataSource = self;
@@ -67,8 +76,6 @@
     [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
     
     self.currentUser = [PFUser currentUser];
-    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 20.0f, 0)];
-    
     PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
     PFQuery *query2 = [PFQuery queryWithClassName:@"Pair"];
@@ -145,12 +152,14 @@
         [chat setObject:self.currentUser[@"facebookId"] forKey:@"fromUser"];
         [chat setObject:self.withUser[@"facebookId"] forKey:@"toUser"];
         [chat setObject:text forKey:@"text"];
+        [self.chats addObject:chat];
+        [self.messageInputView.sendButton setEnabled:NO];
+        [self.tableView reloadData];
+        [JSMessageSoundEffect playMessageSentSound];
+        [self finishSend];
+        [self scrollToBottomAnimated:YES];
         [chat saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            [self.chats addObject:chat];
-            [JSMessageSoundEffect playMessageSentSound];
-            [self.tableView reloadData];
-            [self finishSend];
-            [self scrollToBottomAnimated:YES];
+            [self.messageInputView.sendButton setEnabled:YES];
         }];
     }
 }
@@ -215,7 +224,7 @@
     frame.size.height = cell.bubbleView.textView.contentSize.height;
     cell.bubbleView.textView.frame = frame;
     [cell.bubbleView.textView setContentInset:UIEdgeInsetsMake(4.0f, 4.0f, 0, 0)];
-    cell.bubbleView.tag = indexPath.row;
+    cell.bubbleView.textView.tag = indexPath.row;
     
     frame = cell.bubbleView.frame;
     frame.size.height = cell.bubbleView.textView.contentSize.height + 10.0f;
@@ -240,15 +249,15 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellSingleTap:)];
     [singleTap setNumberOfTapsRequired:1];
     [singleTap setNumberOfTouchesRequired:1];
-    [cell.bubbleView addGestureRecognizer:singleTap];
+    [cell.bubbleView.textView addGestureRecognizer:singleTap];
 }
 
 - (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
 {
     NSLog(@"tapped");
     PFObject *chat = self.chats[recognizer.view.tag];
-    NSLog(@"%@", chat[@"objectId"]);
-    
+    NSLog(@"%@", chat.objectId);
+    self.saveObjectId = chat.objectId;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
     
     [actionSheet showInView:self.view];
@@ -259,6 +268,8 @@
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([buttonTitle isEqualToString:@"Save"]) {
         NSLog(@"save the msg");
+        [DataUtil saveMessageToDiary:self.saveObjectId];
+        
     }
 }
 

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DiaryViewController : UITableViewController
+@property (nonatomic, strong) NSString *pairId;
 @property (nonatomic, strong) NSArray *dataList;
 @end
