@@ -1,5 +1,0 @@
-@interface ParseStarterProjectViewController : UIViewController
-
-
-
-@end
