@@ -10,8 +10,7 @@
 #import <Parse/Parse.h>
 
 @interface StatisticsController : NSObject
-
-+ (NSInteger) totalMessageCount:(NSString*)pairId;
++ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSNumber *))block;
 + (NSInteger) todayMessageCount:(NSString*)pairId;
 + (NSInteger) totalSavedMessage:(NSString*)pairId;
 + (NSInteger) totalPhotos:(NSString*)pairId;

@@ -9,13 +9,17 @@
 #import "StatisticsController.h"
 
 @implementation StatisticsController
-+ (NSInteger) totalMessageCount:(NSString*)pairId{
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
-    [queryForChats whereKey:@"pairId" equalTo:pairId];
-    if([queryForChats countObjects]>1)
-        return [queryForChats countObjects];
-    else
-        return 0;
+
++ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSNumber *))block
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+        [queryForChats whereKey:@"pairId" equalTo:pairId];
+        if([queryForChats countObjects]>1)
+            block([NSNumber numberWithInt:[queryForChats countObjects]]);
+        else
+            block(@0);
+    });
 }
 + (NSInteger) todayMessageCount:(NSString*)pairId{
     PFQuery *query1 = [PFQuery queryWithClassName:@"Chat"];
