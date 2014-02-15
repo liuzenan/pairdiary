@@ -8,6 +8,8 @@
 
 #import "PairDiaryAppDelegate.h"
 #import <Parse/Parse.h>
+#import "loginViewController.h"
+#import "UserController.h"
 
 @implementation PairDiaryAppDelegate
 
@@ -41,7 +43,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+    if (![[UserController sharedInstance] isLoggedIn]) {
+        NSLog(@"login already.");
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        loginViewController * PairDiaryLogin = (loginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
+        [self.window.rootViewController presentViewController:PairDiaryLogin animated:NO completion:Nil];
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
