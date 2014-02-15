@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PairingViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *UserAvatarImage;
+@property (weak, nonatomic) IBOutlet UIImageView *UserAvatarImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *FriendAvatarImageView;
+@property (nonatomic) Boolean readyToChat;
 
 - (IBAction)SelectPartnerButtonPressed:(id)sender;
 
