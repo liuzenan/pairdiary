@@ -76,8 +76,6 @@
     [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
     
     self.currentUser = [PFUser currentUser];
-    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 20.0f, 0)];
-    
     PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
     PFQuery *query2 = [PFQuery queryWithClassName:@"Pair"];
@@ -154,12 +152,14 @@
         [chat setObject:self.currentUser[@"facebookId"] forKey:@"fromUser"];
         [chat setObject:self.withUser[@"facebookId"] forKey:@"toUser"];
         [chat setObject:text forKey:@"text"];
+        [self.chats addObject:chat];
+        [self.messageInputView.sendButton setEnabled:NO];
+        [self.tableView reloadData];
+        [JSMessageSoundEffect playMessageSentSound];
+        [self finishSend];
+        [self scrollToBottomAnimated:YES];
         [chat saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            [self.chats addObject:chat];
-            [JSMessageSoundEffect playMessageSentSound];
-            [self.tableView reloadData];
-            [self finishSend];
-            [self scrollToBottomAnimated:YES];
+            [self.messageInputView.sendButton setEnabled:YES];
         }];
     }
 }
@@ -256,8 +256,8 @@
 {
     NSLog(@"tapped");
     PFObject *chat = self.chats[recognizer.view.tag];
-    NSLog(@"%@", chat[@"objectId"]);
-    
+    NSLog(@"%@", chat.objectId);
+    self.saveObjectId = chat.objectId;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
     
     [actionSheet showInView:self.view];
@@ -268,6 +268,8 @@
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([buttonTitle isEqualToString:@"Save"]) {
         NSLog(@"save the msg");
+        [DataUtil saveMessageToDiary:self.saveObjectId];
+        
     }
 }
 
