@@ -47,20 +47,16 @@
 
 
 -(void) facebookLoginSuccessWithNewUser {
-    //DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
     [self facebookLoginSuccessWithExistingUser];
 }
 
 -(void) facebookLoginSuccessWithExistingUser {
-    //DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
     [SVProgressHUD dismiss];
     [self performSegueWithIdentifier:@"pushPairing" sender:self];
 }
 
 - (void) facebookLoginFailedWithError:(NSError*)error {
-    //DDLogVerbose(@"%@: %@: %@", THIS_FILE, THIS_METHOD,[error localizedDescription]);
     if (error) {
-        [SVProgressHUD dismiss];
         [SVProgressHUD showErrorWithStatus:@"Login Failed"];
     }
 }

@@ -35,7 +35,6 @@
     
     // Login PFUser using Facebook
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
-        [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
         NSLog(@"%@",user.objectId);
         if (!user) {
             if (!error) {
