@@ -127,16 +127,16 @@
             </objects>
             <point key="canvasLocation" x="964" y="82"/>
         </scene>
-        <!--View Controller - Chat-->
+        <!--Pair Diary Message View Controller - Chat-->
         <scene sceneID="WRM-pj-PDE">
             <objects>
-                <viewController id="WoM-fL-xwT" sceneMemberID="viewController">
+                <viewController id="WoM-fL-xwT" customClass="PairDiaryMessageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a2P-xr-Ee6"/>
                         <viewControllerLayoutGuide type="bottom" id="il8-ma-EG1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GXg-ab-FdA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -378,8 +378,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ibw-Ju-u6x" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tq7-Pg-zSd">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="tq7-Pg-zSd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

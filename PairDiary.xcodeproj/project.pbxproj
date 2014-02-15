@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5C07583BBED48659B2780F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B159EFCF644E46429BB2F618 /* libPods.a */; };
+		E46AAD6418AF76EA00F045CB /* PairDiaryMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46AAD6318AF76EA00F045CB /* PairDiaryMessageViewController.m */; };
 		F28A171B18AF4A43003A109C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171A18AF4A43003A109C /* Foundation.framework */; };
 		F28A171D18AF4A43003A109C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171C18AF4A43003A109C /* CoreGraphics.framework */; };
 		F28A171F18AF4A43003A109C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171E18AF4A43003A109C /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		3DCCDE68D5734624A622905D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B159EFCF644E46429BB2F618 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46AAD6218AF76EA00F045CB /* PairDiaryMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairDiaryMessageViewController.h; sourceTree = "<group>"; };
+		E46AAD6318AF76EA00F045CB /* PairDiaryMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairDiaryMessageViewController.m; sourceTree = "<group>"; };
 		F28A171718AF4A43003A109C /* PairDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28A171A18AF4A43003A109C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F28A171C18AF4A43003A109C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -169,6 +172,8 @@
 				F28A173018AF4A43003A109C /* PairDiaryViewController.m */,
 				F28A173218AF4A43003A109C /* Images.xcassets */,
 				F28A172118AF4A43003A109C /* Supporting Files */,
+				E46AAD6218AF76EA00F045CB /* PairDiaryMessageViewController.h */,
+				E46AAD6318AF76EA00F045CB /* PairDiaryMessageViewController.m */,
 			);
 			path = PairDiary;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46AAD6418AF76EA00F045CB /* PairDiaryMessageViewController.m in Sources */,
 				F28A173118AF4A43003A109C /* PairDiaryViewController.m in Sources */,
 				F28A172B18AF4A43003A109C /* PairDiaryAppDelegate.m in Sources */,
 				F28A172718AF4A43003A109C /* main.m in Sources */,
@@ -465,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/qiyuesong/Documents/IOS\\ Projects/PairDiary",
@@ -485,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/qiyuesong/Documents/IOS\\ Projects/PairDiary",
