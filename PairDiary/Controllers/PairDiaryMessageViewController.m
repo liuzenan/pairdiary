@@ -47,6 +47,10 @@
 
 - (void)viewDidLoad
 {
+    self.dataSource = self;
+    self.delegate   = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
     [super viewDidLoad];
     
     if (![[UserController sharedInstance] isLoggedIn]) {
@@ -58,8 +62,11 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [[JSBubbleView appearance] setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:17.0f]];
     self.title = @"Loading...";
+    [self.messageInputView.textView setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:17.0f]];
+    [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
     
     self.currentUser = [PFUser currentUser];
+    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 20.0f, 0)];
     
     PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
@@ -79,12 +86,9 @@
                 [login.navigationController pushViewController:pair animated:NO];
             }];
         }else{
-            self.dataSource = self;
-            self.delegate   = self;
-            self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
             self.pair = object;
-            [[JSBubbleView appearance]setFont:[UIFont systemFontOfSize:16.0f]];
-            self.messageInputView.textView.placeHolder = @"Be original";
+            self.messageInputView.textView.placeHolder = @"Say something...";
             [self setBackgroundColor:[UIColor whiteColor]];
             
             NSString *otherUser = @"";
@@ -197,23 +201,38 @@
     return JSMessagesViewSubtitlePolicyIncomingOnly;
 }
 
--(JSMessageInputViewStyle)inputViewStyle {
-    
-    return  JSMessageInputViewStyleFlat;
+-(JSMessageInputViewStyle)inputViewStyle
+{
+    return JSMessageInputViewStyleFlat;
 }
-
 
 
 -(void)configureCell:(JSBubbleMessageCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
-    if ([cell messageType] == JSBubbleMessageTypeIncoming ) {
+    [cell.bubbleView setFont:[UIFont fontWithName:@"AvenirNext-Regular" size:14.0f]];
+    CGRect frame = cell.bubbleView.textView.frame;
+    frame.size.height = cell.bubbleView.textView.contentSize.height;
+    cell.bubbleView.textView.frame = frame;
+    [cell.bubbleView.textView setContentInset:UIEdgeInsetsMake(4.0f, 4.0f, 0, 0)];
+    
+    frame = cell.bubbleView.frame;
+    frame.size.height = cell.bubbleView.textView.contentSize.height + 10.0f;
+    [cell.bubbleView.bubbleImageView setFrame: frame];
+    
+    if ([cell messageType] == JSBubbleMessageTypeIncoming) {
         
-        cell.bubbleView.textView.textColor = [UIColor colorWithRed:91.0/255.0 green:191.0/255.0 blue:171.0/255.0 alpha:1.0];
-        cell.backgroundColor = [UIColor clearColor];
-    } else if ([cell messageType] == JSBubbleMessageTypeOutgoing) {
+        cell.bubbleView.textView.textColor = [UIColor colorWithHexString:@"333333"];
+        
+        UIImageView *imageView = [JSBubbleImageViewFactory bubbleImageViewForType:JSBubbleMessageTypeIncoming color:[UIColor colorWithHexString:@"F6F6F6"]];
+        [cell.bubbleView.bubbleImageView setImage:imageView.image];
+        
+    } else {
         
         cell.bubbleView.textView.textColor = [UIColor whiteColor];
-        cell.backgroundColor = [UIColor clearColor];
+        
+        UIImageView *imageView = [JSBubbleImageViewFactory bubbleImageViewForType:JSBubbleMessageTypeOutgoing color:[UIColor colorWithHexString:@"F26363"]];
+        [cell.bubbleView.bubbleImageView setImage:imageView.image];
+        
     }
 }
 
@@ -246,11 +265,6 @@
     
     return nil;
 }
-
-
-
-
-
 
 #pragma mark Helper MEthods
 

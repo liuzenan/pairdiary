@@ -28,7 +28,10 @@
                                                             NSFontAttributeName: [UIFont fontWithName:@"AvenirNext-Medium" size:17.0f],
                                                             NSShadowAttributeName: shadow
                                                             }];
-
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes: @{
+                                                           NSFontAttributeName:[UIFont fontWithName:@"AvenirNext-Medium" size:17.0f]
+                                                           } forState:UIControlStateNormal];
     return YES;
 }
 							
