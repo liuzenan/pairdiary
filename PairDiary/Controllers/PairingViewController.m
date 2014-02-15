@@ -9,14 +9,10 @@
 #import "PairingViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <FacebookSDK/FacebookSDK.h>
-<<<<<<< HEAD
 #import <Parse/Parse.h>
 #import <FacebookSDK/FBGraphUser.h>
 #import "SVProgressHUD.h"
 #import "PairDiaryMessageViewController.h"
-=======
->>>>>>> 434293b54636c64662e1bbef7607a8b352d94795
-
 @interface PairingViewController ()
 
 @end
@@ -38,7 +34,6 @@
 	// Do any additional setup after loading the view.
 }
 
-<<<<<<< HEAD
 -(void)friendSelected:(id<FBGraphUser>)user
 {
     NSLog(@"rendering friend's profile");
@@ -46,11 +41,10 @@
     NSURL *imageURL = [NSURL URLWithString:user[@"picture"][@"data"][@"url"]];
     NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
     UIImage *image = [UIImage imageWithData:imageData];
-    [self.FriendAvatarImageView setImage:image];
+    [self.UserAvatarImage setImage:image];
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeGradient];
 }
-=======
->>>>>>> 434293b54636c64662e1bbef7607a8b352d94795
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -58,7 +52,6 @@
 }
 
 - (IBAction)SelectPartnerButtonPressed:(id)sender {
-<<<<<<< HEAD
 //    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
 //    FriendInvitationViewController * FIViewController =(FriendInvitationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"FriendInvitation"];
 //    FIViewController.PairingDelegate = self;
@@ -97,8 +90,7 @@
              }
          }
      }];
-=======
->>>>>>> 434293b54636c64662e1bbef7607a8b352d94795
+
 }
 
 - (NSDictionary*)parseURLParams:(NSString *)query {

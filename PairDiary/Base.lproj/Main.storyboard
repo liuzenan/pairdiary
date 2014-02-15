@@ -152,7 +152,7 @@
                     <navigationItem key="navigationItem" title="Chat" id="QkI-48-ZrO">
                         <barButtonItem key="rightBarButtonItem" title="Diary" id="xo9-ml-H5V">
                             <connections>
-                                <segue destination="2Vq-uF-DrN" kind="push" id="HjM-xP-vzV"/>
+                                <segue destination="2Vq-uF-DrN" kind="push" identifier="ShowDiary" id="HjM-xP-vzV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

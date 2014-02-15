@@ -7,6 +7,10 @@
 //
 
 #import "DiaryViewController.h"
+#import "DataUtil.h"
+#import "DiaryTopCell.h"
+#import "DiaryDayCell.h"
+#import "StatisticsController.h"
 
 @interface DiaryViewController ()
 
@@ -62,9 +66,14 @@
 {
     if (indexPath.section == 0) {
         static NSString *CellIdentifier = @"DiaryTopCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        DiaryTopCell *cell = (DiaryTopCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
         
-        
+        [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",[StatisticsController totalDate:self.pairId]]];
+        [cell.todayMsg setText:[NSString stringWithFormat:@"%ld", [StatisticsController todayMessageCount:self.pairId]]];
+        [cell.numPhotos setText: @"0"];
+        [cell.numDays setText:[NSString stringWithFormat:@"%ld", [StatisticsController totalDate:self.pairId]]];
+        [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", [StatisticsController totalSavedMessage:self.pairId]]];
         
         return cell;
     } else {

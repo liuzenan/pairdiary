@@ -12,6 +12,7 @@
 #import "PairingViewController.h"
 #import <UIColor-HexString/UIColor+HexString.h>
 #import "DataUtil.h"
+#import "DiaryViewController.h"
 
 @interface PairDiaryMessageViewController ()
 
@@ -44,6 +45,14 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ShowDiary"]) {
+        DiaryViewController *vc =[segue destinationViewController];
+        [vc setPairId:self.pair.objectId];
+    }
 }
 
 - (void)viewDidLoad
