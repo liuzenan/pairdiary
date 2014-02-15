@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B5F71435-59D0-4088-B374-5CFA357180FB</string>
+	<string>159CD894-6B6D-4E51-BE0F-4F202A8009F7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PairDiary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6FAA6AA6-D63E-4A89-B80C-56EB3530AF7E</key>
+		<key>197D5661-437C-43A6-AE6C-F735B207F184</key>
 		<string>https://github.com/liuzenan/pairdiary.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PairDiary.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6FAA6AA6-D63E-4A89-B80C-56EB3530AF7E</key>
+		<key>197D5661-437C-43A6-AE6C-F735B207F184</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6FAA6AA6-D63E-4A89-B80C-56EB3530AF7E</string>
+	<string>197D5661-437C-43A6-AE6C-F735B207F184</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6FAA6AA6-D63E-4A89-B80C-56EB3530AF7E</string>
+			<string>197D5661-437C-43A6-AE6C-F735B207F184</string>
 			<key>IDESourceControlWCCName</key>
 			<string>pairdiary</string>
 		</dict>
