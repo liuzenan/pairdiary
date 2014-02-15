@@ -188,7 +188,7 @@
 
 -(JSMessagesViewTimestampPolicy)timestampPolicy {
     
-    return JSMessagesViewTimestampPolicyAll;
+    return JSMessagesViewTimestampPolicyEveryFive;
 }
 
 -(JSMessagesViewAvatarPolicy)avatarPolicy {
@@ -214,6 +214,7 @@
     frame.size.height = cell.bubbleView.textView.contentSize.height;
     cell.bubbleView.textView.frame = frame;
     [cell.bubbleView.textView setContentInset:UIEdgeInsetsMake(4.0f, 4.0f, 0, 0)];
+    cell.bubbleView.tag = indexPath.row;
     
     frame = cell.bubbleView.frame;
     frame.size.height = cell.bubbleView.textView.contentSize.height + 10.0f;
@@ -234,6 +235,30 @@
         [cell.bubbleView.bubbleImageView setImage:imageView.image];
         
     }
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellSingleTap:)];
+    [singleTap setNumberOfTapsRequired:1];
+    [singleTap setNumberOfTouchesRequired:1];
+    [cell.bubbleView addGestureRecognizer:singleTap];
+}
+
+- (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
+{
+    NSLog(@"tapped");
+    PFObject *chat = self.chats[recognizer.view.tag];
+    NSLog(@"%@", chat[@"text"]);
+    
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
+    
+    [actionSheet showInView:self.view];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([buttonTitle isEqualToString:@"Save"]) {
+        NSLog(@"save the msg");
+    }
 }
 
 -(BOOL)shouldPreventScrollToBottomWhileUserScrolling {
@@ -253,7 +278,9 @@
 
 -(NSDate *)timestampForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return nil;
+    PFObject *chat = self.chats[indexPath.row];
+    NSDate *date = chat.createdAt;
+    return date;
 }
 
 -(UIImageView *)avatarImageViewForRowAtIndexPath:(NSIndexPath *)indexPath {
