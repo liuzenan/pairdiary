@@ -262,8 +262,9 @@
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="numDays" destination="9b5-A9-meq" id="RlF-Eq-PRw"/>
+                                    <outlet property="numDays" destination="9b5-A9-meq" id="PdB-lH-dO6"/>
                                     <outlet property="numOfMsgInDiary" destination="adt-8N-tOV" id="DMk-t3-7cj"/>
+                                    <outlet property="numPhotos" destination="dIA-rc-PfK" id="l6g-wz-7IH"/>
                                     <outlet property="todayMsg" destination="WJz-Dl-5Hf" id="z2C-bC-gbP"/>
                                     <outlet property="totalMsg" destination="40Y-lV-eCJ" id="Gn2-ML-cva"/>
                                 </connections>
@@ -324,9 +325,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Diary" id="t1o-eE-LqN"/>
-                    <connections>
-                        <outlet property="photoCount" destination="dIA-rc-PfK" id="k32-fi-ExE"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T89-l8-LUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
