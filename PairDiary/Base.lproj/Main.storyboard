@@ -69,7 +69,7 @@
         <!--Pairing View Controller-->
         <scene sceneID="Att-XU-307">
             <objects>
-                <viewController id="YlT-jb-b2f" customClass="PairingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Pairing" id="YlT-jb-b2f" customClass="PairingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pcf-aK-S0N"/>
                         <viewControllerLayoutGuide type="bottom" id="547-6R-cGK"/>
