@@ -11,7 +11,7 @@
 #import "SVProgressHUD.h"
 #import "UserController.h"
 
-@interface loginViewController : UIViewController <FacebookLoginDelegate>
+@interface LoginViewController : UIViewController <FacebookLoginDelegate>
 
 - (IBAction)loginButtonPressed:(id)sender;
 

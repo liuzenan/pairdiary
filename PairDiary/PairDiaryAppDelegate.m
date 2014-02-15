@@ -8,7 +8,7 @@
 
 #import "PairDiaryAppDelegate.h"
 #import <Parse/Parse.h>
-#import "loginViewController.h"
+#import "LoginViewController.h"
 #import "UserController.h"
 
 @implementation PairDiaryAppDelegate
@@ -16,8 +16,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [Parse setApplicationId:@"ZvzmSjqQC94Cigneyvqid3dk9nr0g6ytaq84Wzcr"
-                  clientKey:@"V5onbrCWWt4w73y3q7E19ZHCQmKrVNnp1Ml9ivT5"];
+    [Parse setApplicationId:@"2Jtj8Ch3fOkMXoWOAgsH8VzftlANtoi4SOdVXokj"
+                  clientKey:@"9r9UIOyyKGO1XFJOF0OJSVet5YKlpv9rZYj7HmhJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [PFFacebookUtils initializeFacebook];
     return YES;
@@ -46,7 +46,7 @@
     if (![[UserController sharedInstance] isLoggedIn]) {
         NSLog(@"login already.");
         UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        loginViewController * PairDiaryLogin = (loginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
+        LoginViewController * PairDiaryLogin = (LoginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
         [self.window.rootViewController presentViewController:PairDiaryLogin animated:NO completion:Nil];
     }
 }
