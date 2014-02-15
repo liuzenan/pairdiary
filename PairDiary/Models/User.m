@@ -8,7 +8,10 @@
 
 #import "User.h"
 #import <Parse/PFObject+Subclass.h>
-//#import "PFObject+Extensions.h"
+
+#pragma mark - PFObject User Class
+
+// Class key
 
 NSString *const kMRUserClassKey = @"User";
 NSString *const kMRUserUserNameKey = @"username";

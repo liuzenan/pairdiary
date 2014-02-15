@@ -48,7 +48,6 @@
 -(void) facebookLoginSuccessWithExistingUser {
     //DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
     [SVProgressHUD showSuccessWithStatus:@"Successfully logged in!"];
-    [self performSegueWithIdentifier:@"kLoadSliderView" sender:self];
 }
 
 - (void) facebookLoginFailedWithError:(NSError*)error {
