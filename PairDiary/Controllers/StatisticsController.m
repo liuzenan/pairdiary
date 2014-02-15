@@ -10,33 +10,42 @@
 
 @implementation StatisticsController
 
-+ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSNumber *))block
++ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
         [queryForChats whereKey:@"pairId" equalTo:pairId];
         if([queryForChats countObjects]>1)
-            block([NSNumber numberWithInt:[queryForChats countObjects]]);
+            block([queryForChats countObjects]);
         else
-            block(@0);
+            block(0);
     });
 }
-+ (NSInteger) todayMessageCount:(NSString*)pairId{
-    PFQuery *query1 = [PFQuery queryWithClassName:@"Chat"];
-    [query1 whereKey:@"pairId" equalTo:pairId];
-    PFQuery *query2 = [PFQuery queryWithClassName:@"Chat"];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy"];
-    NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];
-    [query2 whereKey:@"createdAt" equalTo:stringFromDate];
-    
-    
-    PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
-    
-    if([query countObjects]>1)
-        return [query countObjects];
-    else
-        return 0;
++ (void)todayMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        PFQuery *query1 = [PFQuery queryWithClassName:@"Chat"];
+        [query1 whereKey:@"pairId" equalTo:pairId];
+        PFQuery *query2 = [PFQuery queryWithClassName:@"Chat"];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy"];
+        NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];
+        [query2 whereKey:@"createdAt" equalTo:stringFromDate];
+        
+        
+        PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
+        
+        if([query countObjects]>1)
+            return block([query countObjects]);
+        else
+            return block(0);
+    });
+}
+
++(void)totalPhotos:(NSString *)pairId handler:(void(^)(NSInteger))block{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        return block(0);
+    });
 }
 + (NSInteger) totalSavedMessage:(NSString*)pairId{
     PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
@@ -46,10 +55,8 @@
     else
         return 0;
 }
-+ (NSInteger) totalPhotos:(NSString*)pairId{
-    return 0;
-}
-+ (NSInteger) totalDate:(NSString*)pairId{
++(void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block{
+    dispatch_async(dispatch_get_main_queue(), ^{
     PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
     [queryForChats whereKey:@"pairId" equalTo:pairId];
     [queryForChats orderByAscending:@"createdAt"];
@@ -62,9 +69,12 @@
                                                fromDate:firstDate
                                                  toDate:[NSDate date]
                                                 options:0];
-    return components.day;
+    return block(components.day);
+    });
 }
-+ (NSInteger) totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId{
+
++(void)totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSInteger))block{
+    dispatch_async(dispatch_get_main_queue(), ^{
     PFQuery *query1 = [PFQuery queryWithClassName:@"Diary"];
     [query1 whereKey:@"pairId" equalTo:pairId];
     PFQuery *query2 = [PFQuery queryWithClassName:@"Diary"];
@@ -77,8 +87,10 @@
     PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
     
     if([query countObjects]>1)
-        return [query countObjects];
+        return block([query countObjects]);
     else
-        return 0;
+        return block(0);
+    });
+
 }
 @end
