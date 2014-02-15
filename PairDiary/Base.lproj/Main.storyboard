@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="603" y="744"/>
         </scene>
-        <!--Table View Controller - Diary-->
+        <!--Diary View Controller - Diary-->
         <scene sceneID="vLR-04-uQh">
             <objects>
-                <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="2Vq-uF-DrN" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Diary" extendedLayoutIncludesOpaqueBars="YES" id="2Vq-uF-DrN" customClass="DiaryViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JTL-RI-AqT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
