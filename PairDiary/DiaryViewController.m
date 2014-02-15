@@ -60,12 +60,30 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+    if (indexPath.section == 0) {
+        static NSString *CellIdentifier = @"DiaryTopCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        
+        
+        return cell;
+    } else {
+        static NSString *CellIdentifier = @"Cell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        
+        return cell;
+    }
+
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return 290.0;
+    } else {
+        return 144.0;
+    }
 }
 
 /*

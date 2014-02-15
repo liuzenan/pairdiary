@@ -155,14 +155,14 @@
         <!--Diary View Controller - Diary-->
         <scene sceneID="vLR-04-uQh">
             <objects>
-                <tableViewController storyboardIdentifier="Diary" extendedLayoutIncludesOpaqueBars="YES" id="2Vq-uF-DrN" customClass="DiaryViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Diary" id="2Vq-uF-DrN" customClass="DiaryViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JTL-RI-AqT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="290" id="n95-Dx-jM1">
-                                <rect key="frame" x="0.0" y="86" width="320" height="290"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DiaryTopCell" rowHeight="290" id="n95-Dx-jM1" customClass="DiaryTopCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="290"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n95-Dx-jM1" id="ZEb-8m-OrA">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
@@ -252,12 +252,19 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="numDays" destination="9b5-A9-meq" id="RlF-Eq-PRw"/>
+                                    <outlet property="numOfMsgInDiary" destination="adt-8N-tOV" id="DMk-t3-7cj"/>
+                                    <outlet property="numPhotos" destination="dIA-rc-PfK" id="fwp-xZ-AA4"/>
+                                    <outlet property="todayMsg" destination="WJz-Dl-5Hf" id="z2C-bC-gbP"/>
+                                    <outlet property="totalMsg" destination="40Y-lV-eCJ" id="Gn2-ML-cva"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="egq-pn-X2U">
-                                <rect key="frame" x="0.0" y="376" width="320" height="144"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryDayCell" rowHeight="173" id="egq-pn-X2U" customClass="DiaryDayCell">
+                                <rect key="frame" x="0.0" y="312" width="320" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="egq-pn-X2U" id="9tW-jY-AiF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmI-0I-gvl">
@@ -268,7 +275,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0i-Wc-p4v">
-                                            <rect key="frame" x="14" y="40" width="292" height="103"/>
+                                            <rect key="frame" x="14" y="40" width="292" height="133"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6JW-ea-m73">
@@ -283,11 +290,11 @@
                                                     <color key="textColor" red="0.94901960784313721" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do " translatesAutoresizingMaskIntoConstraints="NO" id="zBd-lw-Uf3">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBd-lw-Uf3">
                                                     <rect key="frame" x="6" y="37" width="280" height="184"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -295,6 +302,12 @@
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="background" destination="P0i-Wc-p4v" id="aeD-JT-YyE"/>
+                                    <outlet property="dateLabel" destination="SmI-0I-gvl" id="L0Z-c9-e2S"/>
+                                    <outlet property="msg" destination="zBd-lw-Uf3" id="6XP-eh-D9h"/>
+                                    <outlet property="numSavedMsg" destination="sUE-hx-sdN" id="0Bv-z6-kCq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

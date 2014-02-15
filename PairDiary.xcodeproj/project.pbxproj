@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A5C07583BBED48659B2780F7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B159EFCF644E46429BB2F618 /* libPods.a */; };
 		E42991E018AF867F00EDF2CF /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991DF18AF867F00EDF2CF /* DiaryViewController.m */; };
+		E42991E418AF877300EDF2CF /* DiaryTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E318AF877300EDF2CF /* DiaryTopCell.m */; };
+		E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E618AF878100EDF2CF /* DiaryDayCell.m */; };
 		E46AAD6418AF76EA00F045CB /* PairDiaryMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46AAD6318AF76EA00F045CB /* PairDiaryMessageViewController.m */; };
 		F28A171B18AF4A43003A109C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171A18AF4A43003A109C /* Foundation.framework */; };
 		F28A171D18AF4A43003A109C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171C18AF4A43003A109C /* CoreGraphics.framework */; };
@@ -52,6 +54,10 @@
 		B159EFCF644E46429BB2F618 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42991DE18AF867F00EDF2CF /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
 		E42991DF18AF867F00EDF2CF /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
+		E42991E218AF877300EDF2CF /* DiaryTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryTopCell.h; sourceTree = "<group>"; };
+		E42991E318AF877300EDF2CF /* DiaryTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryTopCell.m; sourceTree = "<group>"; };
+		E42991E518AF878100EDF2CF /* DiaryDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryDayCell.h; sourceTree = "<group>"; };
+		E42991E618AF878100EDF2CF /* DiaryDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryDayCell.m; sourceTree = "<group>"; };
 		E46AAD6218AF76EA00F045CB /* PairDiaryMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairDiaryMessageViewController.h; sourceTree = "<group>"; };
 		E46AAD6318AF76EA00F045CB /* PairDiaryMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairDiaryMessageViewController.m; sourceTree = "<group>"; };
 		F28A171718AF4A43003A109C /* PairDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +128,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E42991E118AF875E00EDF2CF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E42991E218AF877300EDF2CF /* DiaryTopCell.h */,
+				E42991E318AF877300EDF2CF /* DiaryTopCell.m */,
+				E42991E518AF878100EDF2CF /* DiaryDayCell.h */,
+				E42991E618AF878100EDF2CF /* DiaryDayCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		F28A170E18AF4A43003A109C = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +185,7 @@
 		F28A172018AF4A43003A109C /* PairDiary */ = {
 			isa = PBXGroup;
 			children = (
+				E42991E118AF875E00EDF2CF /* Cell */,
 				F28A172918AF4A43003A109C /* PairDiaryAppDelegate.h */,
 				F28A172A18AF4A43003A109C /* PairDiaryAppDelegate.m */,
 				F28A172C18AF4A43003A109C /* Main.storyboard */,
@@ -350,9 +368,11 @@
 			files = (
 				E46AAD6418AF76EA00F045CB /* PairDiaryMessageViewController.m in Sources */,
 				F28A173118AF4A43003A109C /* PairDiaryViewController.m in Sources */,
+				E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */,
 				F28A172B18AF4A43003A109C /* PairDiaryAppDelegate.m in Sources */,
 				E42991E018AF867F00EDF2CF /* DiaryViewController.m in Sources */,
 				F28A172718AF4A43003A109C /* main.m in Sources */,
+				E42991E418AF877300EDF2CF /* DiaryTopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
