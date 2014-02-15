@@ -21,6 +21,8 @@
 *.swp
 *.lock
 profile
+*.xcodeproj
+*.workspace
 
 
 ####

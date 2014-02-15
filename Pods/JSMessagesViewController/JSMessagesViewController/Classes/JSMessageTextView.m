@@ -187,14 +187,12 @@
                           withAttributes:@{ NSFontAttributeName : self.font,
                                             NSForegroundColorAttributeName : self.placeHolderTextColor,
                                             NSParagraphStyleAttributeName : paragraphStyle }];
-            
         }
         else {
             [self.placeHolder drawInRect:placeHolderRect
                                 withFont:self.font
                            lineBreakMode:NSLineBreakByTruncatingTail
                                alignment:self.textAlignment];
-            
         }
     }
 }
