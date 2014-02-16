@@ -19,7 +19,6 @@
 		E4523AB118AFB4BF005D3AF0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3A18AF819D000084D7 /* User.m */; };
 		E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4318AF819D000084D7 /* EGOCache.m */; };
 		E4523ABC18AFB885005D3AF0 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4523ABB18AFB885005D3AF0 /* DiaryViewController.m */; };
-		F258900D18AF913A00E07B7C /* FacebookUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F258900C18AF913A00E07B7C /* FacebookUserController.m */; };
 		F28A171B18AF4A43003A109C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171A18AF4A43003A109C /* Foundation.framework */; };
 		F28A171D18AF4A43003A109C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171C18AF4A43003A109C /* CoreGraphics.framework */; };
 		F28A171F18AF4A43003A109C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171E18AF4A43003A109C /* UIKit.framework */; };
@@ -82,8 +81,6 @@
 		E42991E618AF878100EDF2CF /* DiaryDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryDayCell.m; sourceTree = "<group>"; };
 		E4523ABA18AFB885005D3AF0 /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiaryViewController.h; path = PairDiary/DiaryViewController.h; sourceTree = SOURCE_ROOT; };
 		E4523ABB18AFB885005D3AF0 /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiaryViewController.m; path = PairDiary/DiaryViewController.m; sourceTree = SOURCE_ROOT; };
-		F258900B18AF913A00E07B7C /* FacebookUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookUserController.h; sourceTree = "<group>"; };
-		F258900C18AF913A00E07B7C /* FacebookUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookUserController.m; sourceTree = "<group>"; };
 		F28A171718AF4A43003A109C /* PairDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28A171A18AF4A43003A109C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F28A171C18AF4A43003A109C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -291,8 +288,6 @@
 				F2BCEF3518AF819D000084D7 /* PairingViewController.m */,
 				F2BCEF3618AF819D000084D7 /* UserController.h */,
 				F2BCEF3718AF819D000084D7 /* UserController.m */,
-				F258900B18AF913A00E07B7C /* FacebookUserController.h */,
-				F258900C18AF913A00E07B7C /* FacebookUserController.m */,
 				CF4873FC18AFE01800C86F65 /* StatisticsController.h */,
 				CF4873FD18AFE01800C86F65 /* StatisticsController.m */,
 				CF4873FF18AFE0C700C86F65 /* DataUtil.h */,
@@ -416,7 +411,7 @@
 				ORGANIZATIONNAME = li.shaohuan;
 				TargetAttributes = {
 					F28A171618AF4A43003A109C = {
-						DevelopmentTeam = P84MG4SANC;
+						DevelopmentTeam = 6TJJ53K256;
 					};
 					F28A173718AF4A43003A109C = {
 						TestTargetID = F28A171618AF4A43003A109C;
@@ -503,7 +498,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F258900D18AF913A00E07B7C /* FacebookUserController.m in Sources */,
 				E4523AB018AFB4BF005D3AF0 /* DaySummaryViewController.m in Sources */,
 				E4523AB118AFB4BF005D3AF0 /* User.m in Sources */,
 				E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */,

@@ -76,25 +76,25 @@
 
         [StatisticsController totalMessageCount:self.pairId handler:
          ^(NSInteger totalMessages){
-              [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",totalMessages]];
+              [cell.totalMsg setText: [NSString stringWithFormat:@"%d",totalMessages]];
          }];
        
         [StatisticsController todayMessageCount:self.pairId handler:
          ^(NSInteger todayMessages){
-             [cell.todayMsg setText: [NSString stringWithFormat:@"%ld",todayMessages]];
+             [cell.todayMsg setText: [NSString stringWithFormat:@"%d",todayMessages]];
          }];
 
         [StatisticsController totalPhotos:self.pairId handler:
          ^(NSInteger totalPhotos){
-             [cell.numPhotos setText: [NSString stringWithFormat:@"%ld",totalPhotos]];
+             [cell.numPhotos setText: [NSString stringWithFormat:@"%d",totalPhotos]];
          }];
         
         [StatisticsController totalDate:self.pairId handler:^(NSInteger totalDates){
-            [cell.numDays setText:[NSString stringWithFormat:@"%ld", totalDates]];
+            [cell.numDays setText:[NSString stringWithFormat:@"%d", totalDates]];
         }];
         
         [StatisticsController totalSavedMessage:self.pairId handler:^(NSInteger totalSavedMessage){
-            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", totalSavedMessage]];
+            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%d", totalSavedMessage]];
         }];
         return cell;
     } else {
