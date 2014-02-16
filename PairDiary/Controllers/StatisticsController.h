@@ -10,10 +10,11 @@
 #import <Parse/Parse.h>
 
 @interface StatisticsController : NSObject
-+ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSNumber *))block;
-+ (NSInteger) todayMessageCount:(NSString*)pairId;
-+ (NSInteger) totalSavedMessage:(NSString*)pairId;
-+ (NSInteger) totalPhotos:(NSString*)pairId;
-+ (NSInteger) totalDate:(NSString*)pairId;
-+ (NSInteger) totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId;
++ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)todayMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)totalPhotos:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block;
++(void)totalSavedMessage:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)totalMessageForDate: (NSDate*)date forPair:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
 @end

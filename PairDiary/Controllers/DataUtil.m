@@ -10,19 +10,20 @@
 
 @implementation DataUtil
 
-+ (void)saveMessageToDiary: (NSString*)chatId{
++ (void)saveMessageToDiary:(NSString*)chatId{
     PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
-    
-    [queryForChats whereKey:@"chatId" equalTo:chatId];
-    [queryForChats findObjectsInBackgroundWithBlock:^(NSArray *objects,NSError *error){
+    [queryForChats getObjectInBackgroundWithId:chatId block:^(PFObject *object, NSError *error) {
         if (!error){
-        PFObject *message = [PFObject objectWithClassName:@"Diary" dictionary:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                                        @"chatId", chatId,@"pairId",objects[0][@"pairId"],@"date",objects[0][@"createdAt"],nil] ];
-                             [message saveInBackground];
+            NSLog(@"%@",object);
+            if(object){
+                PFObject *message = [PFObject objectWithClassName:@"Diary"];
+                [message setObject:chatId forKey:@"chatId"];
+                [message setObject:object[@"pairId"] forKey:@"pairId"];
+                [message setObject:object.createdAt forKey:@"date"];
+                [message saveInBackground];
+            }
         }
     }];
-    
-    
 }
 
 + (NSArray*)getMessagesFor: (NSDate*)date{
