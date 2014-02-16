@@ -11,13 +11,13 @@
 
 @interface Message : PFObject
 
-@property (nonatomic,strong) NSString *fromUser;
-@property (nonatomic,strong) NSString *toUser;
+@property (nonatomic,strong) NSString *message;
 @property (nonatomic,strong) NSString *pairId;
-@property (nonatomic,strong) NSString *text;
+@property (nonatomic,strong) NSDate *date;
+@property (nonatomic,strong) NSString *chatId;
 
 
-- (Message*)initWithText:(NSString*)s fromUser:(NSString*)from toUser:(NSString*)to inPair:(NSString*)pair;
+- (Message*)initWithMsg:(NSString*)s pairId:(NSString*)pairId created:(NSDate*)date inchat:(NSString*)chatId;
 
 
 @end

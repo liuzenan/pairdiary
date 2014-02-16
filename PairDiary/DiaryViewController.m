@@ -11,6 +11,7 @@
 #import "DiaryTopCell.h"
 #import "DiaryDayCell.h"
 #import "StatisticsController.h"
+#import "Message.h"
 
 @interface DiaryViewController ()
 
@@ -22,6 +23,8 @@
 {
     self = [super initWithStyle:style];
     if (self) {
+        _dataList = [[NSArray alloc] init];
+        self.dataList = _dataList;
         // Custom initialization
     }
     return self;
@@ -30,6 +33,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [DataUtil getImportantMessages:[NSDate date] forPair:self.pairId handler:^(NSArray * diaries) {
+        self.dataList = diaries;
+        [self.tableView reloadData];
+    }];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -92,8 +99,13 @@
         return cell;
     } else {
         static NSString *CellIdentifier = @"DiaryDayCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        
+        DiaryDayCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        PFObject* diary = (PFObject*)[self.dataList objectAtIndex:indexPath.row];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm"];
+        NSString *dateDisplay = [dateFormatter stringFromDate:diary.createdAt];
+        cell.dateLabel.text = dateDisplay;
+        cell.msg.text = [diary objectForKey:@"message"];
         return cell;
     }
 

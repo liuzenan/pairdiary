@@ -10,15 +10,15 @@
 
 @implementation Message
 
-@synthesize fromUser,toUser,text,pairId;
+@synthesize message,pairId,date,chatId;
 
-- (Message*)initWithText:(NSString*)s fromUser:(NSString*)from toUser:(NSString*)to inPair:(NSString*)pair{
+- (Message*)initWithMsg:(NSString*)s pairId:(NSString*)p created:(NSDate*)d inchat:(NSString*)c{
     self = [super init];
     if(self){
-        self.pairId = pair;
-        self.fromUser = from;
-        self.toUser = to;
-        self.text = s;
+        self.message = s;
+        self.pairId = p;
+        self.date = d;
+        self.chatId = c;
     }
     return self;
 

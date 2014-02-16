@@ -13,5 +13,5 @@
 
 + (void)saveMessageToDiary: (NSString*)chatId;
 + (NSArray*)getMessagesFor: (NSDate*)date;
-+ (NSArray*)getImportantMessages: (NSDate*)date;
++ (void)getImportantMessages: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block;
 @end
