@@ -14,7 +14,6 @@
     PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
     [queryForChats getObjectInBackgroundWithId:chatId block:^(PFObject *object, NSError *error) {
         if (!error){
-            NSLog(@"%@",object);
             if(object){
                 PFObject *message = [PFObject objectWithClassName:@"Diary"];
                 [message setObject:chatId forKey:@"chatId"];
