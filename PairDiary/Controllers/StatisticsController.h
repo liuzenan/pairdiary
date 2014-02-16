@@ -16,4 +16,5 @@
 + (void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block;
 +(void)totalSavedMessage:(NSString *)pairId handler:(void(^)(NSInteger))block;
 + (void)totalMessageForDate: (NSDate*)date forPair:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
 @end

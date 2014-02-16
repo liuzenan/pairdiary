@@ -24,16 +24,17 @@
 + (void)todayMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        PFQuery *query1 = [PFQuery queryWithClassName:@"Chat"];
-        [query1 whereKey:@"pairId" equalTo:pairId];
-        PFQuery *query2 = [PFQuery queryWithClassName:@"Chat"];
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"yyyy"];
-        NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];
-        [query2 whereKey:@"createdAt" equalTo:stringFromDate];
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSDateComponents *components = [cal components:( NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate:[[NSDate alloc] init]];
         
+        [components setHour:-[components hour]+7];
+        [components setMinute:-[components minute]];
+        [components setSecond:-[components second]];
+        NSDate *today = [cal dateByAddingComponents:components toDate:[[NSDate alloc] init] options:0];
         
-        PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
+        PFQuery *query = [PFQuery queryWithClassName:@"Chat"];
+        [query whereKey:@"pairId" equalTo:pairId];
+        [query whereKey:@"createdAt" greaterThan:today];
         
         if([query countObjects]>1)
             return block([query countObjects]);
@@ -61,20 +62,36 @@
 
 +(void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_main_queue(), ^{
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
-    [queryForChats whereKey:@"pairId" equalTo:pairId];
-    [queryForChats orderByAscending:@"createdAt"];
-    PFObject* firstMessage =[queryForChats getFirstObject];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"MM/dd/yyyy HH:mm"];
-    NSDate *firstDate = [formatter dateFromString:firstMessage[@"createdAt"]];
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
-                                               fromDate:firstDate
-                                                 toDate:[NSDate date]
-                                                options:0];
-    return block(components.day);
+        PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+        [queryForChats whereKey:@"pairId" equalTo:pairId];
+        [queryForChats orderByAscending:@"createdAt"];
+        PFObject* firstMessage =[queryForChats getFirstObject];
+        if(firstMessage){
+            NSInteger dayDifference = [self daysBetweenDate:firstMessage.createdAt andDate:[NSDate date]] + 1;
+            NSLog(@"%@",firstMessage.createdAt);
+            NSLog(@"day difference %ld",dayDifference);
+            return block(dayDifference);
+        }else{
+            return block(0);
+        }
     });
+}
++ (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime
+{
+    NSDate *fromDate;
+    NSDate *toDate;
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&fromDate
+                 interval:NULL forDate:fromDateTime];
+    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&toDate
+                 interval:NULL forDate:toDateTime];
+    
+    NSDateComponents *difference = [calendar components:NSDayCalendarUnit
+                                               fromDate:fromDate toDate:toDate options:0];
+    
+    return [difference day];
 }
 
 +(void)totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSInteger))block{
