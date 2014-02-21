@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 li.shaohuan. All rights reserved.
 //
 
-#import "DataUtil.h"
+#import "ServerController.h"
 
-@implementation DataUtil
+@implementation ServerController
 
 + (void)saveMessageToDiary:(NSString*)chatId{
     PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];

@@ -7,11 +7,11 @@
 //
 
 #import "DiaryViewController.h"
-#import "DataUtil.h"
+#import "ServerController.h"
 #import "DiaryTopCell.h"
 #import "DiaryDayCell.h"
 #import "StatisticsController.h"
-#import "Message.h"
+#import "Chat.h"
 
 @interface DiaryViewController ()
 
@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [DataUtil getImportantMessages:[NSDate date] forPair:self.pairId handler:^(NSArray * diaries) {
+    [ServerController getImportantMessages:[NSDate date] forPair:self.pairId handler:^(NSArray * diaries) {
         self.dataList = diaries;
         [self.tableView reloadData];
     }];
@@ -76,25 +76,25 @@
 
         [StatisticsController totalMessageCount:self.pairId handler:
          ^(NSInteger totalMessages){
-              [cell.totalMsg setText: [NSString stringWithFormat:@"%d",totalMessages]];
+              [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",(long)totalMessages]];
          }];
        
         [StatisticsController todayMessageCount:self.pairId handler:
          ^(NSInteger todayMessages){
-             [cell.todayMsg setText: [NSString stringWithFormat:@"%d",todayMessages]];
+             [cell.todayMsg setText: [NSString stringWithFormat:@"%ld",(long)todayMessages]];
          }];
 
         [StatisticsController totalPhotos:self.pairId handler:
          ^(NSInteger totalPhotos){
-             [cell.numPhotos setText: [NSString stringWithFormat:@"%d",totalPhotos]];
+             [cell.numPhotos setText: [NSString stringWithFormat:@"%ld",(long)totalPhotos]];
          }];
         
         [StatisticsController totalDate:self.pairId handler:^(NSInteger totalDates){
-            [cell.numDays setText:[NSString stringWithFormat:@"%d", totalDates]];
+            [cell.numDays setText:[NSString stringWithFormat:@"%ld", (long)totalDates]];
         }];
         
         [StatisticsController totalSavedMessage:self.pairId handler:^(NSInteger totalSavedMessage){
-            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%d", totalSavedMessage]];
+            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", (long)totalSavedMessage]];
         }];
         return cell;
     } else {

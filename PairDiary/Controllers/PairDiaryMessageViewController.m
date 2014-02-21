@@ -11,7 +11,7 @@
 #import "loginViewController.h"
 #import "PairingViewController.h"
 #import <UIColor-HexString/UIColor+HexString.h>
-#import "DataUtil.h"
+#import "ServerController.h"
 #import "DiaryViewController.h"
 
 @interface PairDiaryMessageViewController ()
@@ -268,7 +268,7 @@
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([buttonTitle isEqualToString:@"Save"]) {
         NSLog(@"save the msg");
-        [DataUtil saveMessageToDiary:self.saveObjectId];
+        [ServerController saveMessageToDiary:self.saveObjectId];
         
     }
 }

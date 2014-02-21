@@ -21,7 +21,7 @@ extern NSString *const UserObjectIdKey;
 extern NSString *const UserFirstNameKey;
 extern NSString *const UserLastNameKey;
 
-@interface User : PFUser<PFSubclassing,NSCoding>
+@interface User : PFUser<PFSubclassing>
 
 + (NSString *)parseClassName;
 - (User*)initWithPFUser:(PFUser*)user;

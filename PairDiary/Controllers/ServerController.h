@@ -1,5 +1,5 @@
 //
-//  DataUtil.h
+//  ServerController.h
 //  PairDiary
 //
 //  Created by Shaohuan Li on 16/2/14.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Message.h"
+#import "Chat.h"
 #import <Parse/Parse.h>
-@interface DataUtil : NSObject
+@interface ServerController: NSObject
 
 + (void)saveMessageToDiary: (NSString*)chatId;
 + (NSArray*)getMessagesFor: (NSDate*)date;
