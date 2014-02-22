@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Chat.h"
+#import "Diary.h"
 #import <Parse/Parse.h>
 @interface ServerController: NSObject
 

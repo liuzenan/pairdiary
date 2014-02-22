@@ -15,12 +15,12 @@
     [queryForChats getObjectInBackgroundWithId:chatId block:^(PFObject *object, NSError *error) {
         if (!error){
             if(object){
-                PFObject *message = [PFObject objectWithClassName:@"Diary"];
-                [message setObject:chatId forKey:@"chatId"];
-                [message setObject:object[@"pairId"] forKey:@"pairId"];
-                [message setObject:object[@"text"] forKey:@"message"];
-                [message setObject:object.createdAt forKey:@"date"];
-                [message saveInBackground];
+                Diary *diary = [Diary object];
+                diary.chatId = chatId;
+                diary.pairId = object[@"pairId"];
+                diary.message = object[@"text"];
+                diary.date = object.createdAt;
+                [diary saveInBackground];
             }
         }
     }];
@@ -28,14 +28,13 @@
 
 + (NSArray*)getMessagesFor: (NSDate*)date{
     PFQuery *queryForChats = [Chat query];
-    
     [queryForChats whereKey:@"createdAt" equalTo:date];
     return [queryForChats findObjects];
 }
 
 + (void)getImportantMessages: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block{
     dispatch_async(dispatch_get_main_queue(), ^{
-        PFQuery *query = [PFQuery queryWithClassName:@"Diary"];
+        PFQuery *query = [Diary query];
         [query whereKey:@"pairId" equalTo:pairId];
         return block([query findObjects]);
     });

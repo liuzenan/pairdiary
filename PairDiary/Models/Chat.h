@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 li.shaohuan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
 // Class key
@@ -20,6 +19,5 @@ extern NSString *const ChatClassKey;
 @property (nonatomic,strong) NSString *toUser;
 
 + (NSString *)parseClassName;
-- (Chat*)initWithPFObject:(PFObject*)chat;
 
 @end

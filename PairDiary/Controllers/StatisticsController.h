@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+#import "Diary.h"
+#import "Chat.h"
 
 @interface StatisticsController : NSObject
 + (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block;

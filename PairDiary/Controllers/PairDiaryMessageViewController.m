@@ -148,10 +148,10 @@
     
     if (text.length != 0) {
         Chat *chat=[Chat object];
-        [chat setObject:self.pair.objectId forKey:@"pairId"];
-        [chat setObject:self.currentUser[@"facebookId"] forKey:@"fromUser"];
-        [chat setObject:self.withUser[@"facebookId"] forKey:@"toUser"];
-        [chat setObject:text forKey:@"text"];
+        chat.pairId = self.pair.objectId;
+        chat.fromUser = self.currentUser[@"facebookId"] ;
+        chat.toUser = self.withUser[@"facebookId"];
+        chat.text = text;
         [self.chats addObject:chat];
         [self.messageInputView.sendButton setEnabled:NO];
         [self.tableView reloadData];

@@ -13,7 +13,7 @@
 + (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+        PFQuery *queryForChats = [Chat query];
         [queryForChats whereKey:@"pairId" equalTo:pairId];
         __block NSInteger count = [queryForChats countObjects];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -35,7 +35,7 @@
         [components setSecond:-[components second]];
         NSDate *today = [cal dateByAddingComponents:components toDate:[[NSDate alloc] init] options:0];
         
-        PFQuery *query = [PFQuery queryWithClassName:@"Chat"];
+        PFQuery *query = [Chat query];
         [query whereKey:@"pairId" equalTo:pairId];
         [query whereKey:@"createdAt" greaterThan:today];
         
@@ -59,7 +59,7 @@
 
 +(void)totalSavedMessage:(NSString *)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        __block PFQuery *queryForChats = [PFQuery queryWithClassName:@"Diary"];
+        __block PFQuery *queryForChats = [Diary query];
         [queryForChats whereKey:@"pairId" equalTo:pairId];
         __block NSInteger count = [queryForChats countObjects];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -74,10 +74,10 @@
 
 +(void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+        PFQuery *queryForChats = [Chat query];
         [queryForChats whereKey:@"pairId" equalTo:pairId];
         [queryForChats orderByAscending:@"createdAt"];
-        PFObject* firstMessage =[queryForChats getFirstObject];
+        Chat* firstMessage =(Chat*)[queryForChats getFirstObject];
         if(firstMessage){
             __block NSInteger dayDifference = [self daysBetweenDate:firstMessage.createdAt andDate:[NSDate date]] + 1;
             NSLog(@"%@",firstMessage.createdAt);
@@ -114,9 +114,9 @@
 
 +(void)totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-    PFQuery *query1 = [PFQuery queryWithClassName:@"Diary"];
+    PFQuery *query1 = [Diary query];
     [query1 whereKey:@"pairId" equalTo:pairId];
-    PFQuery *query2 = [PFQuery queryWithClassName:@"Diary"];
+    PFQuery *query2 = [Diary query];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy"];
     NSString *stringFromDate = [formatter stringFromDate:[NSDate date]];

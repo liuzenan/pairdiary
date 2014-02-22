@@ -22,14 +22,4 @@ NSString *const ChatClassKey = @"Chat";
     return ChatClassKey;
 }
 
-- (Chat*)initWithPFObject:(PFObject *)chat{
-    self = [super init];
-    if(self){
-        self.text = [chat objectForKey:@"text"];
-        self.pairId = [chat objectForKey:@"pairId"];
-        self.fromUser = [chat objectForKey:@"fromUser"];
-        self.toUser = [chat objectForKey:@"toUser"];
-    }
-    return self;
-}
 @end

@@ -12,6 +12,7 @@
 #import "DiaryDayCell.h"
 #import "StatisticsController.h"
 #import "Chat.h"
+#import "Diary.h"
 
 @interface DiaryViewController ()
 
@@ -100,7 +101,7 @@
     } else {
         static NSString *CellIdentifier = @"DiaryDayCell";
         DiaryDayCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        PFObject* diary = (PFObject*)[self.dataList objectAtIndex:indexPath.row];
+        Diary* diary = [self.dataList objectAtIndex:indexPath.row];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm"];
         NSString *dateDisplay = [dateFormatter stringFromDate:diary.createdAt];

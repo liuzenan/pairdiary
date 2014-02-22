@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "UserController.h"
 #import "Chat.h"
+#import "Diary.h"
 
 @implementation PairDiaryAppDelegate
 
@@ -18,6 +19,7 @@
 {
     // Override point for customization after application launch.
     [Chat registerSubclass];
+    [Diary registerSubclass];
     [Parse setApplicationId:@"2Jtj8Ch3fOkMXoWOAgsH8VzftlANtoi4SOdVXokj"
                   clientKey:@"9r9UIOyyKGO1XFJOF0OJSVet5YKlpv9rZYj7HmhJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
