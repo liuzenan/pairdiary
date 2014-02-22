@@ -30,7 +30,8 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         PFQuery *query = [Diary query];
         [query whereKey:@"pairId" equalTo:pairId];
-        [query whereKey:@"date" equalTo:date];
+        [query whereKey:@"date" greaterThanOrEqualTo:[self startofDay:date]];
+        [query whereKey:@"date" lessThanOrEqualTo:[self endofDay:date]];
         return block([query findObjects]);
     });
 }
@@ -39,7 +40,29 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         PFQuery *query = [Diary query];
         [query whereKey:@"pairId" equalTo:pairId];
+        [query orderByDescending:@"date"];
         return block([query findObjects]);
     });
+}
+
++(NSDate *)startofDay:(NSDate*)d{
+    NSCalendar *gregorian = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [gregorian components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit| NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate: d];
+    [components setMinute:0 ];
+    [components setSecond:0];
+    [components setHour:0];
+    
+    NSDate *startofDay = [gregorian dateFromComponents:components];
+    return startofDay;
+}
++(NSDate *)endofDay:(NSDate*)d{
+    NSCalendar *gregorian = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [gregorian components:(NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit| NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit ) fromDate: d];
+    [components setMinute:59 ];
+    [components setSecond:59];
+    [components setHour:23];
+    
+    NSDate *endofDay = [gregorian dateFromComponents:components];
+    return endofDay;
 }
 @end

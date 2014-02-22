@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DaySummaryViewController : UIViewController
+@interface DaySummaryViewController : UITableViewController
 @property (nonatomic, strong) NSString *pairId;
 @property (nonatomic, strong) NSArray *dataList;
 @property (nonatomic, strong) NSDate *date;
