@@ -14,7 +14,6 @@
 		CF48740418AFE1D500C86F65 /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = CF48740318AFE1D500C86F65 /* Chat.m */; };
 		CF62D03E18B8C44B00D0CC4D /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62D03D18B8C44B00D0CC4D /* Diary.m */; };
 		CF62D04118B8CB0C00D0CC4D /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62D04018B8CB0C00D0CC4D /* Pair.m */; };
-		CF99EA8118B8FB7A009E00B2 /* RennSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C93F7518B8C7B5000AACA8 /* RennSDK.framework */; };
 		E42991E418AF877300EDF2CF /* DiaryTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E318AF877300EDF2CF /* DiaryTopCell.m */; };
 		E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E618AF878100EDF2CF /* DiaryDayCell.m */; };
 		E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4C18AF819D000084D7 /* SVProgressHUD.m */; };
@@ -28,6 +27,7 @@
 		F28A172518AF4A43003A109C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F28A172318AF4A43003A109C /* InfoPlist.strings */; };
 		F28A172718AF4A43003A109C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A172618AF4A43003A109C /* main.m */; };
 		F28A172B18AF4A43003A109C /* PairDiaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F28A172A18AF4A43003A109C /* PairDiaryAppDelegate.m */; };
+		F28A172E18AF4A43003A109C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28A172C18AF4A43003A109C /* Main.storyboard */; };
 		F28A173318AF4A43003A109C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28A173218AF4A43003A109C /* Images.xcassets */; };
 		F28A173A18AF4A43003A109C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A173918AF4A43003A109C /* XCTest.framework */; };
 		F28A173B18AF4A43003A109C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171A18AF4A43003A109C /* Foundation.framework */; };
@@ -45,13 +45,14 @@
 		F28A176018AF4AB2003A109C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */; };
 		F28A176318AF4ADD003A109C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A176118AF4ADD003A109C /* FacebookSDK.framework */; };
 		F28A176418AF4ADD003A109C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A176218AF4ADD003A109C /* Parse.framework */; };
-		F2BCEF5018AF819D000084D7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3318AF819D000084D7 /* LoginViewController.m */; };
+		F2A9DC1D18B8F70B00FA145A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A9DC1C18B8F70B00FA145A /* LoginViewController.m */; };
 		F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3518AF819D000084D7 /* PairingViewController.m */; };
 		F2BCEF5418AF819D000084D7 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3E18AF819D000084D7 /* ECSlidingViewController.m */; };
 		F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4018AF819D000084D7 /* UIImage+ImageWithUIView.m */; };
 		F2BCEF5718AF819D000084D7 /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = F2BCEF4418AF819D000084D7 /* README.mdown */; };
 		F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4718AF819D000084D7 /* PopoverView.m */; };
 		F2BCEF5918AF819D000084D7 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2BCEF4A18AF819D000084D7 /* SVProgressHUD.bundle */; };
+		F2C93F7618B8C7B5000AACA8 /* RennSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C93F7518B8C7B5000AACA8 /* RennSDK.framework */; };
 		F2C93F7918B8C82B000AACA8 /* RennSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2C93F7818B8C82B000AACA8 /* RennSDK.bundle */; };
 		F2C93F7C18B8CDDD000AACA8 /* FacebookUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C93F7B18B8CDDD000AACA8 /* FacebookUserController.m */; };
 		F2C93F7F18B8D2BE000AACA8 /* RenrenUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C93F7E18B8D2BE000AACA8 /* RenrenUserController.m */; };
@@ -117,10 +118,10 @@
 		F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F28A176118AF4ADD003A109C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		F28A176218AF4ADD003A109C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F2A9DC1B18B8F70B00FA145A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F2A9DC1C18B8F70B00FA145A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F2BCEF2E18AF819D000084D7 /* DaySummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaySummaryViewController.h; sourceTree = "<group>"; };
 		F2BCEF2F18AF819D000084D7 /* DaySummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaySummaryViewController.m; sourceTree = "<group>"; };
-		F2BCEF3218AF819D000084D7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		F2BCEF3318AF819D000084D7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F2BCEF3418AF819D000084D7 /* PairingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairingViewController.h; sourceTree = "<group>"; };
 		F2BCEF3518AF819D000084D7 /* PairingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairingViewController.m; sourceTree = "<group>"; };
 		F2BCEF3918AF819D000084D7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -153,9 +154,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF99EA8118B8FB7A009E00B2 /* RennSDK.framework in Frameworks */,
-				F28A176318AF4ADD003A109C /* FacebookSDK.framework in Frameworks */,
+				F2C93F7618B8C7B5000AACA8 /* RennSDK.framework in Frameworks */,
 				F28A176418AF4ADD003A109C /* Parse.framework in Frameworks */,
+				F28A176318AF4ADD003A109C /* FacebookSDK.framework in Frameworks */,
 				F28A176018AF4AB2003A109C /* SystemConfiguration.framework in Frameworks */,
 				F28A175E18AF4AA6003A109C /* StoreKit.framework in Frameworks */,
 				F28A175C18AF4A9E003A109C /* Security.framework in Frameworks */,
@@ -289,6 +290,8 @@
 		F2BCEF2B18AF819D000084D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2A9DC1B18B8F70B00FA145A /* LoginViewController.h */,
+				F2A9DC1C18B8F70B00FA145A /* LoginViewController.m */,
 				F2E38ECF18B014B1008024DC /* FriendInvitationViewController.h */,
 				F2E38ED018B014B1008024DC /* FriendInvitationViewController.m */,
 				E4523ABA18AFB885005D3AF0 /* DiaryViewController.h */,
@@ -297,8 +300,6 @@
 				CF4873F718AFC33200C86F65 /* PairDiaryMessageViewController.m */,
 				F2BCEF2E18AF819D000084D7 /* DaySummaryViewController.h */,
 				F2BCEF2F18AF819D000084D7 /* DaySummaryViewController.m */,
-				F2BCEF3218AF819D000084D7 /* LoginViewController.h */,
-				F2BCEF3318AF819D000084D7 /* LoginViewController.m */,
 				F2BCEF3418AF819D000084D7 /* PairingViewController.h */,
 				F2BCEF3518AF819D000084D7 /* PairingViewController.m */,
 				F2C93F7A18B8CDDD000AACA8 /* FacebookUserController.h */,
@@ -476,6 +477,7 @@
 				F28A173318AF4A43003A109C /* Images.xcassets in Resources */,
 				F2BCEF5718AF819D000084D7 /* README.mdown in Resources */,
 				F28A172518AF4A43003A109C /* InfoPlist.strings in Resources */,
+				F28A172E18AF4A43003A109C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,12 +530,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4523AB018AFB4BF005D3AF0 /* DaySummaryViewController.m in Sources */,
+				F2A9DC1D18B8F70B00FA145A /* LoginViewController.m in Sources */,
 				E4523AB118AFB4BF005D3AF0 /* User.m in Sources */,
 				E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */,
 				E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */,
 				F2C93F7F18B8D2BE000AACA8 /* RenrenUserController.m in Sources */,
 				CF48740118AFE0C700C86F65 /* ServerController.m in Sources */,
-				F2BCEF5018AF819D000084D7 /* LoginViewController.m in Sources */,
 				F2E38ED118B014B1008024DC /* FriendInvitationViewController.m in Sources */,
 				CF62D04118B8CB0C00D0CC4D /* Pair.m in Sources */,
 				F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */,
@@ -675,7 +677,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DCCDE68D5734624A622905D /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -697,7 +698,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DCCDE68D5734624A622905D /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
