@@ -76,48 +76,52 @@
     [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
     
     self.currentUser = [PFUser currentUser];
+    //Get the other user
     PFQuery *query1 = [Pair query];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
-    PFQuery *query2 = [Pair query];
-    [query1 whereKey:@"user2" equalTo:self.currentUser[@"facebookId"]];
-    
-    PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
-        // Do something with the returned PFObject in the gameScore variable.
-        if (error){
-            //Go to Invite Page
-            NSLog(@"No Such Pair");
-            __block UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
-            LoginViewController *login = (LoginViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Login"];
-            [self presentViewController:login animated:YES completion:^{
-                PairingViewController *pair = (PairingViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Pairing"];
-                [login.navigationController pushViewController:pair animated:NO];
-            }];
-        }else{
-
+    [query1 getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
+        if(object){
             self.pair = (Pair*)object;
-            self.messageInputView.textView.placeHolder = @"Say something...";
-            [self setBackgroundColor:[UIColor whiteColor]];
-            
-            NSString *otherUser = @"";
-            if ([object[@"user1"] isEqualToString: self.currentUser[@"facebookId"]]){
-                otherUser = object[@"user2"];
-            }else{
-                otherUser = object[@"user1"];
-            }
-            PFQuery *query = [PFUser query];
-            
-            [query whereKey:@"facebookId" equalTo:otherUser];
-            [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-                self.withUser = (PFUser *)object;
-                self.title = self.withUser[@"displayName"];
-                self.initialLoadComplete = NO;
-                
-                [self checkForNewChats];
-                self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
+            NSString *otherUser = object[@"user2"];
+            [self getOtherUser:otherUser];
+        }else{
+            PFQuery *query2 = [Pair query];
+            [query2 whereKey:@"user2" equalTo:self.currentUser[@"facebookId"]];
+            [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
+                if(object){
+                    self.pair = (Pair*)object;
+                    NSString *otherUser = object[@"user1"];
+                    [self getOtherUser:otherUser];
+                }else{
+                    __block UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+                    LoginViewController *login = (LoginViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Login"];
+                    [self presentViewController:login animated:YES completion:^{
+                        PairingViewController *pair = (PairingViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Pairing"];
+                        [login.navigationController pushViewController:pair animated:NO];
+                    }];
+                }
             }];
         }
     }];
+}
+
+- (void)getOtherUser:(NSString*)otherUser{
+    self.messageInputView.textView.placeHolder = @"Say something...";
+    [self setBackgroundColor:[UIColor whiteColor]];
+    
+    PFQuery *query = [PFUser query];
+    
+    [query whereKey:@"facebookId" equalTo:otherUser];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        //Possibly the Other User is not registered.
+        self.withUser = (PFUser *)object;
+        self.title = self.withUser[@"displayName"];
+        self.initialLoadComplete = NO;
+        
+        [self checkForNewChats];
+        self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
