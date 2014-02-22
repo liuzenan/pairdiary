@@ -50,7 +50,28 @@
 - (void)rennLoginSuccess{
     NSLog(@"renren user: %d",[RennClient isLogin]);
     [SVProgressHUD showWithStatus:@"Processing..."];
-    [self.loginDelegate renrenLoginSuccess];
+    PFQuery * query = [PFQuery queryWithClassName:@"User"];
+    [query whereKey:@"renrenId" equalTo:[NSString stringWithFormat:@"%@",[RennClient uid]]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            if([objects count] > 0){
+                NSLog(@"current user exists.");
+                [PFUser logInWithUsernameInBackground:[objects[0] objectForKey:@"username"] password:[NSString stringWithFormat:@"%@",[objects[0] objectForKey:@"password"]]  block:^(PFUser *user, NSError *error) {
+                    if(!error){
+                        [self.loginDelegate renrenLoginSuccessWithExistUser];
+                    }
+                }];
+            }else{
+                NSLog(@"current user is a new user.");
+                [self.loginDelegate renrenLoginSuccessWithNewUser];
+
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
 }
 - (void)rennLogoutSuccess{
     [self.loginDelegate renrenLogoutSuccess];

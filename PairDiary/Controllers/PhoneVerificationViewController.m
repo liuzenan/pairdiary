@@ -28,6 +28,12 @@
 {
     [super viewDidLoad];
     [SVProgressHUD dismiss];
+    NSLog(@"current user: %@",[PFUser currentUser]);
+    if([PFUser currentUser]){
+        //TO DO: change to use user model to persist.
+        PFUser * currentUser = [PFUser currentUser];
+        self.username.text = currentUser[@"username"];
+    }
 	// Do any additional setup after loading the view.
 }
 

@@ -13,7 +13,8 @@
 
 @protocol RenrenLoginDelegate <NSObject>
 
-- (void) renrenLoginSuccess;
+- (void) renrenLoginSuccessWithNewUser;
+- (void) renrenLoginSuccessWithExistUser;
 - (void) renrenLoginFailedWithError:(NSError *)error;
 - (void) renrenLogoutSuccess;
 

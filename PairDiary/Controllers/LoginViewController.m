@@ -68,10 +68,15 @@
     [[RenrenUserController sharedInstance] loginRenrenUser];
 }
 
--(void) renrenLoginSuccess {
+-(void) renrenLoginSuccessWithNewUser {
     GetUserLoginParam *userParam = [[GetUserLoginParam alloc] init];
     [RennClient sendAsynRequest:userParam delegate:self];
-    //[self performSegueWithIdentifier:@"pushPairing" sender:self];
+}
+
+-(void) renrenLoginSuccessWithExistUser {
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    PhoneVerificationViewController * PVViewController =(PhoneVerificationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Phone Verification"];
+    [self presentViewController:PVViewController animated:YES completion:Nil];
 }
 
 - (void) renrenLoginFailedWithError:(NSError*)error {
@@ -85,12 +90,19 @@
 }
 
 - (void)rennService:(RennService *)service requestSuccessWithResponse:(id)response{
-    NSLog(@"user name %@",[response objectForKey:@"name"]);
-    NSLog(@"user id %@",[response objectForKey:@"id"]);
-    NSLog(@"head profile url: %@",[[[response objectForKey:@"avatar"] objectAtIndex:1] objectForKey:@"url"]);
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    PhoneVerificationViewController * PVViewController =(PhoneVerificationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Phone Verification"];
-    [self presentViewController:PVViewController animated:YES completion:Nil];
+    NSLog(@"user name %@",response);
+    PFUser *user = [PFUser user];
+    user.username =[response objectForKey:@"name"];
+    user.password = [NSString stringWithFormat:@"%@",[response objectForKey:@"id"]];
+    user[@"profileUrl"] = [[[response objectForKey:@"avatar"] objectAtIndex:1] objectForKey:@"url"];
+    user[@"renrenId"] = [NSString stringWithFormat:@"%@",[response objectForKey:@"id"]];
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if(succeeded){
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+            PhoneVerificationViewController * PVViewController =(PhoneVerificationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Phone Verification"];
+            [self presentViewController:PVViewController animated:YES completion:Nil];
+        }
+    }];
 }
 - (void)rennService:(RennService *)service requestFailWithError:(NSError*)error{
     [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"login failed with reason: %@",error]];

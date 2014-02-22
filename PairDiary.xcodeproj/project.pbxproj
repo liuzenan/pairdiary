@@ -16,10 +16,8 @@
 		CF62D04118B8CB0C00D0CC4D /* Pair.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62D04018B8CB0C00D0CC4D /* Pair.m */; };
 		E42991E418AF877300EDF2CF /* DiaryTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E318AF877300EDF2CF /* DiaryTopCell.m */; };
 		E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E42991E618AF878100EDF2CF /* DiaryDayCell.m */; };
-		E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4C18AF819D000084D7 /* SVProgressHUD.m */; };
 		E4523AB018AFB4BF005D3AF0 /* DaySummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF2F18AF819D000084D7 /* DaySummaryViewController.m */; };
 		E4523AB118AFB4BF005D3AF0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3A18AF819D000084D7 /* User.m */; };
-		E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4318AF819D000084D7 /* EGOCache.m */; };
 		E4523ABC18AFB885005D3AF0 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4523ABB18AFB885005D3AF0 /* DiaryViewController.m */; };
 		F28A171B18AF4A43003A109C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171A18AF4A43003A109C /* Foundation.framework */; };
 		F28A171D18AF4A43003A109C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A171C18AF4A43003A109C /* CoreGraphics.framework */; };
@@ -47,11 +45,6 @@
 		F2A9DC1D18B8F70B00FA145A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A9DC1C18B8F70B00FA145A /* LoginViewController.m */; };
 		F2B6D73818B9122A003CE290 /* PhoneVerificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B6D73718B9122A003CE290 /* PhoneVerificationViewController.m */; };
 		F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3518AF819D000084D7 /* PairingViewController.m */; };
-		F2BCEF5418AF819D000084D7 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3E18AF819D000084D7 /* ECSlidingViewController.m */; };
-		F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4018AF819D000084D7 /* UIImage+ImageWithUIView.m */; };
-		F2BCEF5718AF819D000084D7 /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = F2BCEF4418AF819D000084D7 /* README.mdown */; };
-		F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4718AF819D000084D7 /* PopoverView.m */; };
-		F2BCEF5918AF819D000084D7 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2BCEF4A18AF819D000084D7 /* SVProgressHUD.bundle */; };
 		F2C93F7618B8C7B5000AACA8 /* RennSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C93F7518B8C7B5000AACA8 /* RennSDK.framework */; };
 		F2C93F7918B8C82B000AACA8 /* RennSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F2C93F7818B8C82B000AACA8 /* RennSDK.bundle */; };
 		F2C93F7C18B8CDDD000AACA8 /* FacebookUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C93F7B18B8CDDD000AACA8 /* FacebookUserController.m */; };
@@ -127,19 +120,6 @@
 		F2BCEF3518AF819D000084D7 /* PairingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairingViewController.m; sourceTree = "<group>"; };
 		F2BCEF3918AF819D000084D7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F2BCEF3A18AF819D000084D7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		F2BCEF3D18AF819D000084D7 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
-		F2BCEF3E18AF819D000084D7 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
-		F2BCEF3F18AF819D000084D7 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
-		F2BCEF4018AF819D000084D7 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
-		F2BCEF4218AF819D000084D7 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
-		F2BCEF4318AF819D000084D7 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
-		F2BCEF4418AF819D000084D7 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
-		F2BCEF4618AF819D000084D7 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
-		F2BCEF4718AF819D000084D7 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
-		F2BCEF4818AF819D000084D7 /* PopoverView_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView_Configuration.h; sourceTree = "<group>"; };
-		F2BCEF4A18AF819D000084D7 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		F2BCEF4B18AF819D000084D7 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		F2BCEF4C18AF819D000084D7 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		F2C93F7518B8C7B5000AACA8 /* RennSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RennSDK.framework; sourceTree = "<group>"; };
 		F2C93F7818B8C82B000AACA8 /* RennSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RennSDK.bundle; sourceTree = "<group>"; };
 		F2C93F7A18B8CDDD000AACA8 /* FacebookUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookUserController.h; sourceTree = "<group>"; };
@@ -200,7 +180,6 @@
 		F28A170E18AF4A43003A109C = {
 			isa = PBXGroup;
 			children = (
-				F2BCEF3B18AF819D000084D7 /* Vendor */,
 				F28A172018AF4A43003A109C /* PairDiary */,
 				F28A173F18AF4A43003A109C /* PairDiaryTests */,
 				F28A171918AF4A43003A109C /* Frameworks */,
@@ -330,59 +309,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F2BCEF3B18AF819D000084D7 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				F2BCEF3C18AF819D000084D7 /* ECSlidingViewController */,
-				F2BCEF4118AF819D000084D7 /* EGOCache */,
-				F2BCEF4518AF819D000084D7 /* PopoverView */,
-				F2BCEF4918AF819D000084D7 /* SVProgressHUD */,
-			);
-			name = Vendor;
-			path = PairDiary/Vendor;
-			sourceTree = "<group>";
-		};
-		F2BCEF3C18AF819D000084D7 /* ECSlidingViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F2BCEF3D18AF819D000084D7 /* ECSlidingViewController.h */,
-				F2BCEF3E18AF819D000084D7 /* ECSlidingViewController.m */,
-				F2BCEF3F18AF819D000084D7 /* UIImage+ImageWithUIView.h */,
-				F2BCEF4018AF819D000084D7 /* UIImage+ImageWithUIView.m */,
-			);
-			path = ECSlidingViewController;
-			sourceTree = "<group>";
-		};
-		F2BCEF4118AF819D000084D7 /* EGOCache */ = {
-			isa = PBXGroup;
-			children = (
-				F2BCEF4218AF819D000084D7 /* EGOCache.h */,
-				F2BCEF4318AF819D000084D7 /* EGOCache.m */,
-				F2BCEF4418AF819D000084D7 /* README.mdown */,
-			);
-			path = EGOCache;
-			sourceTree = "<group>";
-		};
-		F2BCEF4518AF819D000084D7 /* PopoverView */ = {
-			isa = PBXGroup;
-			children = (
-				F2BCEF4618AF819D000084D7 /* PopoverView.h */,
-				F2BCEF4718AF819D000084D7 /* PopoverView.m */,
-				F2BCEF4818AF819D000084D7 /* PopoverView_Configuration.h */,
-			);
-			path = PopoverView;
-			sourceTree = "<group>";
-		};
-		F2BCEF4918AF819D000084D7 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				F2BCEF4A18AF819D000084D7 /* SVProgressHUD.bundle */,
-				F2BCEF4B18AF819D000084D7 /* SVProgressHUD.h */,
-				F2BCEF4C18AF819D000084D7 /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
 		F2C93F7718B8C806000AACA8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,10 +404,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BCEF5918AF819D000084D7 /* SVProgressHUD.bundle in Resources */,
 				F2C93F7918B8C82B000AACA8 /* RennSDK.bundle in Resources */,
 				F28A173318AF4A43003A109C /* Images.xcassets in Resources */,
-				F2BCEF5718AF819D000084D7 /* README.mdown in Resources */,
 				F28A172518AF4A43003A109C /* InfoPlist.strings in Resources */,
 				F28A172E18AF4A43003A109C /* Main.storyboard in Resources */,
 			);
@@ -538,19 +462,14 @@
 				E4523AB018AFB4BF005D3AF0 /* DaySummaryViewController.m in Sources */,
 				F2A9DC1D18B8F70B00FA145A /* LoginViewController.m in Sources */,
 				E4523AB118AFB4BF005D3AF0 /* User.m in Sources */,
-				E4523AB218AFB4BF005D3AF0 /* EGOCache.m in Sources */,
-				E4523AAE18AFB412005D3AF0 /* SVProgressHUD.m in Sources */,
 				F2C93F7F18B8D2BE000AACA8 /* RenrenUserController.m in Sources */,
 				CF48740118AFE0C700C86F65 /* ServerController.m in Sources */,
 				F2E38ED118B014B1008024DC /* FriendInvitationViewController.m in Sources */,
 				CF62D04118B8CB0C00D0CC4D /* Pair.m in Sources */,
-				F2BCEF5818AF819D000084D7 /* PopoverView.m in Sources */,
-				F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */,
 				CF4873FE18AFE01800C86F65 /* StatisticsController.m in Sources */,
 				E4523ABC18AFB885005D3AF0 /* DiaryViewController.m in Sources */,
 				F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */,
 				CF4873F818AFC33200C86F65 /* PairDiaryMessageViewController.m in Sources */,
-				F2BCEF5418AF819D000084D7 /* ECSlidingViewController.m in Sources */,
 				F2B6D73818B9122A003CE290 /* PhoneVerificationViewController.m in Sources */,
 				CF62D03E18B8C44B00D0CC4D /* Diary.m in Sources */,
 				E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */,

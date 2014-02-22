@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface PhoneVerificationViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *username;
+@property (weak, nonatomic) IBOutlet UIImageView *phoneNumber;
+@property (weak, nonatomic) IBOutlet UIImageView *verificationCode;
 
 @end
