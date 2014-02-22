@@ -49,6 +49,7 @@
 
 - (void)rennLoginSuccess{
     NSLog(@"renren user: %d",[RennClient isLogin]);
+    [SVProgressHUD showWithStatus:@"Processing..."];
     [self.loginDelegate renrenLoginSuccess];
 }
 - (void)rennLogoutSuccess{

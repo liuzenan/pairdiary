@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "PhoneVerificationViewController.h"
 
 @interface LoginViewController ()
 
@@ -68,7 +69,9 @@
 }
 
 -(void) renrenLoginSuccess {
-    [self performSegueWithIdentifier:@"pushPairing" sender:self];
+    GetUserLoginParam *userParam = [[GetUserLoginParam alloc] init];
+    [RennClient sendAsynRequest:userParam delegate:self];
+    //[self performSegueWithIdentifier:@"pushPairing" sender:self];
 }
 
 - (void) renrenLoginFailedWithError:(NSError*)error {
@@ -79,6 +82,18 @@
 
 - (void) renrenLogoutSuccess {
     [SVProgressHUD showWithStatus:@"logout successfully!"];
+}
+
+- (void)rennService:(RennService *)service requestSuccessWithResponse:(id)response{
+    NSLog(@"user name %@",[response objectForKey:@"name"]);
+    NSLog(@"user id %@",[response objectForKey:@"id"]);
+    NSLog(@"head profile url: %@",[[[response objectForKey:@"avatar"] objectAtIndex:1] objectForKey:@"url"]);
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    PhoneVerificationViewController * PVViewController =(PhoneVerificationViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Phone Verification"];
+    [self presentViewController:PVViewController animated:YES completion:Nil];
+}
+- (void)rennService:(RennService *)service requestFailWithError:(NSError*)error{
+    [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"login failed with reason: %@",error]];
 }
 
 @end
