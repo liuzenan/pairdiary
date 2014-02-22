@@ -76,9 +76,9 @@
     [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
     
     self.currentUser = [PFUser currentUser];
-    PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
+    PFQuery *query1 = [Pair query];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
-    PFQuery *query2 = [PFQuery queryWithClassName:@"Pair"];
+    PFQuery *query2 = [Pair query];
     [query1 whereKey:@"user2" equalTo:self.currentUser[@"facebookId"]];
     
     PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
@@ -95,7 +95,7 @@
             }];
         }else{
 
-            self.pair = object;
+            self.pair = (Pair*)object;
             self.messageInputView.textView.placeHolder = @"Say something...";
             [self setBackgroundColor:[UIColor whiteColor]];
             
