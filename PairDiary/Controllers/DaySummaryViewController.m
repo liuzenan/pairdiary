@@ -13,6 +13,8 @@
 @end
 
 @implementation DaySummaryViewController
+@synthesize pairId;
+@synthesize date;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

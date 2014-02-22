@@ -468,11 +468,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/qiyuesong/Documents/IOS\\ Projects/PairDiary",
-<<<<<<< HEAD
 					/Users/shaohuanli/Developer/pairdiary,
-=======
 					"/Volumes/Macintosh\\ HD/Users/liuzenan/Documents/Project/pairdiary",
->>>>>>> fc3af9d74f6b98da73bec014c043b47250ef4a69
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PairDiary/PairDiary-Prefix.pch";
@@ -491,11 +488,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/qiyuesong/Documents/IOS\\ Projects/PairDiary",
-<<<<<<< HEAD
 					/Users/shaohuanli/Developer/pairdiary,
-=======
 					"/Volumes/Macintosh\\ HD/Users/liuzenan/Documents/Project/pairdiary",
->>>>>>> fc3af9d74f6b98da73bec014c043b47250ef4a69
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PairDiary/PairDiary-Prefix.pch";

@@ -11,7 +11,9 @@
 #import "DiaryTopCell.h"
 #import "DiaryDayCell.h"
 #import "StatisticsController.h"
+#import "DaySummaryViewController.h"
 #import "Chat.h"
+#import "Diary.h"
 
 @interface DiaryViewController ()
 
@@ -33,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [ServerController getImportantMessages:[NSDate date] forPair:self.pairId handler:^(NSArray * diaries) {
+    [ServerController getPairDiary:self.pairId handler:^(NSArray * diaries) {
         self.dataList = diaries;
         [self.tableView reloadData];
     }];
@@ -74,14 +76,14 @@
         static NSString *CellIdentifier = @"DiaryTopCell";
         DiaryTopCell *cell = (DiaryTopCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
-        [StatisticsController totalMessageCount:self.pairId handler:
-         ^(NSInteger totalMessages){
-              [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",(long)totalMessages]];
+        [StatisticsController totalChatCount:self.pairId handler:
+         ^(NSInteger totalChats){
+              [cell.totalMsg setText: [NSString stringWithFormat:@"%ld",(long)totalChats]];
          }];
        
-        [StatisticsController todayMessageCount:self.pairId handler:
-         ^(NSInteger todayMessages){
-             [cell.todayMsg setText: [NSString stringWithFormat:@"%ld",(long)todayMessages]];
+        [StatisticsController todayChatCount:self.pairId handler:
+         ^(NSInteger todayChats){
+             [cell.todayMsg setText: [NSString stringWithFormat:@"%ld",(long)todayChats]];
          }];
 
         [StatisticsController totalPhotos:self.pairId handler:
@@ -93,16 +95,16 @@
             [cell.numDays setText:[NSString stringWithFormat:@"%ld", (long)totalDates]];
         }];
         
-        [StatisticsController totalSavedMessage:self.pairId handler:^(NSInteger totalSavedMessage){
-            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", (long)totalSavedMessage]];
+        [StatisticsController totalDiary:self.pairId handler:^(NSInteger totalDiary){
+            [cell.numOfMsgInDiary setText:[NSString stringWithFormat:@"%ld", (long)totalDiary]];
         }];
         return cell;
     } else {
         static NSString *CellIdentifier = @"DiaryDayCell";
         DiaryDayCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-        PFObject* diary = (PFObject*)[self.dataList objectAtIndex:indexPath.row];
+        Diary* diary = [self.dataList objectAtIndex:indexPath.row];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm"];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         NSString *dateDisplay = [dateFormatter stringFromDate:diary.createdAt];
         cell.dateLabel.text = dateDisplay;
         cell.msg.text = [diary objectForKey:@"message"];
@@ -117,6 +119,18 @@
         return 290.0;
     } else {
         return 144.0;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+    }else{
+        Diary* diary = [self.dataList objectAtIndex:indexPath.row];
+        DaySummaryViewController *dsvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DaySummary"];
+        //dsvc.pairId = diary.pairId;
+        //dsvc.date = diary.date;
+        [self.navigationController pushViewController:dsvc animated:YES];
     }
 }
 

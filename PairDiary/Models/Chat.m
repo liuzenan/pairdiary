@@ -7,19 +7,19 @@
 //
 
 #import "Chat.h"
+#import <Parse/PFObject+Subclass.h>
+
+NSString *const ChatClassKey = @"Chat";
 
 @implementation Chat
 
-@synthesize text,pairId,fromUser,toUser;
+@dynamic text;
+@dynamic pairId;
+@dynamic fromUser;
+@dynamic toUser;
 
-- (Chat*)initWithPFObject:(PFObject *)chat{
-    self = [super init];
-    if(self){
-        self.text = [chat objectForKey:@"text"];
-        self.pairId = [chat objectForKey:@"pairId"];
-        self.fromUser = [chat objectForKey:@"fromUser"];
-        self.toUser = [chat objectForKey:@"toUser"];
-    }
-    return self;
++ (NSString *)parseClassName {
+    return ChatClassKey;
 }
+
 @end

@@ -77,48 +77,52 @@
     [self.messageInputView.sendButton.titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Bold" size:20.0f]];
     
     self.currentUser = [PFUser currentUser];
-    PFQuery *query1 = [PFQuery queryWithClassName:@"Pair"];
+    //Get the other user
+    PFQuery *query1 = [Pair query];
     [query1 whereKey:@"user1" equalTo:self.currentUser[@"facebookId"]];
-    PFQuery *query2 = [PFQuery queryWithClassName:@"Pair"];
-    [query1 whereKey:@"user2" equalTo:self.currentUser[@"facebookId"]];
-    
-    PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
-        // Do something with the returned PFObject in the gameScore variable.
-        if (error){
-            //Go to Invite Page
-            NSLog(@"No Such Pair");
-            __block UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
-            LoginViewController *login = (LoginViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Login"];
-            [self presentViewController:login animated:YES completion:^{
-                PairingViewController *pair = (PairingViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Pairing"];
-                [login.navigationController pushViewController:pair animated:NO];
-            }];
+    [query1 getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
+        if(object){
+            self.pair = (Pair*)object;
+            NSString *otherUser = object[@"user2"];
+            [self getOtherUser:otherUser];
         }else{
-
-            self.pair = object;
-            self.messageInputView.textView.placeHolder = @"Say something...";
-            [self setBackgroundColor:[UIColor whiteColor]];
-            
-            NSString *otherUser = @"";
-            if ([object[@"user1"] isEqualToString: self.currentUser[@"facebookId"]]){
-                otherUser = object[@"user2"];
-            }else{
-                otherUser = object[@"user1"];
-            }
-            PFQuery *query = [PFUser query];
-            
-            [query whereKey:@"facebookId" equalTo:otherUser];
-            [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-                self.withUser = (PFUser *)object;
-                self.title = self.withUser[@"displayName"];
-                self.initialLoadComplete = NO;
-                
-                [self checkForNewChats];
-                self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
+            PFQuery *query2 = [Pair query];
+            [query2 whereKey:@"user2" equalTo:self.currentUser[@"facebookId"]];
+            [query2 getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error){
+                if(object){
+                    self.pair = (Pair*)object;
+                    NSString *otherUser = object[@"user1"];
+                    [self getOtherUser:otherUser];
+                }else{
+                    __block UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+                    LoginViewController *login = (LoginViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Login"];
+                    [self presentViewController:login animated:YES completion:^{
+                        PairingViewController *pair = (PairingViewController*)[storyboard instantiateViewControllerWithIdentifier:@"Pairing"];
+                        [login.navigationController pushViewController:pair animated:NO];
+                    }];
+                }
             }];
         }
     }];
+}
+
+- (void)getOtherUser:(NSString*)otherUser{
+    self.messageInputView.textView.placeHolder = @"Say something...";
+    [self setBackgroundColor:[UIColor whiteColor]];
+    
+    PFQuery *query = [PFUser query];
+    
+    [query whereKey:@"facebookId" equalTo:otherUser];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        //Possibly the Other User is not registered.
+        self.withUser = (PFUser *)object;
+        self.title = self.withUser[@"displayName"];
+        self.initialLoadComplete = NO;
+        
+        [self checkForNewChats];
+        self.chatsTimer = [NSTimer scheduledTimerWithTimeInterval:15 target:self selector:@selector(checkForNewChats) userInfo:nil repeats:YES];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -148,11 +152,11 @@
 -(void)didSendText:(NSString *)text {
     
     if (text.length != 0) {
-        PFObject *chat = [PFObject objectWithClassName:@"Chat"];
-        [chat setObject:self.pair.objectId forKey:@"pairId"];
-        [chat setObject:self.currentUser[@"facebookId"] forKey:@"fromUser"];
-        [chat setObject:self.withUser[@"facebookId"] forKey:@"toUser"];
-        [chat setObject:text forKey:@"text"];
+        Chat *chat=[Chat object];
+        chat.pairId = self.pair.objectId;
+        chat.fromUser = self.currentUser[@"facebookId"] ;
+        chat.toUser = self.withUser[@"facebookId"];
+        chat.text = text;
         [self.chats addObject:chat];
         [self.messageInputView.sendButton setEnabled:NO];
         [self.tableView reloadData];
@@ -167,7 +171,7 @@
 
 -(JSBubbleMessageType)messageTypeForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSString *testFromUser = chat[@"fromUser"];
     
     if ([testFromUser isEqualToString:self.currentUser[@"facebookId"]]) {
@@ -181,7 +185,7 @@
 
 -(UIImageView *)bubbleImageViewWithType:(JSBubbleMessageType)type forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSString *testFromUser = chat[@"fromUser"];
     
     if ([testFromUser isEqualToString:self.currentUser[@"facebookId"]]) {
@@ -255,9 +259,7 @@
 
 - (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
 {
-    NSLog(@"tapped");
-    PFObject *chat = self.chats[recognizer.view.tag];
-    NSLog(@"%@", chat.objectId);
+    Chat *chat = self.chats[recognizer.view.tag];
     self.saveObjectId = chat.objectId;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
     
@@ -269,7 +271,7 @@
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([buttonTitle isEqualToString:@"Save"]) {
         NSLog(@"save the msg");
-        [ServerController saveMessageToDiary:self.saveObjectId];
+        [ServerController saveChatToDiary:self.saveObjectId];
         
     }
 }
@@ -284,14 +286,14 @@
 
 -(NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSString *message = chat[@"text"];
     return message;
 }
 
 -(NSDate *)timestampForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSDate *date = chat.createdAt;
     return date;
 }
@@ -312,7 +314,7 @@
     
     NSInteger oldChatCount = [self.chats count];
     
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+    PFQuery *queryForChats = [Chat query];
     [queryForChats whereKey:@"pairId" equalTo:self.pair.objectId];
     [queryForChats orderByAscending:@"createdAt"];
     [queryForChats findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {

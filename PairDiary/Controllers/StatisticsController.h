@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+#import "Diary.h"
+#import "Chat.h"
 
 @interface StatisticsController : NSObject
-+ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block;
-+ (void)todayMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)totalChatCount:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)todayChatCount:(NSString *)pairId handler:(void(^)(NSInteger))block;
 + (void)totalPhotos:(NSString *)pairId handler:(void(^)(NSInteger))block;
 + (void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block;
-+(void)totalSavedMessage:(NSString *)pairId handler:(void(^)(NSInteger))block;
-+ (void)totalMessageForDate: (NSDate*)date forPair:(NSString *)pairId handler:(void(^)(NSInteger))block;
++(void)totalDiary:(NSString *)pairId handler:(void(^)(NSInteger))block;
++ (void)totalDiaryForDate: (NSDate*)date forPair:(NSString *)pairId handler:(void(^)(NSInteger))block;
 + (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
 @end
