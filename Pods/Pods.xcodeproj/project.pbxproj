@@ -10,13 +10,18 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+<<<<<<< HEAD
 		<key>0118F0973F5D4A7BB8924638</key>
+=======
+		<key>00206BE2B7E74F18AF5EF4F6</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-square-blue@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-blue@2x.png</string>
@@ -36,12 +41,22 @@
 			</dict>
 		</dict>
 		<key>01E809F33B7644C6A7F836CA</key>
+=======
+			<string>input-bar-flat</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-flat</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>00821FFF25574868A0BB4816</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-selected.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-selected.png</string>
@@ -107,9 +122,42 @@
 			<array/>
 			<key>dependencies</key>
 			<array/>
+=======
+			<string>bubble-classic-green.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-green.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>00EB3FF42E1940C0BA7DF274</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
 			<key>name</key>
+			<string>bubble-classic-square-blue@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-blue@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0123AF733D5F42629BA18B70</key>
+		<dict>
+			<key>fileRef</key>
+			<string>03446DE34A6447F08D58C29C</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01C48A171BDF4CA793F751AA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+<<<<<<< HEAD
 			<string>Pods-CXPhotoBrowser</string>
 			<key>productName</key>
 			<string>Pods-CXPhotoBrowser</string>
@@ -119,6 +167,15 @@
 			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>0484BBC3EFA74477A068385D</key>
+=======
+			<string>bubble.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>02149E14552747A0B578A809</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -127,24 +184,26 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
+<<<<<<< HEAD
 			<string>libPods-JSMessagesViewController.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>049BE3BAD6ED444B8E853F87</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>send-button.png</string>
-			<key>path</key>
-			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button.png</string>
+=======
+			<string>libPods-CXPhotoBrowser.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>0B0D58D6868E4DD09D27BFFE</key>
+		<key>022933A50F28487EAE45FAFB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3EC3CF64C0324535A9628B1C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>029F80170E98439DBEDBACB0</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -153,6 +212,33 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
+			<string>CXBrowserToolBarView.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXBrowserToolBarView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+<<<<<<< HEAD
+		<key>0B0D58D6868E4DD09D27BFFE</key>
+=======
+		<key>032C54EC9BF54A8080458A8C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9616DD70432444249CAE6A48</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>03446DE34A6447F08D58C29C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+<<<<<<< HEAD
 			<string>CXTapDetectingView.h</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXTapDetectingView.h</string>
@@ -160,12 +246,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0BEEE3BE29FE4D8C9408020C</key>
+=======
+			<string>JSQSystemSoundPlayer.h</string>
+			<key>path</key>
+			<string>JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0381609A10C4471A8F9DBE29</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>button-photo@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/input-bar-flat/button-photo@2x.png</string>
@@ -173,11 +269,21 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0C7D09AF17F84510A4585D57</key>
+=======
+			<string>Images</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>051CC87A871241CA984ADFEA</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>bubble-classic-square</string>
 			<key>path</key>
@@ -196,9 +302,55 @@
 		<dict>
 			<key>fileRef</key>
 			<string>54330FA3B6F543889BDF5F6C</string>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSMessageSoundEffect.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageSoundEffect.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06ABCE51D08C4D3D996886AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4247A53ADF9B428A906DD6E5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>06C9184A2BA54637BAF878C1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D31934550548414E8309C5E7</string>
+				<string>264DBF9F100B4105893861D8</string>
+				<string>F8DF601C899540E68DC39EA0</string>
+				<string>B88A492954424AD3A7C92788</string>
+				<string>F35B9D22D09F414F994F2806</string>
+				<string>C75EC1BF25DB41E69894550E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0844F946ED7148048919262E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EB1086D5A12E44679BD0B505</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+<<<<<<< HEAD
 		<key>10C092CE01A941BBBFA68227</key>
 		<dict>
 			<key>fileRef</key>
@@ -212,12 +364,29 @@
 			</dict>
 		</dict>
 		<key>11C666078FDE43E2AB19C033</key>
+=======
+		<key>0876283E668E4BB6A6A88800</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>06C9184A2BA54637BAF878C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0898C1BDF8D44B3AAC5D5EB6</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>JSBubbleView.m</string>
@@ -280,9 +449,31 @@
 			<string>Debug</string>
 		</dict>
 		<key>145D5E3A59F544D9A5FD69EA</key>
+=======
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-CXPhotoBrowser-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>092A4B3E5A1B47008C1B43FA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6603EFC9E5B44ACBB899067</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>0A03D1395DE4478E9435073B</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>children</key>
 			<array>
+<<<<<<< HEAD
 				<string>A052922429304E0E969C632E</string>
 				<string>4A4569B001FE4E22985CC87B</string>
 				<string>0484BBC3EFA74477A068385D</string>
@@ -297,20 +488,32 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>14AF4B9FC8B74ECE9911C480</key>
+=======
+				<string>14E30EB8C50B4DABB7AA9460</string>
+				<string>AA64E69E388746C7A2F534B9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>0AFB0423B4B04F70BC0C976F</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>JSMessagesViewController.h</string>
+			<string>bubble-classic-square-selected.png</string>
 			<key>path</key>
-			<string>JSMessagesViewController/Classes/JSMessagesViewController.h</string>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-selected.png</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+<<<<<<< HEAD
 		<key>14ED1FAEC51244B89F5DF156</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -332,20 +535,49 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>16B02E0058444EF1BFDE9B92</key>
+=======
+		<key>0AFC11D6003B4313B9C76AC7</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>7E38998ECB7743ACB5BBA03B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0B38E7EA469B4E6BB47C9DA2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BB96B5226D72483799A6F16C</string>
+				<string>C003F68179D247258E6F5347</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>0B9B87D43B1F45C8A18E736C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>UIImage+JSMessagesView.h</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Classes/Categories/UIImage+JSMessagesView.h</string>
+=======
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
+<<<<<<< HEAD
 		<key>1717DE0163DE439C90B32A7C</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -376,12 +608,31 @@
 			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>177F5792800A415F802BB561</key>
+=======
+		<key>0BD93DCA24194C6E940A3CB8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXPhotoLoadingView.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoLoadingView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E2DC029753249A0B8B818FE</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-stroked-tailless.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-stroked-tailless.png</string>
@@ -413,14 +664,62 @@
 			<string>0</string>
 		</dict>
 		<key>18322D5D9AE5474A919A9DAA</key>
+=======
+			<string>input-bar-classic</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0E9DB2072C124137AE1C3F94</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>69385A551B8948E2995E81B5</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>B9DB77A2D9954120ADBF9555</string>
+			<key>productRefGroup</key>
+			<string>72685112C9AA41EBA0ED2C87</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>A9CC540C67D340209C713715</string>
+				<string>4E3D66D9991D456B8B576EB3</string>
+				<string>667464125DF94D9C929E9E97</string>
+				<string>334D8516BF574A7C8D178F6D</string>
+				<string>52264CFB8F564681907BC09A</string>
+			</array>
+		</dict>
+		<key>1054DD2ED2BD4A2A93641DD8</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>JSMessageSoundEffect.m</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Classes/JSMessageSoundEffect.m</string>
@@ -428,11 +727,21 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1B35F7EBB4EF45139C08BC7D</key>
+=======
+			<string>bubble-classic-square-blue.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-blue.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13B99DC0C11F488B989C9065</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>text</string>
 			<key>path</key>
@@ -468,11 +777,84 @@
 			<string>0</string>
 		</dict>
 		<key>1E77BAFDDE824924931A5CBD</key>
+=======
+			<key>name</key>
+			<string>message-received.aiff</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Sounds/message-received.aiff</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14E30EB8C50B4DABB7AA9460</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1EF269FBFD4C4AB28037666B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-UIColor-HexString-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>15D1ACC0780340F6BC581152</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>52264CFB8F564681907BC09A</string>
+			<key>targetProxy</key>
+			<string>A8B3EF8AC54C45DE9599778E</string>
+		</dict>
+		<key>162C499FA9DD421E9DBCBE46</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
@@ -490,10 +872,48 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>1FACCF08ADA744ECAC6ED8F4</key>
+=======
+			<key>name</key>
+			<string>avatar-placeholder@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/avatar/avatar-placeholder@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>184D93672704483EB1558245</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>send-button.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>189F81C88B16440DA96E84E6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>18B19A5CDDB04B7CAAEBB680</string>
+				<string>351C1BEA71214BC792130254</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>18B19A5CDDB04B7CAAEBB680</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>fileRef</key>
+			<string>D9E2A45D03874829845D7CF8</string>
+			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
@@ -512,10 +932,21 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>20E88134A1244A228AB9B4EF</key>
+=======
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>18D9D9248C0B4533B84971EC</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>F1A1BE15EC7A424EB769E2DA</string>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
@@ -534,14 +965,30 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>21A5D30A04924937ADC850F0</key>
+=======
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>19DB1E9A56504EA4B1D2E5E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>45BDA039A39248A3A562F75C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>1AF3B1B94B144518A861F275</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>JSAvatarImageFactory.m</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Classes/Factories/JSAvatarImageFactory.m</string>
@@ -568,14 +1015,114 @@
 			</dict>
 		</dict>
 		<key>23A0768C604841B0BAD8184D</key>
+=======
+			<string>input-bar-flat.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-flat/input-bar-flat.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1B759F1C2AC64A789B3D8511</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>30A59C1A4E224EE492B09A8F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-JSMessagesViewController-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1CEFC67763E147599E4CF50E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>982C2BD66CFD41268ACB3E66</string>
+				<string>60C0034E1BE64571A66C40AC</string>
+				<string>A6D2B5E239D0472CB39830B8</string>
+				<string>022933A50F28487EAE45FAFB</string>
+				<string>FF258250AE2342ABB0788F8C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1EF269FBFD4C4AB28037666B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-UIColor-HexString-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB34721211A44B5867D68DB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7F4C33736A30483CA1A046B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>225FC6BFF93D45B89A74DAD1</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXTapDetectingImageView.h</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXTapDetectingImageView.h</string>
@@ -583,12 +1130,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2575DC3E55DB49A6957EF067</key>
+=======
+			<string>CXPhotoBrowser.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoBrowser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23380B3D18704A92983538D4</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-square-gray.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-gray.png</string>
@@ -599,6 +1156,25 @@
 		<dict>
 			<key>fileRef</key>
 			<string>21A5D30A04924937ADC850F0</string>
+=======
+			<string>bubble-stroked@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-stroked@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2353F3B4236840638CD18CB0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7D2F3AD368346CEAB174D4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>23570F15250E4DD0B7767830</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B9B87D43B1F45C8A18E736C</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -607,13 +1183,20 @@
 				<string>-fobjc-arc</string>
 			</dict>
 		</dict>
+<<<<<<< HEAD
 		<key>2949FE08A765499FAA645646</key>
+=======
+		<key>23DF748A34F4426B896F8EAE</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-green.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-green.png</string>
@@ -636,18 +1219,39 @@
 				<string>68D95A97F8F24DE488F1A0FA</string>
 				<string>F26C5519752F4AAE963ED1D0</string>
 			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+=======
+			<string>JSMessageInputView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageInputView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>252BE56A689D4133A4E8B7D4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-CXPhotoBrowser-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+<<<<<<< HEAD
 		<key>2A3B2B82E08B4E71916C7B9D</key>
+=======
+		<key>264DBF9F100B4105893861D8</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Pods-JSQSystemSoundPlayer-prefix.pch</string>
@@ -658,9 +1262,73 @@
 		<dict>
 			<key>fileRef</key>
 			<string>14AF4B9FC8B74ECE9911C480</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+=======
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2742C67CF77C40C68633B135</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>NO</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+<<<<<<< HEAD
 		<key>2C89BEACEC0B481D8D7506A3</key>
 		<dict>
 			<key>fileRef</key>
@@ -669,10 +1337,39 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>2D9E83FE3C0144A6AB6476A0</key>
+=======
+		<key>2880C863F56244B0A458E547</key>
+		<dict>
+			<key>fileRef</key>
+			<string>322CC4E9674D4A92B5C4100B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>28E89B4CD9BA454B9DAB3CB8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-classic-typing.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-typing.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>297C06E4DEBC4E4B9E95A848</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7D894F1A81342D5BDF2FDD0</string>
+				<string>1EF269FBFD4C4AB28037666B</string>
+				<string>7E38998ECB7743ACB5BBA03B</string>
+				<string>B3880BD0D2AD46BCAF205C7E</string>
+			</array>
+			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>text</string>
@@ -686,12 +1383,22 @@
 			<string>xcode.lang.ruby</string>
 		</dict>
 		<key>2F49259412124B8EB90D0303</key>
+=======
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>29F3D68BAE0F48DFB07D9DAB</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-UIColor-HexString-Private.xcconfig</string>
@@ -724,12 +1431,48 @@
 			<string>DEVELOPER_DIR</string>
 		</dict>
 		<key>30B0C671B1744C3DBD55E018</key>
+=======
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JSQSystemSoundPlayer-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2A2AD14F259241F5AA624440</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+			<string>bubble-min-tailless.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min-tailless.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2AF6A6F3076E43F4B25F38BA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-JSMessagesViewController.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2C84BB44615540E29DB53844</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+<<<<<<< HEAD
 			<string>Images</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images</string>
@@ -820,15 +1563,139 @@
 			<string>0</string>
 			<key>defaultConfigurationName</key>
 			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
+=======
+			<string>bubble-stroked-tailless.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-stroked-tailless.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>37928D88FBA24AE3AB476E74</key>
+		<key>2E525D1955C841DA83157E82</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSBubbleView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSBubbleView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2EDDB648683249B186A0EE40</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>52334967C9C64E99A50AC45E</string>
+				<string>37933407DDCC4FECA37FBE7A</string>
+				<string>BAF1AA28D0334FD69FC44813</string>
+				<string>E980C5FC118A4B42AC2778C7</string>
+				<string>48D6937103A14058B14B49B5</string>
+				<string>BE48E73B0D214383AD170247</string>
+				<string>50A6155CF2C04930A396F100</string>
+				<string>F895D9B6F8F045F6A0504014</string>
+				<string>F606CAE19DC544449B2CE648</string>
+				<string>794D2C3E9BFB4A8B8D7811F0</string>
+				<string>6D0B055FB1DB48C9AFE92CFA</string>
+				<string>6B7625790D504CC2B44CA9AD</string>
+				<string>ADE10BEF7C594E3D9F804515</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2EF80C74BEE148B096BF1B7A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-min@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30A59C1A4E224EE492B09A8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JSMessagesViewController-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3175E9465CE7430A8B5D3B25</key>
+		<dict>
+			<key>fileRef</key>
+			<string>33788ACA454B42BFBAECC7B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>319A6A424B3048679E7D9D9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-min.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>322CC4E9674D4A92B5C4100B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIColor+JSMessagesView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/UIColor+JSMessagesView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32F7EAB59C69497C91E4573B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>0E9DB2072C124137AE1C3F94</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>334D8516BF574A7C8D178F6D</string>
+			<key>remoteInfo</key>
+			<string>Pods-JSQSystemSoundPlayer</string>
+		</dict>
+<<<<<<< HEAD
+		<key>37928D88FBA24AE3AB476E74</key>
+=======
+		<key>3302ABBC8C45470B86FBB188</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>path</key>
@@ -840,9 +1707,33 @@
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
+=======
+			<key>name</key>
+			<string>bubble-classic-selected.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-selected.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>334D8516BF574A7C8D178F6D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>42DC1B1BB881459B928CE283</string>
+			<key>buildPhases</key>
+			<array>
+				<string>189F81C88B16440DA96E84E6</string>
+				<string>0B38E7EA469B4E6BB47C9DA2</string>
+				<string>68B28F27BA344A858C1015D2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-blue@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-blue@2x.png</string>
@@ -850,12 +1741,39 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3C2E6B484FE040FD87F42C18</key>
+=======
+			<string>Pods-JSQSystemSoundPlayer</string>
+			<key>productName</key>
+			<string>Pods-JSQSystemSoundPlayer</string>
+			<key>productReference</key>
+			<string>3EC3CF64C0324535A9628B1C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>33788ACA454B42BFBAECC7B5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-CXPhotoBrowser-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>34B7228640974D7C86E4FBE5</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-square-selected@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-selected@2x.png</string>
@@ -930,12 +1848,72 @@
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
 			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
+=======
+			<string>UIImage+JSMessagesView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/UIImage+JSMessagesView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>351C1BEA71214BC792130254</key>
+		<dict>
+			<key>fileRef</key>
+			<string>29F3D68BAE0F48DFB07D9DAB</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>362FFE6456664F5AA943669B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EC39FB2BE06E4B59960F201A</string>
+				<string>9A3165D8C6A64A2BADE155F1</string>
+				<string>0844F946ED7148048919262E</string>
+				<string>3D8E650AB3214C14A9D3536A</string>
+				<string>19DB1E9A56504EA4B1D2E5E0</string>
+				<string>092A4B3E5A1B47008C1B43FA</string>
+				<string>E49D4A0ACEA244D691A54E19</string>
+				<string>4F1A35B8185442019DBEDF08</string>
+				<string>3175E9465CE7430A8B5D3B25</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>367D128895674693B74BD1D6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5E923AC3869D4345BEA6511C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>37933407DDCC4FECA37FBE7A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>398BB2026CCC44F3B8854BC8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+<<<<<<< HEAD
 		<key>3EB13ACDF675401C93A9BDAD</key>
+=======
+		<key>382A750A3D8B473CA4A192BB</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>children</key>
 			<array>
@@ -944,6 +1922,7 @@
 				<string>E2F1E1DEFC6044478F85C7E6</string>
 			</array>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>UIColor-HexString</string>
@@ -958,6 +1937,24 @@
 			<array>
 				<string>50500124578A4C318EBB99F3</string>
 				<string>5B06015380004E87B8A21B7A</string>
+=======
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSBubbleImageViewFactory.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Factories/JSBubbleImageViewFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3839F8DD4EFB4BFC84485440</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C1A3EFD6AD1944348C3F597B</string>
+				<string>E146BCBACE094BDCAE66320E</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -966,12 +1963,17 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+<<<<<<< HEAD
 		<key>3F2A21BE97AF4BE091F7F6B6</key>
+=======
+		<key>398BB2026CCC44F3B8854BC8</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>bubble-flat</string>
 			<key>path</key>
@@ -987,12 +1989,44 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>418CC13933ED4620BCD8F199</key>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSBubbleImageViewFactory.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Factories/JSBubbleImageViewFactory.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3D39BF42D95241CD80B013B4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7DC75BDD1EE491195734EDC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D8E650AB3214C14A9D3536A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>225FC6BFF93D45B89A74DAD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>3DFCB536376D469A8FD04CAE</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>avatar</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/avatar</string>
@@ -1000,11 +2034,21 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>426E92B3D7AC42C4B83EC36C</key>
+=======
+			<string>bubble@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3E65EEDFE6F848ED855993F2</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+<<<<<<< HEAD
 				<string>260F2F14963B46CDAF0CEF2F</string>
 				<string>B8A1E171B4944806AB11DEF0</string>
 				<string>019B8C8E40054853B879E4A2</string>
@@ -1018,19 +2062,27 @@
 				<string>C784183A1FC74A5BBD4F18D2</string>
 				<string>9141D9323CA043DD969D95D0</string>
 				<string>F42EAE29B6434338B277B6ED</string>
+=======
+				<string>9034F11D66A043549E48866B</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+<<<<<<< HEAD
 		<key>44A99121C2004471BFD7AB51</key>
+=======
+		<key>3E840A42BDC341BFA5556CB3</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-JSMessagesViewController.xcconfig</string>
@@ -1051,12 +2103,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4756C01B5D83413889DCC318</key>
+=======
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JSQSystemSoundPlayer-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EA5E6C8F7054A39BF99A23C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>avatar-placeholder@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/avatar/avatar-placeholder@2x.png</string>
@@ -1064,6 +2126,57 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>48B385B105AE4084A1400C90</key>
+=======
+			<string>send-button-pressed.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button-pressed.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EC3CF64C0324535A9628B1C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+<<<<<<< HEAD
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXPhotoLoadingViewProtocol.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoLoadingViewProtocol.h</string>
+=======
+			<key>path</key>
+			<string>libPods-JSQSystemSoundPlayer.a</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3FABE3BE85074413BA40B7C6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8E0B0F43A0E345D6BDA92F8A</string>
+				<string>252BE56A689D4133A4E8B7D4</string>
+				<string>33788ACA454B42BFBAECC7B5</string>
+				<string>0898C1BDF8D44B3AAC5D5EB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+<<<<<<< HEAD
+		<key>48B9BAF226FC41A3A117B367</key>
+=======
+		<key>4247A53ADF9B428A906DD6E5</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1072,19 +2185,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>CXPhotoLoadingViewProtocol.h</string>
-			<key>path</key>
-			<string>CXPhotoBrowser/CXPhotoLoadingViewProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48B9BAF226FC41A3A117B367</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-stroked-tailless@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-stroked-tailless@2x.png</string>
@@ -1262,17 +2363,55 @@
 				<key>VALIDATE_PRODUCT</key>
 				<string>YES</string>
 			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
+=======
+			<string>JSAvatarImageFactory.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Factories/JSAvatarImageFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>42DC1B1BB881459B928CE283</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>5AE3036672AD42DE87988CEF</string>
+				<string>C7AC6D49A35A434BA2B8BE4C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>44BE4092AF4F49FE8C8831E1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>51FE0D338BF44417AABAAC7A</string>
+				<string>D4FCE30678EE48E08860FA40</string>
+				<string>29F3D68BAE0F48DFB07D9DAB</string>
+				<string>3E840A42BDC341BFA5556CB3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+<<<<<<< HEAD
 		<key>4F622B70494E412A89463FA6</key>
+=======
+		<key>45BDA039A39248A3A562F75C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>bubble-stroked.png</string>
 			<key>path</key>
@@ -1284,9 +2423,37 @@
 		<dict>
 			<key>fileRef</key>
 			<string>9C931B7FFCB34ED98A72CE1D</string>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CXPhotoLoadingView.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoLoadingView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47BE875DACB945D7A0005711</key>
+		<dict>
+			<key>fileRef</key>
+			<string>719C890FACAB490CA5E19A66</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>48D6937103A14058B14B49B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DB356001A27F455AACCA0145</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+<<<<<<< HEAD
 		<key>50500124578A4C318EBB99F3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -1341,12 +2508,16 @@
 			<string>Debug</string>
 		</dict>
 		<key>525DEE8A56C14D3F9BF95B62</key>
+=======
+		<key>4B9EF81A6B9D40988F44FF16</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-square-selected.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-selected.png</string>
@@ -1354,12 +2525,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>52CD1CFCD44346509EC35450</key>
+=======
+			<string>bubble-classic-blue@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-blue@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D013B6A1EB94B878BD87190</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>children</key>
 			<array>
 				<string>812F649A8C9342E5A6E7CC79</string>
 			</array>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Targets Support Files</string>
@@ -1367,11 +2548,25 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>537D23A387704D97A902D865</key>
+=======
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSAvatarImageFactory.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Factories/JSAvatarImageFactory.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D3BEAC75CE9487489250857</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
@@ -1382,12 +2577,31 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>54330FA3B6F543889BDF5F6C</key>
+=======
+			<key>name</key>
+			<string>bubble-classic-selected@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-selected@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E3D66D9991D456B8B576EB3</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>buildConfigurationList</key>
+			<string>3839F8DD4EFB4BFC84485440</string>
+			<key>buildPhases</key>
+			<array>
+				<string>362FFE6456664F5AA943669B</string>
+				<string>367D128895674693B74BD1D6</string>
+				<string>E580BE41269A4546BF347834</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>path</key>
 			<string>libPods-JSQSystemSoundPlayer.a</string>
@@ -1395,6 +2609,19 @@
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>55237F614B1C4413ACF3D8E8</key>
+=======
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-CXPhotoBrowser</string>
+			<key>productName</key>
+			<string>Pods-CXPhotoBrowser</string>
+			<key>productReference</key>
+			<string>02149E14552747A0B578A809</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>4EE1A682553643E897225364</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>fileRef</key>
 			<string>BE309405458D4BF2915D8726</string>
@@ -1450,15 +2677,26 @@
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>58E2B5442CEF453EAF9BD925</key>
+=======
+			<string>NSString+JSMessagesView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/NSString+JSMessagesView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F1A35B8185442019DBEDF08</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>51637A8F57B841368007D54F</string>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>name</key>
 			<string>input-bar-flat@2x.png</string>
@@ -1468,6 +2706,28 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5910602EC1CF482AA149794A</key>
+=======
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>50A6155CF2C04930A396F100</key>
+		<dict>
+			<key>fileRef</key>
+			<string>051CC87A871241CA984ADFEA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>51637A8F57B841368007D54F</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1475,17 +2735,29 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+<<<<<<< HEAD
 			<key>path</key>
 			<string>Pods-JSQSystemSoundPlayer-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5A181E4BE16A49AFA7479621</key>
+=======
+			<key>name</key>
+			<string>CXZoomingScrollView.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXZoomingScrollView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51FE0D338BF44417AABAAC7A</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>bubble-classic-typing.png</string>
 			<key>path</key>
@@ -1494,12 +2766,67 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5ABD03292E9A4BCAAE66CFE9</key>
+=======
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JSQSystemSoundPlayer.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52264CFB8F564681907BC09A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0A03D1395DE4478E9435073B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9A4F008368E14E25ACCE1A31</string>
+				<string>D713CCEB132442D5AD16897E</string>
+				<string>5A808AA13597400A9EBF2243</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-UIColor-HexString</string>
+			<key>productName</key>
+			<string>Pods-UIColor-HexString</string>
+			<key>productReference</key>
+			<string>C333B35001844D9FAE68B2CE</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>52334967C9C64E99A50AC45E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D013B6A1EB94B878BD87190</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>530131E125D9484A853971E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6B0C91F79B5546EC84028075</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56D6940F168C42ADA49D70AD</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-square-blue.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-blue.png</string>
@@ -1510,6 +2837,102 @@
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>2F49259412124B8EB90D0303</string>
+=======
+			<string>bubble-tailless.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-tailless.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56F8A1FBD8F54F69BF145B42</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXZoomingScrollView.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXZoomingScrollView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>587CD2E6B08943309D8246DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4247A53ADF9B428A906DD6E5</string>
+				<string>4D013B6A1EB94B878BD87190</string>
+				<string>382A750A3D8B473CA4A192BB</string>
+				<string>398BB2026CCC44F3B8854BC8</string>
+				<string>8368DBF8FF71406F84A0F6E7</string>
+				<string>F4A078DB8E2A4B3ABB1C77C6</string>
+				<string>A7D2F3AD368346CEAB174D4F</string>
+				<string>2E525D1955C841DA83157E82</string>
+				<string>719C890FACAB490CA5E19A66</string>
+				<string>DB356001A27F455AACCA0145</string>
+				<string>23DF748A34F4426B896F8EAE</string>
+				<string>8561CC6887ED4120B3627528</string>
+				<string>CA789584AFA04F248273A346</string>
+				<string>051CC87A871241CA984ADFEA</string>
+				<string>7F4C33736A30483CA1A046B5</string>
+				<string>75456C2FAC0645408EB19CBB</string>
+				<string>A7BEF8626E224D03B116B458</string>
+				<string>DA86DB2D4C4A4E8781EB741F</string>
+				<string>4EE1A682553643E897225364</string>
+				<string>71ACEC7516F842D8BC6A8B15</string>
+				<string>322CC4E9674D4A92B5C4100B</string>
+				<string>BFE6A3D095FA4D0EBB838533</string>
+				<string>34B7228640974D7C86E4FBE5</string>
+				<string>A3244956A76A4B46993DD4E2</string>
+				<string>94704CF0753F4717BB81279C</string>
+				<string>59F71B8D6F9D44D989CF8A33</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JSMessagesViewController</string>
+			<key>path</key>
+			<string>JSMessagesViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>59F71B8D6F9D44D989CF8A33</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6BD12DFD31124290BC3D69B1</string>
+				<string>30A59C1A4E224EE492B09A8F</string>
+				<string>C1FBD09654E941E99DD8D111</string>
+				<string>BF281B6B65F441E19611AE4B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>5A808AA13597400A9EBF2243</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3D39BF42D95241CD80B013B4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5AE3036672AD42DE87988CEF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D4FCE30678EE48E08860FA40</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -1517,31 +2940,36 @@
 				<key>ARCHS</key>
 				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
 				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
+				<string>NO</string>
 				<key>DSTROOT</key>
 				<string>/tmp/xcodeproj.dst</string>
 				<key>GCC_C_LANGUAGE_STANDARD</key>
 				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
+<<<<<<< HEAD
 				<string>Pods-UIColor-HexString-prefix.pch</string>
+=======
+				<string>Pods-JSQSystemSoundPlayer-prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 				<key>GCC_VERSION</key>
 				<string>com.apple.compilers.llvm.clang.1_0</string>
 				<key>INSTALL_PATH</key>
 				<string>$(BUILT_PRODUCTS_DIR)</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
 				<key>OTHER_LDFLAGS</key>
 				<string></string>
 				<key>PRODUCT_NAME</key>
@@ -1552,12 +2980,11 @@
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
 				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
 			</dict>
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>Release</string>
 		</dict>
 		<key>5B1E5DD803F24452BC7A0B80</key>
@@ -2037,6 +3464,38 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7D607BB9C8224EEB9513657C</key>
+=======
+			<string>Debug</string>
+		</dict>
+		<key>5D9ECEABEE6A4E5985C9F686</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>0E9DB2072C124137AE1C3F94</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>334D8516BF574A7C8D178F6D</string>
+			<key>remoteInfo</key>
+			<string>Pods-JSQSystemSoundPlayer</string>
+		</dict>
+		<key>5E923AC3869D4345BEA6511C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B9B87D43B1F45C8A18E736C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>60C0034E1BE64571A66C40AC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>02149E14552747A0B578A809</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6189A9A6FFAD47C0BCB855B6</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2049,6 +3508,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+<<<<<<< HEAD
 		<key>7E7C48ED76A4491B8F60904A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2125,10 +3585,121 @@
 			</dict>
 		</dict>
 		<key>83A6F12BB8154C49AF9E600C</key>
+=======
+		<key>64DD2D58C449425AB39CF864</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>baseConfigurationReference</key>
+			<string>30A59C1A4E224EE492B09A8F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-JSMessagesViewController-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
 			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>65635AB54CAC46FAB498DA5B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1B759F1C2AC64A789B3D8511</string>
+				<string>64DD2D58C449425AB39CF864</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>65B16E81E2A04824907B3612</key>
+		<dict>
+			<key>fileRef</key>
+			<string>382A750A3D8B473CA4A192BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>667464125DF94D9C929E9E97</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>65635AB54CAC46FAB498DA5B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2EDDB648683249B186A0EE40</string>
+				<string>67231A781B6D4BFBA57307EE</string>
+				<string>8795E5FF931B4087869A7282</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>90D07EA2E4B14E7FBF4CDE3D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JSMessagesViewController</string>
+			<key>productName</key>
+			<string>Pods-JSMessagesViewController</string>
+			<key>productReference</key>
+			<string>2AF6A6F3076E43F4B25F38BA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>67231A781B6D4BFBA57307EE</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>23570F15250E4DD0B7767830</string>
+				<string>BFDA29C8E3E6477F8F9F50CD</string>
+			</array>
+			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>name</key>
 			<string>bubble-min@2x.png</string>
@@ -2138,10 +3709,29 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>84DFAEB4194D4901A6ED4983</key>
+=======
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6728CFD080E047768371D697</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>CBC338FE7A104CECA8F1DD5A</string>
 			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B28F27BA344A858C1015D2</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0123AF733D5F42629BA18B70</string>
+			</array>
+			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>name</key>
 			<string>bubble-tailless@2x.png</string>
@@ -2151,10 +3741,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8EB17ACFB4AC48208C25D34F</key>
+=======
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68CE8D24FC7C4DAA91754FE7</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>03446DE34A6447F08D58C29C</string>
+				<string>D9E2A45D03874829845D7CF8</string>
+				<string>44BE4092AF4F49FE8C8831E1</string>
+			</array>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
@@ -2164,12 +3766,24 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8F414EEE69B84FE795B87DFB</key>
+=======
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JSQSystemSoundPlayer</string>
+			<key>path</key>
+			<string>JSQSystemSoundPlayer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68D70E856DD549D19E48F547</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>send-button@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button@2x.png</string>
@@ -2180,10 +3794,33 @@
 		<dict>
 			<key>fileRef</key>
 			<string>C46670C85F2446719DE2F22F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+=======
+			<string>bubble-classic-square-gray.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-gray.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>69385A551B8948E2995E81B5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6189A9A6FFAD47C0BCB855B6</string>
+				<string>2742C67CF77C40C68633B135</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+<<<<<<< HEAD
 		<key>901A37551AAB4123A269E1B1</key>
+=======
+		<key>6B0C91F79B5546EC84028075</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2192,6 +3829,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>JSQSystemSoundPlayer.h</string>
 			<key>path</key>
 			<string>JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.h</string>
@@ -2199,6 +3837,27 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>90E9B9C462E94D4395B59F11</key>
+=======
+			<string>CXTapDetectingView.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXTapDetectingView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B7625790D504CC2B44CA9AD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BFE6A3D095FA4D0EBB838533</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>6BD12DFD31124290BC3D69B1</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>children</key>
 			<array>
@@ -2256,6 +3915,7 @@
 				<string>8F414EEE69B84FE795B87DFB</string>
 			</array>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Resources</string>
@@ -2278,6 +3938,31 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9101F2CEB1C3417D880863F6</key>
+=======
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JSMessagesViewController.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6BD98140E3394497A36E29C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4EE1A682553643E897225364</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6D0B055FB1DB48C9AFE92CFA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C1FBD09654E941E99DD8D111</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7029045BD2094CF5974BC04C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>children</key>
 			<array>
@@ -2309,6 +3994,7 @@
 				<string>7363112B11234D8AAE2F94AD</string>
 			</array>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>JSMessagesViewController</string>
@@ -2443,18 +4129,43 @@
 				<key>VALIDATE_PRODUCT</key>
 				<string>YES</string>
 			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+=======
+			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>bubble-classic-blue.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-blue.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>719C890FACAB490CA5E19A66</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSDismissiveTextView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSDismissiveTextView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+<<<<<<< HEAD
 		<key>99D2767B8B58403AB0545E96</key>
+=======
+		<key>71ACEC7516F842D8BC6A8B15</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>sourcecode.c.h</string>
 			<key>name</key>
 			<string>JSMessageSoundEffect.h</string>
@@ -2464,8 +4175,37 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9B7A3C2F2A8147AE8CE9EA3D</key>
+=======
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSString+JSMessagesView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/NSString+JSMessagesView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>72685112C9AA41EBA0ED2C87</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EBB6303867054C60827E4A70</string>
+				<string>02149E14552747A0B578A809</string>
+				<string>2AF6A6F3076E43F4B25F38BA</string>
+				<string>3EC3CF64C0324535A9628B1C</string>
+				<string>C333B35001844D9FAE68B2CE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>73A7513A8B6C4913ABC89F9A</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXTargetDependency</string>
 			<key>target</key>
 			<string>B714EA32463445E19C53FB0B</string>
@@ -2473,6 +4213,17 @@
 			<string>A01A53136C0E43638FCD9223</string>
 		</dict>
 		<key>9C931B7FFCB34ED98A72CE1D</key>
+=======
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-classic-square</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75456C2FAC0645408EB19CBB</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2480,18 +4231,42 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+<<<<<<< HEAD
 			<key>path</key>
 			<string>UIColor+HexString.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9FE1D2BDB989413AADC121EE</key>
+=======
+			<key>name</key>
+			<string>JSMessageTextView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageTextView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>794D2C3E9BFB4A8B8D7811F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>71ACEC7516F842D8BC6A8B15</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>7C76186EC28340D9984B380C</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>send-button-pressed@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button-pressed@2x.png</string>
@@ -2499,10 +4274,20 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A01A53136C0E43638FCD9223</key>
+=======
+			<string>bubble-tailless@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-tailless@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7D8D20579D9C4738A39F57F8</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>containerPortal</key>
 			<string>552905054E17449DAB5D9BA2</string>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXContainerItemProxy</string>
 			<key>proxyType</key>
 			<string>1</string>
@@ -2512,6 +4297,17 @@
 			<string>Pods-JSQSystemSoundPlayer</string>
 		</dict>
 		<key>A052922429304E0E969C632E</key>
+=======
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>input-bar-background@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/input-bar-background@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E38998ECB7743ACB5BBA03B</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -2519,11 +4315,19 @@
 			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>path</key>
 			<string>libPods.a</string>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-UIColor-HexString-dummy.m</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+<<<<<<< HEAD
 		<key>A096B789D1754FC29B3A8DEA</key>
 		<dict>
 			<key>fileRef</key>
@@ -2532,11 +4336,63 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>A0EE60766F3645EA9F2A4B43</key>
+=======
+		<key>7E6852F56B3D48F2B5F394FF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D24685E4398D4963ACA584AB</string>
+				<string>9BE097B5F6394B3D83F0C22F</string>
+				<string>029F80170E98439DBEDBACB0</string>
+				<string>D5A66160E88D4C659FF109BC</string>
+				<string>CBC338FE7A104CECA8F1DD5A</string>
+				<string>EB1086D5A12E44679BD0B505</string>
+				<string>9616DD70432444249CAE6A48</string>
+				<string>225FC6BFF93D45B89A74DAD1</string>
+				<string>0BD93DCA24194C6E940A3CB8</string>
+				<string>45BDA039A39248A3A562F75C</string>
+				<string>90945B094A58497892CC92EA</string>
+				<string>BB099410854F4D97A1E953A5</string>
+				<string>EAB5AD94294348D2BA81C2EC</string>
+				<string>C6603EFC9E5B44ACBB899067</string>
+				<string>6B0C91F79B5546EC84028075</string>
+				<string>BC774D3253F24EBB9FD61041</string>
+				<string>56F8A1FBD8F54F69BF145B42</string>
+				<string>51637A8F57B841368007D54F</string>
+				<string>3FABE3BE85074413BA40B7C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CXPhotoBrowser</string>
+			<key>path</key>
+			<string>CXPhotoBrowser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F4C33736A30483CA1A046B5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSMessageTextView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageTextView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>804A431BABF041F58A72F089</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
@@ -2571,12 +4427,45 @@
 			<string>0</string>
 		</dict>
 		<key>A25A16EB660A4EE688DD2B03</key>
+=======
+			<key>name</key>
+			<string>bubble-classic-gray@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-gray@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8149CF577DC849E2BB3397F1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>23DF748A34F4426B896F8EAE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8368DBF8FF71406F84A0F6E7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSBubbleMessageCell.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSBubbleMessageCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>845FE0D2ACB44BFDBF743501</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-tailless.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-tailless.png</string>
@@ -2584,12 +4473,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A3AA46C3111D46CB8ACFAAAD</key>
+=======
+			<string>bubble-classic</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8477DE022F954A82AB890335</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-min-tailless@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min-tailless@2x.png</string>
@@ -2597,6 +4496,31 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A51AD7DC3D98440CAD86AFC5</key>
+=======
+			<string>bubble-classic-green@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-green@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84F8B6CBCE71451CA2E30FDC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7E6852F56B3D48F2B5F394FF</string>
+				<string>587CD2E6B08943309D8246DD</string>
+				<string>68CE8D24FC7C4DAA91754FE7</string>
+				<string>A66EC7BC8B4A4B7A883F44BF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8561CC6887ED4120B3627528</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2605,6 +4529,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXZoomingScrollView.m</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXZoomingScrollView.m</string>
@@ -2625,6 +4550,52 @@
 			<string>0</string>
 		</dict>
 		<key>A6221C0E29C24421B162002B</key>
+=======
+			<string>JSMessageInputView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageInputView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>871C1D791A9B42B5B5081845</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>0E9DB2072C124137AE1C3F94</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4E3D66D9991D456B8B576EB3</string>
+			<key>remoteInfo</key>
+			<string>Pods-CXPhotoBrowser</string>
+		</dict>
+		<key>8795E5FF931B4087869A7282</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>06ABCE51D08C4D3D996886AA</string>
+				<string>65B16E81E2A04824907B3612</string>
+				<string>A65B744CE9FC465CB6F1DDAF</string>
+				<string>2353F3B4236840638CD18CB0</string>
+				<string>47BE875DACB945D7A0005711</string>
+				<string>8149CF577DC849E2BB3397F1</string>
+				<string>DB238A7DD68C4DC9880087EC</string>
+				<string>1FB34721211A44B5867D68DB</string>
+				<string>F69F7403F26A415FB9C8D44C</string>
+				<string>6BD98140E3394497A36E29C3</string>
+				<string>2880C863F56244B0A458E547</string>
+				<string>B0EF6D8A6D8E4FE4818CB3BE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>89FBF3AEE96E404DBFBDFC6E</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2633,6 +4604,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXPhotoLoadingView.m</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXPhotoLoadingView.m</string>
@@ -2640,6 +4612,15 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A6CC94E0206E4E07AE00C522</key>
+=======
+			<string>button-photo.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-flat/button-photo.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E0B0F43A0E345D6BDA92F8A</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2650,17 +4631,35 @@
 			<key>name</key>
 			<string>JSBubbleView.h</string>
 			<key>path</key>
+<<<<<<< HEAD
 			<string>JSMessagesViewController/Classes/JSBubbleView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A9DE03EE5E284C60A82EBD57</key>
+=======
+			<string>Pods-CXPhotoBrowser.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9034F11D66A043549E48866B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B88A492954424AD3A7C92788</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>90945B094A58497892CC92EA</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-min.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min.png</string>
@@ -2668,11 +4667,107 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AAF1F3E3E3FA48DC968A6E75</key>
+=======
+			<string>CXPhotoLoadingViewProtocol.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoLoadingViewProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>90D07EA2E4B14E7FBF4CDE3D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>334D8516BF574A7C8D178F6D</string>
+			<key>targetProxy</key>
+			<string>5D9ECEABEE6A4E5985C9F686</string>
+		</dict>
+		<key>94704CF0753F4717BB81279C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0381609A10C4471A8F9DBE29</string>
+				<string>B41565D5F4CF41D19B6FCB6A</string>
+				<string>D3EE3D5B001E4F1B8EFF2EDA</string>
+				<string>B6A04F1C67F943B0ABB46083</string>
+				<string>162C499FA9DD421E9DBCBE46</string>
+				<string>01C48A171BDF4CA793F751AA</string>
+				<string>845FE0D2ACB44BFDBF743501</string>
+				<string>7029045BD2094CF5974BC04C</string>
+				<string>4B9EF81A6B9D40988F44FF16</string>
+				<string>BD98A1E7E64B49649801D5E3</string>
+				<string>804A431BABF041F58A72F089</string>
+				<string>00821FFF25574868A0BB4816</string>
+				<string>8477DE022F954A82AB890335</string>
+				<string>3302ABBC8C45470B86FBB188</string>
+				<string>4D3BEAC75CE9487489250857</string>
+				<string>73A7513A8B6C4913ABC89F9A</string>
+				<string>1054DD2ED2BD4A2A93641DD8</string>
+				<string>00EB3FF42E1940C0BA7DF274</string>
+				<string>68D70E856DD549D19E48F547</string>
+				<string>D526179E9A52455C9B383724</string>
+				<string>0AFB0423B4B04F70BC0C976F</string>
+				<string>FD8E5AACA1394D67A16B319D</string>
+				<string>28E89B4CD9BA454B9DAB3CB8</string>
+				<string>FF203D5416F04C17911FB1A1</string>
+				<string>9E830833FAF14F0983F5FEE9</string>
+				<string>319A6A424B3048679E7D9D9B</string>
+				<string>2A2AD14F259241F5AA624440</string>
+				<string>9498FAE91B8B4360857B936F</string>
+				<string>2EF80C74BEE148B096BF1B7A</string>
+				<string>A3F056527BA0493BAA0B1D67</string>
+				<string>2C84BB44615540E29DB53844</string>
+				<string>B5567388015B482994C8EDE3</string>
+				<string>23380B3D18704A92983538D4</string>
+				<string>56D6940F168C42ADA49D70AD</string>
+				<string>7C76186EC28340D9984B380C</string>
+				<string>3DFCB536376D469A8FD04CAE</string>
+				<string>89FBF3AEE96E404DBFBDFC6E</string>
+				<string>DA895EAE571F476EB85E5CE3</string>
+				<string>A6A6F81962C645E19EC188C6</string>
+				<string>7D8D20579D9C4738A39F57F8</string>
+				<string>0E2DC029753249A0B8B818FE</string>
+				<string>00206BE2B7E74F18AF5EF4F6</string>
+				<string>1AF3B1B94B144518A861F275</string>
+				<string>C412DEE25F5847F68EA71EB9</string>
+				<string>A94D921D764442BEAB49B1D6</string>
+				<string>B4C089301841404099790FB8</string>
+				<string>13B99DC0C11F488B989C9065</string>
+				<string>97DE97C2783C4EE6B5DEFFBE</string>
+				<string>184D93672704483EB1558245</string>
+				<string>3EA5E6C8F7054A39BF99A23C</string>
+				<string>F3D20D1DC8754F1A81335FCD</string>
+				<string>C3F59D08A999498CB849E135</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9498FAE91B8B4360857B936F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-min-tailless@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min-tailless@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9616DD70432444249CAE6A48</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>input-field-cover.png</string>
 			<key>path</key>
@@ -2681,12 +4776,96 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AE596DAAA970433DBF3AC695</key>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXPhotoBrowser.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoBrowser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96B3418898F64F9192269CEB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>334D8516BF574A7C8D178F6D</string>
+			<key>targetProxy</key>
+			<string>32F7EAB59C69497C91E4573B</string>
+		</dict>
+		<key>97DE97C2783C4EE6B5DEFFBE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+			<string>message-sent.aiff</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Sounds/message-sent.aiff</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>982C2BD66CFD41268ACB3E66</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B9B87D43B1F45C8A18E736C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>98562F8F5F354B3CAC6B2892</key>
+		<dict>
+			<key>fileRef</key>
+			<string>90945B094A58497892CC92EA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9A3165D8C6A64A2BADE155F1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5A66160E88D4C659FF109BC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>9A4F008368E14E25ACCE1A31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0AFC11D6003B4313B9C76AC7</string>
+				<string>18D9D9248C0B4533B84971EC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9B9DC66FE0FB4A028D2218AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0BD93DCA24194C6E940A3CB8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9BE097B5F6394B3D83F0C22F</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+<<<<<<< HEAD
 			<string>button-photo.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/input-bar-flat/button-photo.png</string>
@@ -2694,19 +4873,51 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AECFAF362C13415AA95B8CD5</key>
+=======
+			<string>CXBrowserNavBarView.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXBrowserNavBarView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9BE3DC2244734D6E8DA4B200</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+<<<<<<< HEAD
+			<string>bubble-min-tailless.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min-tailless.png</string>
+=======
+			<string>AudioToolbox.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AudioToolbox.framework</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+<<<<<<< HEAD
+		<key>B1A2032CDC0C440DBAD6EE7C</key>
+=======
+		<key>9E830833FAF14F0983F5FEE9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>bubble-min-tailless.png</string>
+			<string>bubble-flat</string>
 			<key>path</key>
-			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-min-tailless.png</string>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B1A2032CDC0C440DBAD6EE7C</key>
+		<key>A3244956A76A4B46993DD4E2</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2715,6 +4926,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXBrowserToolBarView.m</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXBrowserToolBarView.m</string>
@@ -2722,14 +4934,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B41CFD53BE8F49C9B6BA893E</key>
+=======
+			<string>UIImage+JSMessagesView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/UIImage+JSMessagesView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3F056527BA0493BAA0B1D67</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXPhotoBrowser.m</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXPhotoBrowser.m</string>
@@ -2763,12 +4983,33 @@
 			<string>0</string>
 		</dict>
 		<key>B4E3796752E14BBE8977D1BF</key>
+=======
+			<string>bubble-stroked.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-stroked.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A65B744CE9FC465CB6F1DDAF</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>8368DBF8FF71406F84A0F6E7</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A66EC7BC8B4A4B7A883F44BF</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7DC75BDD1EE491195734EDC</string>
+				<string>F1A1BE15EC7A424EB769E2DA</string>
+				<string>297C06E4DEBC4E4B9E95A848</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-selected@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-selected@2x.png</string>
@@ -2776,11 +5017,72 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B4FA842E76214B49BE306B34</key>
+=======
+			<string>UIColor-HexString</string>
+			<key>path</key>
+			<string>UIColor-HexString</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A694FCCC9F694B94BA26F299</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D31934550548414E8309C5E7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A6A6F81962C645E19EC188C6</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
@@ -2792,11 +5094,62 @@
 		<dict>
 			<key>containerPortal</key>
 			<string>552905054E17449DAB5D9BA2</string>
+=======
+			<key>name</key>
+			<string>input-bar-background.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/input-bar-background.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6D2B5E239D0472CB39830B8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2AF6A6F3076E43F4B25F38BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A7BEF8626E224D03B116B458</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSMessagesViewController.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessagesViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7D2F3AD368346CEAB174D4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSBubbleView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSBubbleView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8B3EF8AC54C45DE9599778E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>0E9DB2072C124137AE1C3F94</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXContainerItemProxy</string>
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
+<<<<<<< HEAD
 			<string>B714EA32463445E19C53FB0B</string>
 			<key>remoteInfo</key>
 			<string>Pods-JSQSystemSoundPlayer</string>
@@ -2810,6 +5163,42 @@
 				<string>E570936883EF4A1BA7603363</string>
 				<string>755FCC6AD891454F8D904F8C</string>
 				<string>1C6AC6E57D304FCD85071B35</string>
+=======
+			<string>52264CFB8F564681907BC09A</string>
+			<key>remoteInfo</key>
+			<string>Pods-UIColor-HexString</string>
+		</dict>
+		<key>A94D921D764442BEAB49B1D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>input-field-cover.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/input-field-cover.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A9CC540C67D340209C713715</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B7091C9FC29F4B5FB440F745</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3E65EEDFE6F848ED855993F2</string>
+				<string>1CEFC67763E147599E4CF50E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F6ACE195ED444870A74CF348</string>
+				<string>B530A77E24A84D9D8E760A75</string>
+				<string>96B3418898F64F9192269CEB</string>
+				<string>15D1ACC0780340F6BC581152</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -2818,6 +5207,7 @@
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>Pods-JSQSystemSoundPlayer</string>
 			<key>productName</key>
 			<string>Pods-JSQSystemSoundPlayer</string>
@@ -2830,12 +5220,158 @@
 		<dict>
 			<key>fileRef</key>
 			<string>0B0D58D6868E4DD09D27BFFE</string>
+=======
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>EBB6303867054C60827E4A70</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AA64E69E388746C7A2F534B9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1EF269FBFD4C4AB28037666B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Pods-UIColor-HexString-prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ADE10BEF7C594E3D9F804515</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3244956A76A4B46993DD4E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+		<key>B0EF6D8A6D8E4FE4818CB3BE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>34B7228640974D7C86E4FBE5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>B88F56BAD88440FBB1A4C665</key>
+		<key>B332D240B8B249F98BA5C14B</key>
 		<dict>
 			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>B3880BD0D2AD46BCAF205C7E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-UIColor-HexString-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B41565D5F4CF41D19B6FCB6A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Sounds</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Sounds</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+<<<<<<< HEAD
+		<key>B88F56BAD88440FBB1A4C665</key>
+=======
+		<key>B4C089301841404099790FB8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>input-field-cover@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/input-field-cover@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B530A77E24A84D9D8E760A75</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>667464125DF94D9C929E9E97</string>
+			<key>targetProxy</key>
+			<string>FED94818A8C04FCD83E76190</string>
+		</dict>
+		<key>B5567388015B482994C8EDE3</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXTargetDependency</string>
 			<key>target</key>
 			<string>0475126A6E1548BEA3D09479</string>
@@ -2862,6 +5398,17 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>B94DBF157B4743DABECAE1FE</key>
+=======
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-stroked-tailless@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-flat/bubble-stroked-tailless@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6A04F1C67F943B0ABB46083</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2870,6 +5417,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXPhotoProtocol.h</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXPhotoProtocol.h</string>
@@ -2877,12 +5425,36 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B9C7CE80EA7A403684A53172</key>
+=======
+			<string>avatar-placeholder.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/avatar/avatar-placeholder.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B7091C9FC29F4B5FB440F745</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A694FCCC9F694B94BA26F299</string>
+				<string>F2FDFF9808E04C97A5C5B480</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B88A492954424AD3A7C92788</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Pods-UIColor-HexString-prefix.pch</string>
@@ -2900,14 +5472,42 @@
 		<dict>
 			<key>fileRef</key>
 			<string>B1A2032CDC0C440DBAD6EE7C</string>
+=======
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9DB77A2D9954120ADBF9555</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D7F1A3B460FD430C8825E72A</string>
+				<string>FCD06EA494F445B090C1B395</string>
+				<string>84F8B6CBCE71451CA2E30FDC</string>
+				<string>72685112C9AA41EBA0ED2C87</string>
+				<string>0876283E668E4BB6A6A88800</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BAF1AA28D0334FD69FC44813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F4A078DB8E2A4B3ABB1C77C6</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
 			<dict>
 				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+				<string>-fobjc-arc</string>
 			</dict>
 		</dict>
+<<<<<<< HEAD
 		<key>BC970E5D86A74FEA9C432C1B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2936,6 +5536,9 @@
 			<string>XCConfigurationList</string>
 		</dict>
 		<key>BE309405458D4BF2915D8726</key>
+=======
+		<key>BB099410854F4D97A1E953A5</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2944,6 +5547,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>CXPhotoBrowser.h</string>
 			<key>path</key>
 			<string>CXPhotoBrowser/CXPhotoBrowser.h</string>
@@ -2967,12 +5571,31 @@
 			<string>SOURCE_ROOT</string>
 		</dict>
 		<key>C08D947BDCAC4FD48302DF8B</key>
+=======
+			<string>CXPhotoProtocol.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhotoProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB96B5226D72483799A6F16C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9BE3DC2244734D6E8DA4B200</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BC774D3253F24EBB9FD61041</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-green@2x.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-green@2x.png</string>
@@ -2980,11 +5603,21 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C2A826705245468AA0626E72</key>
+=======
+			<string>CXTapDetectingView.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXTapDetectingView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD98A1E7E64B49649801D5E3</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>path</key>
@@ -3009,15 +5642,38 @@
 		<dict>
 			<key>fileRef</key>
 			<string>99D2767B8B58403AB0545E96</string>
+=======
+			<key>name</key>
+			<string>bubble-classic-gray.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-gray.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE48E73B0D214383AD170247</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8561CC6887ED4120B3627528</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
 		</dict>
+<<<<<<< HEAD
 		<key>C39FD0B2CD3E4DC8AEF06B32</key>
+=======
+		<key>BF281B6B65F441E19611AE4B</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>bubble-stroked@2x.png</string>
 			<key>path</key>
@@ -3039,6 +5695,23 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C46670C85F2446719DE2F22F</key>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JSMessagesViewController-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BFDA29C8E3E6477F8F9F50CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B332D240B8B249F98BA5C14B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BFE6A3D095FA4D0EBB838533</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3047,6 +5720,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>NSString+JSMessagesView.h</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Classes/Categories/NSString+JSMessagesView.h</string>
@@ -3074,6 +5748,25 @@
 		</dict>
 		<key>CB02740A5E264999AE10F4AF</key>
 		<dict>
+=======
+			<string>UIColor+JSMessagesView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/UIColor+JSMessagesView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C003F68179D247258E6F5347</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B9B87D43B1F45C8A18E736C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C1A3EFD6AD1944348C3F597B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>252BE56A689D4133A4E8B7D4</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -3139,6 +5832,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+<<<<<<< HEAD
 		<key>CD2BF6D1B20F486598DBCE2C</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3196,14 +5890,8 @@
 				<string>F6A2972B63EE4E7AB7F75D1C</string>
 				<string>3EB13ACDF675401C93A9BDAD</string>
 			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D001D6E76A3B41FEB0F1D3D9</key>
+=======
+		<key>C1FBD09654E941E99DD8D111</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3211,182 +5899,58 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>JSMessagesViewController.m</string>
 			<key>path</key>
-			<string>JSMessagesViewController/Classes/JSMessagesViewController.m</string>
+			<string>Pods-JSMessagesViewController-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D3292F70D84948C8A4B7E169</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIImage+JSMessagesView.m</string>
-			<key>path</key>
-			<string>JSMessagesViewController/Classes/Categories/UIImage+JSMessagesView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D6784E83897A40D58B3B9B2A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3EC593EE7D674E41BDBCBB30</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EDBCA8AA2D234A8E84407C7D</string>
-				<string>5EFDB3850FEB46CA87276665</string>
-				<string>EDAB4D21E28A46238141BE1A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-UIColor-HexString</string>
-			<key>productName</key>
-			<string>Pods-UIColor-HexString</string>
-			<key>productReference</key>
-			<string>14ED1FAEC51244B89F5DF156</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>D7A47B211B094073A9274F2D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSMessageInputView.h</string>
-			<key>path</key>
-			<string>JSMessagesViewController/Classes/JSMessageInputView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D843230F82FD4996B2E0B6A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-CXPhotoBrowser-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D8BA50BA58EF48B5BB6BDFFF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>bubble-classic</string>
-			<key>path</key>
-			<string>JSMessagesViewController/Resources/Images/bubble-classic</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D8D5A00D91F54DE4B006F202</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>JSBubbleMessageCell.h</string>
-			<key>path</key>
-			<string>JSMessagesViewController/Classes/JSBubbleMessageCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA5DF1F6A62F46CE84447536</key>
+		<key>C22F9727FAD24606B153BAA7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5910602EC1CF482AA149794A</string>
+			<string>D24685E4398D4963ACA584AB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>DB3AAC45BD3D454388B1AD05</key>
+		<key>C333B35001844D9FAE68B2CE</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-dummy.m</string>
+			<string>libPods-UIColor-HexString.a</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>DBDC85C2067C4F468873D7DD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6711F4B263EE4DB39B0AAEE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>DDD601A83BD24AFD993610EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CXTapDetectingView.m</string>
-			<key>path</key>
-			<string>CXPhotoBrowser/CXTapDetectingView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF86530D31CB48FB843C5B3D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6F9D7715F54642EFBB0C580F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>E0A1A66496914FE1966F751A</key>
+		<key>C3F59D08A999498CB849E135</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>input-bar-background.png</string>
+			<string>send-button@2x.png</string>
 			<key>path</key>
-			<string>JSMessagesViewController/Resources/Images/input-bar-classic/input-bar-background.png</string>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button@2x.png</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E15D0D926F80408C80E061C8</key>
+		<key>C412DEE25F5847F68EA71EB9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>input-bar-flat@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-flat/input-bar-flat@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6603EFC9E5B44ACBB899067</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3395,13 +5959,13 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>JSMessageInputView.m</string>
+			<string>CXTapDetectingImageView.m</string>
 			<key>path</key>
-			<string>JSMessagesViewController/Classes/JSMessageInputView.m</string>
+			<string>CXPhotoBrowser/CXTapDetectingImageView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E181347C18BE4533B6941611</key>
+		<key>C75EC1BF25DB41E69894550E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3414,25 +5978,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E2BA2E98282B4F5DAC305954</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIColor+JSMessagesView.h</string>
-			<key>path</key>
-			<string>JSMessagesViewController/Classes/Categories/UIColor+JSMessagesView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2CD750B02F4497196CC6634</key>
+		<key>C7AC6D49A35A434BA2B8BE4C</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>CDCAC10CCD1A4A7FA1C932DA</string>
+			<string>D4FCE30678EE48E08860FA40</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -3478,6 +6027,515 @@
 				<key>VALIDATE_PRODUCT</key>
 				<string>YES</string>
 			</dict>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+<<<<<<< HEAD
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D001D6E76A3B41FEB0F1D3D9</key>
+=======
+			<string>Release</string>
+		</dict>
+		<key>CA789584AFA04F248273A346</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSMessageSoundEffect.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageSoundEffect.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBBB0975FB704D48B61DC7A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EAB5AD94294348D2BA81C2EC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CBC338FE7A104CECA8F1DD5A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXPhoto.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhoto.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1881A38FDA442EE9F71E2B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9BE3DC2244734D6E8DA4B200</string>
+				<string>0B9B87D43B1F45C8A18E736C</string>
+				<string>B332D240B8B249F98BA5C14B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D24685E4398D4963ACA584AB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXBrowserNavBarView.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXBrowserNavBarView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D31934550548414E8309C5E7</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+<<<<<<< HEAD
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSMessagesViewController.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessagesViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3292F70D84948C8A4B7E169</key>
+=======
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3EE3D5B001E4F1B8EFF2EDA</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+<<<<<<< HEAD
+			<string>UIImage+JSMessagesView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/UIImage+JSMessagesView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D6784E83897A40D58B3B9B2A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>3EC593EE7D674E41BDBCBB30</string>
+			<key>buildPhases</key>
+			<array>
+				<string>EDBCA8AA2D234A8E84407C7D</string>
+				<string>5EFDB3850FEB46CA87276665</string>
+				<string>EDAB4D21E28A46238141BE1A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-UIColor-HexString</string>
+			<key>productName</key>
+			<string>Pods-UIColor-HexString</string>
+			<key>productReference</key>
+			<string>14ED1FAEC51244B89F5DF156</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>D7A47B211B094073A9274F2D</key>
+=======
+			<string>avatar</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/avatar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4FCE30678EE48E08860FA40</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JSQSystemSoundPlayer-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D526179E9A52455C9B383724</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+<<<<<<< HEAD
+			<string>JSMessageInputView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageInputView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D843230F82FD4996B2E0B6A9</key>
+=======
+			<string>bubble-classic-square-gray@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-gray@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5A66160E88D4C659FF109BC</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+<<<<<<< HEAD
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-CXPhotoBrowser-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D8BA50BA58EF48B5BB6BDFFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-classic</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D8D5A00D91F54DE4B006F202</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+=======
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CXBrowserToolBarView.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXBrowserToolBarView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D713CCEB132442D5AD16897E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D7C8CC72578C4A3FA713B94E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D7C8CC72578C4A3FA713B94E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B9B87D43B1F45C8A18E736C</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>JSBubbleMessageCell.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSBubbleMessageCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+<<<<<<< HEAD
+		<key>DA5DF1F6A62F46CE84447536</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5910602EC1CF482AA149794A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DB3AAC45BD3D454388B1AD05</key>
+=======
+		<key>D7F1A3B460FD430C8825E72A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>D9E2A45D03874829845D7CF8</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSQSystemSoundPlayer.m</string>
+			<key>path</key>
+<<<<<<< HEAD
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DBDC85C2067C4F468873D7DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6711F4B263EE4DB39B0AAEE3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>DDD601A83BD24AFD993610EB</key>
+=======
+			<string>JSQSystemSoundPlayer/Classes/JSQSystemSoundPlayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA86DB2D4C4A4E8781EB741F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSMessagesViewController.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessagesViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA895EAE571F476EB85E5CE3</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+<<<<<<< HEAD
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CXTapDetectingView.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXTapDetectingView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF86530D31CB48FB843C5B3D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F9D7715F54642EFBB0C580F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>E0A1A66496914FE1966F751A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>input-bar-background.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/input-bar-background.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E15D0D926F80408C80E061C8</key>
+=======
+			<key>name</key>
+			<string>button-photo@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-flat/button-photo@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB238A7DD68C4DC9880087EC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CA789584AFA04F248273A346</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DB356001A27F455AACCA0145</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+<<<<<<< HEAD
+			<string>JSMessageInputView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSMessageInputView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E181347C18BE4533B6941611</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BA2E98282B4F5DAC305954</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIColor+JSMessagesView.h</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/Categories/UIColor+JSMessagesView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2CD750B02F4497196CC6634</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>CDCAC10CCD1A4A7FA1C932DA</string>
+=======
+			<string>JSDismissiveTextView.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSDismissiveTextView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E146BCBACE094BDCAE66320E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>252BE56A689D4133A4E8B7D4</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+<<<<<<< HEAD
+				<string>Pods-JSQSystemSoundPlayer-prefix.pch</string>
+=======
+				<string>Pods-CXPhotoBrowser-prefix.pch</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+<<<<<<< HEAD
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
@@ -3559,9 +6617,12 @@
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
+=======
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>XCBuildConfiguration</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>bubble-classic-gray.png</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-gray.png</string>
@@ -3607,6 +6668,48 @@
 				<string>A51AD7DC3D98440CAD86AFC5</string>
 				<string>BECC50659261403FABB65292</string>
 			</array>
+=======
+			<string>Release</string>
+		</dict>
+		<key>E49D4A0ACEA244D691A54E19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BC774D3253F24EBB9FD61041</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>E580BE41269A4546BF347834</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C22F9727FAD24606B153BAA7</string>
+				<string>E9139E963F6142CFB09B632D</string>
+				<string>6728CFD080E047768371D697</string>
+				<string>032C54EC9BF54A8080458A8C</string>
+				<string>9B9DC66FE0FB4A028D2218AA</string>
+				<string>98562F8F5F354B3CAC6B2892</string>
+				<string>F9A693E22C474D3384295568</string>
+				<string>CBBB0975FB704D48B61DC7A4</string>
+				<string>530131E125D9484A853971E1</string>
+				<string>EE6922E35D1D440E957503A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E9139E963F6142CFB09B632D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>029F80170E98439DBEDBACB0</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
@@ -3616,14 +6719,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+<<<<<<< HEAD
 		<key>ED8590F3A27546BBB6717790</key>
 		<dict>
 			<key>fileRef</key>
 			<string>16B02E0058444EF1BFDE9B92</string>
+=======
+		<key>E980C5FC118A4B42AC2778C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E525D1955C841DA83157E82</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+<<<<<<< HEAD
 		<key>EDAB4D21E28A46238141BE1A</key>
+=======
+		<key>EAB5AD94294348D2BA81C2EC</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -3632,6 +6746,7 @@
 				<string>15E0F24F2F2D48C391691355</string>
 			</array>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
@@ -3648,15 +6763,66 @@
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+=======
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CXTapDetectingImageView.h</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXTapDetectingImageView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
+		<key>EB1086D5A12E44679BD0B505</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CXPhoto.m</string>
+			<key>path</key>
+			<string>CXPhotoBrowser/CXPhoto.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EBB6303867054C60827E4A70</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+<<<<<<< HEAD
 		<key>EE3E555456484197A5BB497B</key>
 		<dict>
 			<key>fileRef</key>
 			<string>0484BBC3EFA74477A068385D</string>
+=======
+		<key>EC39FB2BE06E4B59960F201A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9BE097B5F6394B3D83F0C22F</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
 		</dict>
+<<<<<<< HEAD
 		<key>EF91932E823642DE9741E515</key>
 		<dict>
 			<key>fileRef</key>
@@ -3665,11 +6831,22 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>F0784AD075714C10871689AA</key>
+=======
+		<key>EE6922E35D1D440E957503A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56F8A1FBD8F54F69BF145B42</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F1A1BE15EC7A424EB769E2DA</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>input-bar-flat.png</string>
 			<key>path</key>
@@ -3678,12 +6855,75 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F088DC226CEF4CDEA99AA25D</key>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIColor+HexString.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F2FDFF9808E04C97A5C5B480</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D31934550548414E8309C5E7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_VERSION</key>
+				<string>com.apple.compilers.llvm.clang.1_0</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F35B9D22D09F414F994F2806</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>JSQSystemSoundPlayer.m</string>
@@ -3693,12 +6933,22 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F1AD0C9631A34A3D9C439437</key>
+=======
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F3D20D1DC8754F1A81335FCD</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>message-received.aiff</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Resources/Sounds/message-received.aiff</string>
@@ -3706,11 +6956,21 @@
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F2149932BB954A36877AFD0E</key>
+=======
+			<string>send-button-pressed@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/input-bar-classic/send-button-pressed@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4A078DB8E2A4B3ABB1C77C6</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+<<<<<<< HEAD
 			<key>name</key>
 			<string>bubble-classic-blue.png</string>
 			<key>path</key>
@@ -3729,13 +6989,20 @@
 		<dict>
 			<key>fileRef</key>
 			<string>E2BA2E98282B4F5DAC305954</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
+=======
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>JSBubbleMessageCell.m</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Classes/JSBubbleMessageCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F42EAE29B6434338B277B6ED</key>
+		<key>F606CAE19DC544449B2CE648</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D3292F70D84948C8A4B7E169</string>
+			<string>DA86DB2D4C4A4E8781EB741F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3744,13 +7011,80 @@
 				<string>-fobjc-arc</string>
 			</dict>
 		</dict>
-		<key>F43B2EC2CDF24BC2B4C29C43</key>
+		<key>F69F7403F26A415FB9C8D44C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7BEF8626E224D03B116B458</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F6ACE195ED444870A74CF348</key>
+		<dict>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>4E3D66D9991D456B8B576EB3</string>
+			<key>targetProxy</key>
+			<string>871C1D791A9B42B5B5081845</string>
+		</dict>
+		<key>F7D894F1A81342D5BDF2FDD0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-UIColor-HexString.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7DC75BDD1EE491195734EDC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIColor+HexString.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+<<<<<<< HEAD
+		<key>F42EAE29B6434338B277B6ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D3292F70D84948C8A4B7E169</string>
+=======
+		<key>F895D9B6F8F045F6A0504014</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75456C2FAC0645408EB19CBB</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fobjc-arc</string>
+			</dict>
+		</dict>
+<<<<<<< HEAD
+		<key>F43B2EC2CDF24BC2B4C29C43</key>
+=======
+		<key>F8DF601C899540E68DC39EA0</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+<<<<<<< HEAD
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
 			<string>JSDismissiveTextView.m</string>
@@ -3767,10 +7101,31 @@
 				<string>CDCAC10CCD1A4A7FA1C932DA</string>
 				<string>5910602EC1CF482AA149794A</string>
 				<string>2A3B2B82E08B4E71916C7B9D</string>
+=======
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9A693E22C474D3384295568</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BB099410854F4D97A1E953A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FCD06EA494F445B090C1B395</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D1881A38FDA442EE9F71E2B8</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>Support Files</string>
 			<key>sourceTree</key>
 			<string>SOURCE_ROOT</string>
@@ -3800,6 +7155,13 @@
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>F81AF62C5B2B4BF48111E40E</key>
+=======
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD8E5AACA1394D67A16B319D</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3808,6 +7170,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
+<<<<<<< HEAD
 			<string>JSBubbleMessageCell.m</string>
 			<key>path</key>
 			<string>JSMessagesViewController/Classes/JSBubbleMessageCell.m</string>
@@ -3898,10 +7261,33 @@
 			</dict>
 		</dict>
 		<key>FCB19FABD34E4254B86EED7D</key>
+=======
+			<string>bubble-classic-square-selected@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic-square/bubble-classic-square-selected@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FED94818A8C04FCD83E76190</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>0E9DB2072C124137AE1C3F94</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>667464125DF94D9C929E9E97</string>
+			<key>remoteInfo</key>
+			<string>Pods-JSMessagesViewController</string>
+		</dict>
+		<key>FF203D5416F04C17911FB1A1</key>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 		<dict>
 			<key>fileRef</key>
 			<string>1FACCF08ADA744ECAC6ED8F4</string>
 			<key>isa</key>
+<<<<<<< HEAD
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>FF5686CA0A574BAE9BDAC86D</key>
@@ -3910,9 +7296,29 @@
 			<string>A6CC94E0206E4E07AE00C522</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+=======
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>bubble-classic-typing@2x.png</string>
+			<key>path</key>
+			<string>JSMessagesViewController/Resources/Images/bubble-classic/bubble-classic-typing@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
+		</dict>
+		<key>FF258250AE2342ABB0788F8C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C333B35001844D9FAE68B2CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
+<<<<<<< HEAD
 	<string>552905054E17449DAB5D9BA2</string>
+=======
+	<string>0E9DB2072C124137AE1C3F94</string>
+>>>>>>> c3c3c336205f5b59274234239bb6bfac6d096c62
 </dict>
 </plist>

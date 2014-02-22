@@ -690,10 +690,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/qiyuesong/Documents/IOS\\ Projects/PairDiary",
-					"/Volumes/Macintosh\\ HD/Users/liuzenan/Documents/Project/pairdiary",
 					/Users/shaohuanli/Developer/pairdiary,
-					/Users/qiyuesong/Documents/pairdiary,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PairDiary/PairDiary-Prefix.pch";
@@ -714,10 +711,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/qiyuesong/Documents/IOS\\ Projects/PairDiary",
-					"/Volumes/Macintosh\\ HD/Users/liuzenan/Documents/Project/pairdiary",
 					/Users/shaohuanli/Developer/pairdiary,
-					/Users/qiyuesong/Documents/pairdiary,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PairDiary/PairDiary-Prefix.pch";
