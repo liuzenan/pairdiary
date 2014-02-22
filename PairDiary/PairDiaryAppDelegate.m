@@ -11,7 +11,7 @@
 #import "LoginViewController.h"
 #import "RenrenUserController.h"
 #import "FacebookUserController.h"
-#import <RennSDK/RennSDK.h>
+#import "RennSDK/RennSDK.h"
 #import "Chat.h"
 #import "Diary.h"
 #import "Pair.h"

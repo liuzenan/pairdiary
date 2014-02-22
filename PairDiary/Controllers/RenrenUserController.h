@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
-#import <RennSDK/RennSDK.h>
+#import "RennSDK/RennSDK.h"
 #import "User.h"
 
 @protocol RenrenLoginDelegate <NSObject>
