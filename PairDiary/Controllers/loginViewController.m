@@ -26,10 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [UserController sharedInstance].loginDelegate = self;
+    [FacebookUserController sharedInstance].loginDelegate = self;
+    [RenrenUserController sharedInstance].loginDelegate = self;
+
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    if([[UserController sharedInstance] isLoggedIn]){
-        NSLog(@"current user : %@",[PFUser currentUser]);
+    if([[FacebookUserController sharedInstance] isLoggedIn]){
+        NSLog(@"current user : facebook %@",[PFUser currentUser]);
+        [self performSegueWithIdentifier:@"pushPairing" sender:self];
+    }else if([[RenrenUserController sharedInstance] isLoggedIn]){
+        NSLog(@"current user : renren %@",[PFUser currentUser]);
         [self performSegueWithIdentifier:@"pushPairing" sender:self];
     }
 }
@@ -40,18 +45,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)loginButtonPressed:(id)sender {
-    [[UserController sharedInstance] loginFaceBookUser];
-    [SVProgressHUD showWithStatus:@"Logging in..."];
+- (IBAction)facebookLoginButtonPressed:(id)sender {
+    [[FacebookUserController sharedInstance] loginFaceBookUser];
 }
 
-
--(void) facebookLoginSuccessWithNewUser {
-    [self facebookLoginSuccessWithExistingUser];
-}
-
--(void) facebookLoginSuccessWithExistingUser {
-    [SVProgressHUD dismiss];
+-(void) facebookLoginSuccess{
     [self performSegueWithIdentifier:@"pushPairing" sender:self];
 }
 
@@ -60,4 +58,27 @@
         [SVProgressHUD showErrorWithStatus:@"Login Failed"];
     }
 }
+
+- (void) facebookLogoutSuccess {
+    [SVProgressHUD showWithStatus:@"logout successfully!"];
+}
+
+- (IBAction)renrenLoginButtonPressed:(id)sender {
+    [[RenrenUserController sharedInstance] loginRenrenUser];
+}
+
+-(void) renrenLoginSuccess {
+    [self performSegueWithIdentifier:@"pushPairing" sender:self];
+}
+
+- (void) renrenLoginFailedWithError:(NSError*)error {
+    if (error) {
+        [SVProgressHUD showErrorWithStatus:@"Login Failed"];
+    }
+}
+
+- (void) renrenLogoutSuccess {
+    [SVProgressHUD showWithStatus:@"logout successfully!"];
+}
+
 @end

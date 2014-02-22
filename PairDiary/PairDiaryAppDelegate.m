@@ -9,7 +9,9 @@
 #import "PairDiaryAppDelegate.h"
 #import <Parse/Parse.h>
 #import "LoginViewController.h"
-#import "UserController.h"
+#import "RenrenUserController.h"
+#import "FacebookUserController.h"
+#import <RennSDK/RennSDK.h>
 
 @implementation PairDiaryAppDelegate
 
@@ -19,7 +21,10 @@
     [Parse setApplicationId:@"2Jtj8Ch3fOkMXoWOAgsH8VzftlANtoi4SOdVXokj"
                   clientKey:@"9r9UIOyyKGO1XFJOF0OJSVet5YKlpv9rZYj7HmhJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    [PFFacebookUtils initializeFacebook];
+    //[PFFacebookUtils initializeFacebook];
+    
+    [RennClient initWithAppId:@"264753" apiKey:@"fa6e37a3beba4bb7962bc32e53a1c11b" secretKey:@"56f317819aaf4a84b965e224bc69c4c4"];
+    [RennClient setTokenType:@"bearer"];
 
     NSShadow* shadow = [NSShadow new];
     
@@ -55,7 +60,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    if (![[UserController sharedInstance] isLoggedIn]) {
+    if (![[RenrenUserController sharedInstance] isLoggedIn]) {
         UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         LoginViewController * PairDiaryLogin = (LoginViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"Login"];
         [self.window.rootViewController presentViewController:PairDiaryLogin animated:NO completion:Nil];
@@ -67,13 +72,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
--(BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
-    return [FBAppCall handleOpenURL:url
-                  sourceApplication:sourceApplication
-                        withSession:[PFFacebookUtils session]];
+//-(BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation {
+//    return [FBAppCall handleOpenURL:url
+//                  sourceApplication:sourceApplication
+//                        withSession:[PFFacebookUtils session]];
+//}
+
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [RennClient  handleOpenURL:url];
 }
 
 @end

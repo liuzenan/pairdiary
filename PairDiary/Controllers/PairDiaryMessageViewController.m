@@ -7,7 +7,8 @@
 //
 
 #import "PairDiaryMessageViewController.h"
-#import "UserController.h"
+#import "FacebookUserController.h"
+#import "RenrenUserController.h"
 #import "loginViewController.h"
 #import "PairingViewController.h"
 #import <UIColor-HexString/UIColor+HexString.h>
@@ -63,7 +64,7 @@
 
     [super viewDidLoad];
     
-    if (![[UserController sharedInstance] isLoggedIn]) {
+    if (![[FacebookUserController sharedInstance] isLoggedIn] && ![[RenrenUserController sharedInstance] isLoggedIn]) {
         return;
     }
     

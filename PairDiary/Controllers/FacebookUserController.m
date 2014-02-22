@@ -1,25 +1,25 @@
 //
-//  UserController.m
+//  FacebookUserController.m
 //  PairDiary
 //
-//  Created by qiyue song on 15/2/14.
+//  Created by qiyue song on 22/2/14.
 //  Copyright (c) 2014 li.shaohuan. All rights reserved.
 //
 
-#import "UserController.h"
+#import "FacebookUserController.h"
 #import <Parse/PFObject+Subclass.h>
 #import "SVProgressHUD.h"
 
 #define FACEBOOK_ID_KEY @"fb_id_for_%@"
 
-@implementation UserController
+@implementation FacebookUserController
 
 + (id)sharedInstance
 {
-    static UserController *__sharedInstance;
+    static FacebookUserController *__sharedInstance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        __sharedInstance = [[UserController alloc] init];
+        __sharedInstance = [[FacebookUserController alloc] init];
     });
     
     return __sharedInstance;
@@ -47,12 +47,12 @@
             
         } else if (user.isNew) {
             [self fetchFacebookDetailsWithCompletionHandler:^{
-                [self.loginDelegate facebookLoginSuccessWithNewUser];
+                [self.loginDelegate facebookLoginSuccess];
             }];
             
         } else {
             [self fetchFacebookDetailsWithCompletionHandler:^{
-                [self.loginDelegate facebookLoginSuccessWithExistingUser];
+                [self.loginDelegate facebookLoginSuccess];
             }]; // Temporary so that everyone's data will be in
         }
     }];
@@ -88,14 +88,14 @@
 }
 
 - (void)fetchUserForUserID:(NSString*)userId WithCompletionHandler: (void(^)(User *user))completion {
-//    [ServerController queryUserWithConditions:@{kMRUserObjectIdKey:userId} andCompletionHandler:^(NSArray *results, NSError *error) {
-//        if(!error && results.count > 0) {
-//            User *user = [results objectAtIndex:0];
-//            completion(user);
-//        } else {
-//            completion(nil);
-//        }
-//    }];
+    //    [ServerController queryUserWithConditions:@{kMRUserObjectIdKey:userId} andCompletionHandler:^(NSArray *results, NSError *error) {
+    //        if(!error && results.count > 0) {
+    //            User *user = [results objectAtIndex:0];
+    //            completion(user);
+    //        } else {
+    //            completion(nil);
+    //        }
+    //    }];
 }
 
 -(void)logout{

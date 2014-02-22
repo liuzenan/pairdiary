@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "RenrenUserController.h"
+#import "FacebookUserController.h"
 #import "SVProgressHUD.h"
-#import "UserController.h"
 
-@interface LoginViewController : UIViewController <FacebookLoginDelegate>
+@interface LoginViewController : UIViewController <FacebookLoginDelegate,RenrenLoginDelegate>
 
-- (IBAction)loginButtonPressed:(id)sender;
-
+- (IBAction)facebookLoginButtonPressed:(id)sender;
+- (IBAction)renrenLoginButtonPressed:(id)sender;
 @end

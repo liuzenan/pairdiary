@@ -1,8 +1,8 @@
 //
-//  UserController.h
+//  FacebookUserController.h
 //  PairDiary
 //
-//  Created by qiyue song on 15/2/14.
+//  Created by qiyue song on 22/2/14.
 //  Copyright (c) 2014 li.shaohuan. All rights reserved.
 //
 
@@ -13,18 +13,18 @@
 
 @protocol FacebookLoginDelegate <NSObject>
 
-- (void) facebookLoginSuccessWithExistingUser;
-- (void) facebookLoginSuccessWithNewUser;
+- (void) facebookLoginSuccess;
 - (void) facebookLoginFailedWithError:(NSError *)error;
+- (void) facebookLogoutSuccess;
 
 @end
 
-@interface UserController : NSObject
+@interface FacebookUserController : NSObject
 
 @property (nonatomic, weak) id<FacebookLoginDelegate> loginDelegate;
 
 // Singleton
-+ (UserController *)sharedInstance;
++ (FacebookUserController *)sharedInstance;
 
 /*
  * Method name: isLoggedIn
