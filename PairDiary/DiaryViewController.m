@@ -37,6 +37,7 @@
     [super viewDidLoad];
     [ServerController getPairDiary:self.pairId handler:^(NSArray * diaries) {
         self.dataList = diaries;
+        [self setupDataSource:diaries];
         [self.tableView reloadData];
     }];
     // Uncomment the following line to preserve selection between presentations.
@@ -44,6 +45,32 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void) setupDataSource:(NSArray*)sortedDateArray
+{
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.locale = [NSLocale currentLocale];
+    dateFormatter.timeZone = calendar.timeZone;
+    [dateFormatter setDateFormat:@"DD MM YYYY"];
+    
+    NSDictionary *summary;
+    for (Diary *diary in sortedDateArray)
+    {
+        NSString* dateSection = [dateFormatter stringFromDate:diary.date];
+        if ([summary objectForKey:dateSection] != nil) {
+            NSDictionary *dict = [summary objectForKey:dateSection];
+            NSString *count = [dict objectForKey:@"count"];
+            [dict setValue: [NSString stringWithFormat:@"%d", (count.intValue+1)] forKey:[dict objectForKey:@"count"]];
+            [summary setValue: dict forKey:[summary objectForKey:dateSection]];
+        }else{
+            NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  @"1", @"count", dateSection, @"date",diary.message, @"message", nil];
+            [summary setValue: dict forKey:[summary objectForKey:dateSection]];
+        }
+    }
+    NSLog(@"summary%@",summary);
 }
 
 - (void)didReceiveMemoryWarning
@@ -127,9 +154,9 @@
     if (indexPath.section == 0) {
     }else{
         Diary* diary = [self.dataList objectAtIndex:indexPath.row];
-        DaySummaryViewController *dsvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DaySummary"];
-        //dsvc.pairId = diary.pairId;
-        //dsvc.date = diary.date;
+        DaySummaryViewController *dsvc = [[DaySummaryViewController alloc] init];
+        dsvc.pairId = diary.pairId;
+        dsvc.date = diary.date;
         [self.navigationController pushViewController:dsvc animated:YES];
     }
 }

@@ -15,4 +15,6 @@
 + (void)saveChatToDiary: (NSString*)chatId;
 + (void)getDiary:(NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block;
 + (void)getPairDiary:(NSString*)pairId handler:(void(^)(NSArray*))block;
++(NSDate *)startofDay:(NSDate*)d;
++(NSDate *)endofDay:(NSDate*)d;
 @end

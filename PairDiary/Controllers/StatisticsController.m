@@ -82,7 +82,7 @@
         if(firstMessage){
             __block NSInteger dayDifference = [self daysBetweenDate:firstMessage.createdAt andDate:[NSDate date]] + 1;
             NSLog(@"%@",firstMessage.createdAt);
-            NSLog(@"day difference %ld",dayDifference);
+            NSLog(@"day difference %ld",(long)dayDifference);
             dispatch_async(dispatch_get_main_queue(), ^{
                 return block(dayDifference);
             });
