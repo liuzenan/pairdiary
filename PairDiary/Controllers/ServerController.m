@@ -11,7 +11,7 @@
 @implementation ServerController
 
 + (void)saveMessageToDiary:(NSString*)chatId{
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+    PFQuery *queryForChats = [Chat query];
     [queryForChats getObjectInBackgroundWithId:chatId block:^(PFObject *object, NSError *error) {
         if (!error){
             if(object){
@@ -27,7 +27,7 @@
 }
 
 + (NSArray*)getMessagesFor: (NSDate*)date{
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+    PFQuery *queryForChats = [Chat query];
     
     [queryForChats whereKey:@"createdAt" equalTo:date];
     return [queryForChats findObjects];

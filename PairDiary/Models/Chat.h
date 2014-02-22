@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
-@interface Chat : PFObject
+// Class key
+extern NSString *const ChatClassKey;
+
+@interface Chat : PFObject<PFSubclassing>
 
 @property (nonatomic,strong) NSString *text;
 @property (nonatomic,strong) NSString *pairId;
 @property (nonatomic,strong) NSString *fromUser;
 @property (nonatomic,strong) NSString *toUser;
 
++ (NSString *)parseClassName;
 - (Chat*)initWithPFObject:(PFObject*)chat;
 
 @end

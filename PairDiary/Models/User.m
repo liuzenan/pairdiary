@@ -28,8 +28,8 @@ NSString *const UserLastNameKey = @"last_name";
 @dynamic displayName;
 @dynamic email;
 @dynamic facebookId;
-@synthesize firstName;
-@synthesize lastName;
+@dynamic firstName;
+@dynamic lastName;
 
 + (NSString *)parseClassName {
     return UserClassKey;

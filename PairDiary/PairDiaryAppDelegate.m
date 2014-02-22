@@ -10,12 +10,14 @@
 #import <Parse/Parse.h>
 #import "LoginViewController.h"
 #import "UserController.h"
+#import "Chat.h"
 
 @implementation PairDiaryAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Chat registerSubclass];
     [Parse setApplicationId:@"2Jtj8Ch3fOkMXoWOAgsH8VzftlANtoi4SOdVXokj"
                   clientKey:@"9r9UIOyyKGO1XFJOF0OJSVet5YKlpv9rZYj7HmhJ"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];

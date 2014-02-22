@@ -147,7 +147,7 @@
 -(void)didSendText:(NSString *)text {
     
     if (text.length != 0) {
-        PFObject *chat = [PFObject objectWithClassName:@"Chat"];
+        Chat *chat=[Chat object];
         [chat setObject:self.pair.objectId forKey:@"pairId"];
         [chat setObject:self.currentUser[@"facebookId"] forKey:@"fromUser"];
         [chat setObject:self.withUser[@"facebookId"] forKey:@"toUser"];
@@ -166,7 +166,7 @@
 
 -(JSBubbleMessageType)messageTypeForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSString *testFromUser = chat[@"fromUser"];
     
     if ([testFromUser isEqualToString:self.currentUser[@"facebookId"]]) {
@@ -180,7 +180,7 @@
 
 -(UIImageView *)bubbleImageViewWithType:(JSBubbleMessageType)type forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSString *testFromUser = chat[@"fromUser"];
     
     if ([testFromUser isEqualToString:self.currentUser[@"facebookId"]]) {
@@ -255,7 +255,7 @@
 - (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
 {
     NSLog(@"tapped");
-    PFObject *chat = self.chats[recognizer.view.tag];
+    Chat *chat = self.chats[recognizer.view.tag];
     NSLog(@"%@", chat.objectId);
     self.saveObjectId = chat.objectId;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
@@ -283,14 +283,14 @@
 
 -(NSString *)textForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSString *message = chat[@"text"];
     return message;
 }
 
 -(NSDate *)timestampForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    PFObject *chat = self.chats[indexPath.row];
+    Chat *chat = self.chats[indexPath.row];
     NSDate *date = chat.createdAt;
     return date;
 }
@@ -311,7 +311,7 @@
     
     NSInteger oldChatCount = [self.chats count];
     
-    PFQuery *queryForChats = [PFQuery queryWithClassName:@"Chat"];
+    PFQuery *queryForChats = [Chat query];
     [queryForChats whereKey:@"pairId" equalTo:self.pair.objectId];
     [queryForChats orderByAscending:@"createdAt"];
     [queryForChats findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
