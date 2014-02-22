@@ -10,7 +10,7 @@
 
 @implementation ServerController
 
-+ (void)saveMessageToDiary:(NSString*)chatId{
++ (void)saveChatToDiary:(NSString*)chatId{
     PFQuery *queryForChats = [Chat query];
     [queryForChats getObjectInBackgroundWithId:chatId block:^(PFObject *object, NSError *error) {
         if (!error){
@@ -26,18 +26,20 @@
     }];
 }
 
-+ (NSArray*)getMessagesFor: (NSDate*)date{
-    PFQuery *queryForChats = [Chat query];
-    [queryForChats whereKey:@"createdAt" equalTo:date];
-    return [queryForChats findObjects];
++ (void)getDiary:(NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        PFQuery *query = [Diary query];
+        [query whereKey:@"pairId" equalTo:pairId];
+        [query whereKey:@"date" equalTo:date];
+        return block([query findObjects]);
+    });
 }
 
-+ (void)getImportantMessages: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block{
++ (void)getPairDiary:(NSString*)pairId handler:(void(^)(NSArray*))block{
     dispatch_async(dispatch_get_main_queue(), ^{
         PFQuery *query = [Diary query];
         [query whereKey:@"pairId" equalTo:pairId];
         return block([query findObjects]);
     });
-    
 }
 @end

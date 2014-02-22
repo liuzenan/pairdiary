@@ -10,21 +10,21 @@
 
 @implementation StatisticsController
 
-+ (void)totalMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block
++ (void)totalChatCount:(NSString *)pairId handler:(void(^)(NSInteger))block
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         PFQuery *queryForChats = [Chat query];
         [queryForChats whereKey:@"pairId" equalTo:pairId];
         __block NSInteger count = [queryForChats countObjects];
         dispatch_async(dispatch_get_main_queue(), ^{
-            if(count>1)
+            if(count>0)
                 block(count);
             else
                 block(0);
         });
     });
 }
-+ (void)todayMessageCount:(NSString *)pairId handler:(void(^)(NSInteger))block
++ (void)todayChatCount:(NSString *)pairId handler:(void(^)(NSInteger))block
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSCalendar *cal = [NSCalendar currentCalendar];
@@ -41,7 +41,7 @@
         
         __block NSInteger count = [query countObjects];
         dispatch_async(dispatch_get_main_queue(), ^{
-            if(count>1)
+            if(count>0)
                 return block(count);
             else
                 return block(0);
@@ -57,13 +57,14 @@
     });
 }
 
-+(void)totalSavedMessage:(NSString *)pairId handler:(void(^)(NSInteger))block{
++(void)totalDiary:(NSString *)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        __block PFQuery *queryForChats = [Diary query];
-        [queryForChats whereKey:@"pairId" equalTo:pairId];
-        __block NSInteger count = [queryForChats countObjects];
+        __block PFQuery *query = [Diary query];
+        [query whereKey:@"pairId" equalTo:pairId];
+        __block NSInteger count = [query countObjects];
+        NSLog(@"count %ld",(long)count);
         dispatch_async(dispatch_get_main_queue(), ^{
-            if(count>1)
+            if(count>0)
                 return block(count);
             else
                 return block(0);
@@ -74,10 +75,10 @@
 
 +(void)totalDate:(NSString *)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        PFQuery *queryForChats = [Chat query];
-        [queryForChats whereKey:@"pairId" equalTo:pairId];
-        [queryForChats orderByAscending:@"createdAt"];
-        Chat* firstMessage =(Chat*)[queryForChats getFirstObject];
+        PFQuery *query = [Chat query];
+        [query whereKey:@"pairId" equalTo:pairId];
+        [query orderByAscending:@"createdAt"];
+        Chat* firstMessage =(Chat*)[query getFirstObject];
         if(firstMessage){
             __block NSInteger dayDifference = [self daysBetweenDate:firstMessage.createdAt andDate:[NSDate date]] + 1;
             NSLog(@"%@",firstMessage.createdAt);
@@ -112,7 +113,7 @@
     return [difference day];
 }
 
-+(void)totalMessageForDate: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSInteger))block{
++(void)totalDiaryForDate: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSInteger))block{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
     PFQuery *query1 = [Diary query];
     [query1 whereKey:@"pairId" equalTo:pairId];
@@ -126,7 +127,7 @@
     PFQuery *query = [PFQuery orQueryWithSubqueries:@[query1, query2]];
     __block NSInteger count = [query countObjects];
     dispatch_async(dispatch_get_main_queue(), ^{
-        if(count>1)
+        if(count>0)
             return block(count);
         else
             return block(0);

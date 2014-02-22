@@ -258,9 +258,7 @@
 
 - (void)cellSingleTap:(UITapGestureRecognizer*)recognizer
 {
-    NSLog(@"tapped");
     Chat *chat = self.chats[recognizer.view.tag];
-    NSLog(@"%@", chat.objectId);
     self.saveObjectId = chat.objectId;
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Save to Diary" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles: @"Save", nil];
     
@@ -272,7 +270,7 @@
     NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
     if ([buttonTitle isEqualToString:@"Save"]) {
         NSLog(@"save the msg");
-        [ServerController saveMessageToDiary:self.saveObjectId];
+        [ServerController saveChatToDiary:self.saveObjectId];
         
     }
 }

@@ -12,7 +12,7 @@
 #import <Parse/Parse.h>
 @interface ServerController: NSObject
 
-+ (void)saveMessageToDiary: (NSString*)chatId;
-+ (NSArray*)getMessagesFor: (NSDate*)date;
-+ (void)getImportantMessages: (NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block;
++ (void)saveChatToDiary: (NSString*)chatId;
++ (void)getDiary:(NSDate*)date forPair:(NSString*)pairId handler:(void(^)(NSArray*))block;
++ (void)getPairDiary:(NSString*)pairId handler:(void(^)(NSArray*))block;
 @end

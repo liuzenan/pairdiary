@@ -337,7 +337,7 @@
         <!--Table View Controller-->
         <scene sceneID="1np-uX-oRY">
             <objects>
-                <tableViewController id="t1O-Ou-uv3" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DaySummary" id="t1O-Ou-uv3" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r4w-kF-Cb5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
