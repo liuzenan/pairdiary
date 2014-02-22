@@ -23,6 +23,7 @@
 profile
 *.xcodeproj
 *.workspace
+*.pbxproj
 *.orig
 
 
