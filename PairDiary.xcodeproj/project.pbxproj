@@ -41,11 +41,11 @@
 		F28A175818AF4A88003A109C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175718AF4A88003A109C /* MobileCoreServices.framework */; };
 		F28A175A18AF4A91003A109C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175918AF4A91003A109C /* QuartzCore.framework */; };
 		F28A175C18AF4A9E003A109C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175B18AF4A9E003A109C /* Security.framework */; };
-		F28A175E18AF4AA6003A109C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175D18AF4AA6003A109C /* StoreKit.framework */; };
 		F28A176018AF4AB2003A109C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */; };
 		F28A176318AF4ADD003A109C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A176118AF4ADD003A109C /* FacebookSDK.framework */; };
 		F28A176418AF4ADD003A109C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A176218AF4ADD003A109C /* Parse.framework */; };
 		F2A9DC1D18B8F70B00FA145A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A9DC1C18B8F70B00FA145A /* LoginViewController.m */; };
+		F2B6D73818B9122A003CE290 /* PhoneVerificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B6D73718B9122A003CE290 /* PhoneVerificationViewController.m */; };
 		F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3518AF819D000084D7 /* PairingViewController.m */; };
 		F2BCEF5418AF819D000084D7 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF3E18AF819D000084D7 /* ECSlidingViewController.m */; };
 		F2BCEF5518AF819D000084D7 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BCEF4018AF819D000084D7 /* UIImage+ImageWithUIView.m */; };
@@ -114,12 +114,13 @@
 		F28A175718AF4A88003A109C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F28A175918AF4A91003A109C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F28A175B18AF4A9E003A109C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		F28A175D18AF4AA6003A109C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F28A176118AF4ADD003A109C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		F28A176218AF4ADD003A109C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F2A9DC1B18B8F70B00FA145A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F2A9DC1C18B8F70B00FA145A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F2B6D73618B9122A003CE290 /* PhoneVerificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneVerificationViewController.h; sourceTree = "<group>"; };
+		F2B6D73718B9122A003CE290 /* PhoneVerificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneVerificationViewController.m; sourceTree = "<group>"; };
 		F2BCEF2E18AF819D000084D7 /* DaySummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaySummaryViewController.h; sourceTree = "<group>"; };
 		F2BCEF2F18AF819D000084D7 /* DaySummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaySummaryViewController.m; sourceTree = "<group>"; };
 		F2BCEF3418AF819D000084D7 /* PairingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairingViewController.h; sourceTree = "<group>"; };
@@ -154,11 +155,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2C93F7618B8C7B5000AACA8 /* RennSDK.framework in Frameworks */,
-				F28A176418AF4ADD003A109C /* Parse.framework in Frameworks */,
 				F28A176318AF4ADD003A109C /* FacebookSDK.framework in Frameworks */,
+				F28A176418AF4ADD003A109C /* Parse.framework in Frameworks */,
+				F2C93F7618B8C7B5000AACA8 /* RennSDK.framework in Frameworks */,
 				F28A176018AF4AB2003A109C /* SystemConfiguration.framework in Frameworks */,
-				F28A175E18AF4AA6003A109C /* StoreKit.framework in Frameworks */,
 				F28A175C18AF4A9E003A109C /* Security.framework in Frameworks */,
 				F28A175A18AF4A91003A109C /* QuartzCore.framework in Frameworks */,
 				F28A175818AF4A88003A109C /* MobileCoreServices.framework in Frameworks */,
@@ -225,7 +225,6 @@
 				F28A176118AF4ADD003A109C /* FacebookSDK.framework */,
 				F28A176218AF4ADD003A109C /* Parse.framework */,
 				F28A175F18AF4AB2003A109C /* SystemConfiguration.framework */,
-				F28A175D18AF4AA6003A109C /* StoreKit.framework */,
 				F28A175B18AF4A9E003A109C /* Security.framework */,
 				F28A175918AF4A91003A109C /* QuartzCore.framework */,
 				F28A175718AF4A88003A109C /* MobileCoreServices.framework */,
@@ -310,6 +309,8 @@
 				CF4873FD18AFE01800C86F65 /* StatisticsController.m */,
 				CF4873FF18AFE0C700C86F65 /* ServerController.h */,
 				CF48740018AFE0C700C86F65 /* ServerController.m */,
+				F2B6D73618B9122A003CE290 /* PhoneVerificationViewController.h */,
+				F2B6D73718B9122A003CE290 /* PhoneVerificationViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -442,6 +443,11 @@
 				TargetAttributes = {
 					F28A171618AF4A43003A109C = {
 						DevelopmentTeam = P84MG4SANC;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					F28A173718AF4A43003A109C = {
 						TestTargetID = F28A171618AF4A43003A109C;
@@ -545,6 +551,7 @@
 				F2BCEF5118AF819D000084D7 /* PairingViewController.m in Sources */,
 				CF4873F818AFC33200C86F65 /* PairDiaryMessageViewController.m in Sources */,
 				F2BCEF5418AF819D000084D7 /* ECSlidingViewController.m in Sources */,
+				F2B6D73818B9122A003CE290 /* PhoneVerificationViewController.m in Sources */,
 				CF62D03E18B8C44B00D0CC4D /* Diary.m in Sources */,
 				E42991E718AF878100EDF2CF /* DiaryDayCell.m in Sources */,
 				F28A172B18AF4A43003A109C /* PairDiaryAppDelegate.m in Sources */,
@@ -684,6 +691,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/shaohuanli/Developer/pairdiary,
+					/Users/qiyuesong/Documents/pairdiary,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PairDiary/PairDiary-Prefix.pch";
@@ -705,6 +713,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/shaohuanli/Developer/pairdiary,
+					/Users/qiyuesong/Documents/pairdiary,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PairDiary/PairDiary-Prefix.pch";
